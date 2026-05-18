@@ -1,0 +1,334 @@
+{
+  "version": 1,
+  "date": "2026-05-16",
+  "title": "横式退位减法巩固卷",
+  "topic": "两位数退位减法",
+  "grade": "一年级下册",
+  "target": "针对 `横式退位迁移不稳`，验证芝芝能否在等式/横式里记住“十位少1后还要继续减”。",
+  "template": "templates/worksheet/a4-single.html",
+  "worksheet_file": "worksheet.html",
+  "answer_key_file": "answer-key.md",
+  "page": {
+    "size": "A4",
+    "expected_pages": 1,
+    "verify_print": true
+  },
+  "fields": [
+    "姓名",
+    "日期",
+    "用时",
+    "正确题数"
+  ],
+  "reminder": "小提醒：每天5分钟口算；两位数横式必须写规范竖式；做完自己选1题检查。",
+  "footer": "爸爸观察：先看有没有草稿和检查痕迹，再看答案对不对。",
+  "sections": [
+    {
+      "title": "一、先读题：圈关键词，再说任务。",
+      "layout": "cards-3",
+      "items": [
+        {
+          "type": "reading_task",
+          "text": "横式也要想竖式。"
+        },
+        {
+          "type": "reading_task",
+          "text": "算完要检查。"
+        },
+        {
+          "type": "reading_task",
+          "text": "十位少 1 后还要减。"
+        }
+      ]
+    },
+    {
+      "title": "二、口算热身。",
+      "layout": "grid-4",
+      "items": [
+        {
+          "type": "equation",
+          "expr": "13 - 8",
+          "answer": "5"
+        },
+        {
+          "type": "equation",
+          "expr": "15 - 7",
+          "answer": "8"
+        },
+        {
+          "type": "equation",
+          "expr": "12 - 6",
+          "answer": "6"
+        },
+        {
+          "type": "equation",
+          "expr": "14 - 9",
+          "answer": "5"
+        },
+        {
+          "type": "equation",
+          "expr": "16 - 8",
+          "answer": "8"
+        },
+        {
+          "type": "equation",
+          "expr": "11 - 5",
+          "answer": "6"
+        },
+        {
+          "type": "equation",
+          "expr": "18 - 9",
+          "answer": "9"
+        },
+        {
+          "type": "equation",
+          "expr": "12 - 7",
+          "answer": "5"
+        }
+      ]
+    },
+    {
+      "title": "三、横式退位：先说链条，再写答案。",
+      "layout": "problem-grid-2",
+      "items": [
+        {
+          "type": "borrowing_chain",
+          "expr": "70 - 28",
+          "answer": "42",
+          "steps": [
+            "个位：10 - 8 = [blank]",
+            "十位：7 借走 1 后变 [blank]，还要减 2。"
+          ],
+          "answer_detail": "`70 - 28 = 42`；个位 2；十位借后变 6，`6 - 2 = 4`"
+        },
+        {
+          "type": "borrowing_chain",
+          "expr": "60 - 27",
+          "answer": "33",
+          "steps": [
+            "个位：10 - 7 = [blank]",
+            "十位：6 借走 1 后变 [blank]，还要减 2。"
+          ],
+          "answer_detail": "`60 - 27 = 33`；个位 3；十位借后变 5，`5 - 2 = 3`"
+        },
+        {
+          "type": "borrowing_chain",
+          "expr": "80 - 36",
+          "answer": "44",
+          "steps": [
+            "个位：10 - 6 = [blank]",
+            "十位：8 借走 1 后变 [blank]，还要减 3。"
+          ],
+          "answer_detail": "`80 - 36 = 44`；个位 4；十位借后变 7，`7 - 3 = 4`"
+        },
+        {
+          "type": "borrowing_chain",
+          "expr": "90 - 58",
+          "answer": "32",
+          "steps": [
+            "个位：10 - 8 = [blank]",
+            "十位：9 借走 1 后变 [blank]，还要减 5。"
+          ],
+          "answer_detail": "`90 - 58 = 32`；个位 2；十位借后变 8，`8 - 5 = 3`"
+        }
+      ]
+    },
+    {
+      "title": "四、自己算。两位数题必须在旁边写小竖式。",
+      "layout": "grid-4",
+      "items": [
+        {
+          "type": "equation",
+          "expr": "52 - 28",
+          "answer": "24"
+        },
+        {
+          "type": "equation",
+          "expr": "73 - 46",
+          "answer": "27"
+        },
+        {
+          "type": "equation",
+          "expr": "64 - 37",
+          "answer": "27"
+        },
+        {
+          "type": "equation",
+          "expr": "81 - 54",
+          "answer": "27"
+        },
+        {
+          "type": "equation",
+          "expr": "75 - 39",
+          "answer": "36"
+        },
+        {
+          "type": "equation",
+          "expr": "43 - 18",
+          "answer": "25"
+        }
+      ]
+    },
+    {
+      "title": "五、再练一组：横式也要想竖式。",
+      "layout": "compact-3",
+      "items": [
+        {
+          "type": "equation",
+          "expr": "60 - 34",
+          "answer": "26"
+        },
+        {
+          "type": "equation",
+          "expr": "70 - 46",
+          "answer": "24"
+        },
+        {
+          "type": "equation",
+          "expr": "80 - 57",
+          "answer": "23"
+        },
+        {
+          "type": "equation",
+          "expr": "90 - 69",
+          "answer": "21"
+        },
+        {
+          "type": "equation",
+          "expr": "54 - 29",
+          "answer": "25"
+        },
+        {
+          "type": "equation",
+          "expr": "62 - 38",
+          "answer": "24"
+        },
+        {
+          "type": "equation",
+          "expr": "71 - 45",
+          "answer": "26"
+        },
+        {
+          "type": "equation",
+          "expr": "83 - 56",
+          "answer": "27"
+        },
+        {
+          "type": "equation",
+          "expr": "92 - 68",
+          "answer": "24"
+        }
+      ]
+    },
+    {
+      "title": "六、检查两题：差 + 减数 = 被减数。",
+      "layout": "check-grid-2",
+      "items": [
+        {
+          "type": "check_equation",
+          "expr": "70 - 28",
+          "answer": "42",
+          "check": "+ 28 = 70",
+          "answer_detail": "`70 - 28 = 42`，检查：`42 + 28 = 70`"
+        },
+        {
+          "type": "check_equation",
+          "expr": "60 - 27",
+          "answer": "33",
+          "check": "+ 27 = 60",
+          "answer_detail": "`60 - 27 = 33`，检查：`33 + 27 = 60`"
+        }
+      ]
+    },
+    {
+      "title": "七、最后一组：先写草稿，再写答案。",
+      "layout": "grid-4",
+      "items": [
+        {
+          "type": "equation",
+          "expr": "50 - 26",
+          "answer": "24"
+        },
+        {
+          "type": "equation",
+          "expr": "61 - 35",
+          "answer": "26"
+        },
+        {
+          "type": "equation",
+          "expr": "72 - 48",
+          "answer": "24"
+        },
+        {
+          "type": "equation",
+          "expr": "83 - 59",
+          "answer": "24"
+        },
+        {
+          "type": "equation",
+          "expr": "94 - 67",
+          "answer": "27"
+        },
+        {
+          "type": "equation",
+          "expr": "51 - 29",
+          "answer": "22"
+        },
+        {
+          "type": "equation",
+          "expr": "63 - 47",
+          "answer": "16"
+        },
+        {
+          "type": "equation",
+          "expr": "82 - 56",
+          "answer": "26"
+        }
+      ]
+    }
+  ],
+  "grading": {
+    "error_labels": [
+      {
+        "name": "横式退位链条断了",
+        "description": "个位借位对了，但十位少 1 后忘记继续减。"
+      },
+      {
+        "name": "个位口算错",
+        "description": "如 `10-8`、`10-7` 算错。"
+      },
+      {
+        "name": "十位忘记少1",
+        "description": "借位后仍用原十位去减。"
+      },
+      {
+        "name": "没有真正检查",
+        "description": "写了检查式，但加法结果不成立。"
+      },
+      {
+        "name": "读题任务不清",
+        "description": "读题训练说不出要做什么。"
+      },
+      {
+        "name": "草稿动作未完成",
+        "description": "两位数横式加减没有小竖式、拆分式或清楚草稿。"
+      },
+      {
+        "name": "检查动作未完成",
+        "description": "做完没有检查 3 题，或检查式没有真正算。"
+      }
+    ],
+    "reassessment": [
+      "40题中对 35题及以上，且第12-15题全部正确：`横式退位迁移` 可标为 `待巩固稳定`。",
+      "第12-15题错 1题：继续 `待巩固`，下次再做 4 道同结构题。",
+      "第12-15题错 2题及以上：重新标为 `薄弱项`，说明横式链条仍不稳。",
+      "如果检查题写了但没有真正算对，保留 `检查习惯不足`。",
+      "如果答案达标但没有草稿痕迹，只能标为 `计算暂对，草稿习惯未达标`，不能算真正通过。",
+      "如果没有检查 3 题，保留 `检查习惯不足`。"
+    ],
+    "next": [
+      "如果本卷通过，下次减少退位专项题，加入 1-2 道应用题看是否能迁移。",
+      "如果本卷未通过，继续只练横式退位链条，不加应用题。",
+      "如果提醒后仍不写草稿，下次改为少量大格草稿卷，先练落笔流程，不增加题量。"
+    ]
+  }
+}

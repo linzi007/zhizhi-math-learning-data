@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>横式退位减法巩固卷</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 12mm;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 18px;
+      line-height: 1.32;
+      color: #111;
+      background: #fff;
+    }
+
+    .sheet {
+      max-width: 186mm;
+      margin: 0 auto;
+    }
+
+    h1 {
+      margin: 0 0 5px;
+      text-align: center;
+      font-size: 25px;
+      line-height: 1.15;
+    }
+
+    .meta {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 6px;
+      margin-bottom: 5px;
+      font-size: 15px;
+      line-height: 1.25;
+    }
+
+    .line {
+      display: inline-block;
+      min-width: 25mm;
+      border-bottom: 1px solid #222;
+      height: 17px;
+      vertical-align: bottom;
+    }
+
+    .tip {
+      border: 1px solid #222;
+      padding: 4px 8px;
+      margin-bottom: 5px;
+      font-size: 15px;
+      line-height: 1.25;
+    }
+
+    h2 {
+      margin: 5px 0 3px;
+      font-size: 17px;
+      line-height: 1.2;
+    }
+
+    .read-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 6px;
+      margin-bottom: 4px;
+    }
+
+    .read-card {
+      border: 1px solid #bbb;
+      min-height: 20mm;
+      padding: 4px 6px;
+      font-size: 15px;
+      line-height: 1.25;
+    }
+
+    .mental-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 3px 10px;
+      margin-bottom: 4px;
+    }
+
+    .compact-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 3px 10px;
+      margin-bottom: 4px;
+    }
+
+    .item {
+      white-space: nowrap;
+      min-height: 20px;
+      line-height: 1.25;
+    }
+
+    .blank {
+      display: inline-block;
+      width: 15mm;
+      border-bottom: 1px solid #222;
+      height: 18px;
+      vertical-align: bottom;
+    }
+
+    .blank-wide {
+      display: inline-block;
+      width: 24mm;
+      border-bottom: 1px solid #222;
+      height: 18px;
+      vertical-align: bottom;
+    }
+
+    .problem-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 5px 10px;
+    }
+
+    .problem {
+      border: 1px solid #bbb;
+      min-height: 24mm;
+      padding: 5px 6px;
+      break-inside: avoid;
+    }
+
+    .problem.tall {
+      min-height: 30mm;
+    }
+
+    .prompt {
+      font-size: 16px;
+      line-height: 1.25;
+    }
+
+    .work-line {
+      display: block;
+      margin-top: 4px;
+      height: 15px;
+      border-bottom: 1px solid #222;
+    }
+
+    .answer-line {
+      margin-top: 4px;
+      font-size: 16px;
+      line-height: 1.25;
+    }
+
+    .choice {
+      display: inline-block;
+      min-width: 11mm;
+      margin-right: 3mm;
+      border: 1px solid #999;
+      text-align: center;
+      line-height: 1.35;
+    }
+
+    .chain {
+      margin-top: 3px;
+      font-size: 15px;
+      line-height: 1.25;
+    }
+
+    .dash {
+      display: block;
+      margin-top: 2px;
+      height: 17px;
+      border-bottom: 1px dashed #888;
+    }
+
+    .check-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 5px 10px;
+    }
+
+    .check-card {
+      border: 1px solid #bbb;
+      min-height: 22mm;
+      padding: 5px 6px;
+      line-height: 1.3;
+    }
+
+    .footer {
+      margin-top: 5px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <main class="sheet">
+    <h1>横式退位减法巩固卷</h1>
+    <section class="meta">
+      <div>姓名：<span class="line"></span></div>
+      <div>日期：<span class="line"></span></div>
+      <div>用时：<span class="line"></span></div>
+      <div>正确题数：<span class="line"></span></div>
+    </section>
+    <section class="tip">小提醒：每天5分钟口算；两位数横式必须写规范竖式；做完自己选1题检查。</section>
+    <h2>一、先读题：圈关键词，再说任务。</h2>
+    <section class="read-grid">
+      <div class="read-card">
+        1. 横式也要想竖式。<br>
+        关键词：<span class="blank"></span><br>
+        任务：<span class="dash"></span>
+      </div>
+      <div class="read-card">
+        2. 算完要检查。<br>
+        关键词：<span class="blank"></span><br>
+        任务：<span class="dash"></span>
+      </div>
+      <div class="read-card">
+        3. 十位少 1 后还要减。<br>
+        关键词：<span class="blank"></span><br>
+        任务：<span class="dash"></span>
+      </div>
+    </section>
+    <h2>二、口算热身。</h2>
+    <section class="mental-grid">
+      <div class="item">4. 13 - 8 = <span class="blank"></span></div>
+      <div class="item">5. 15 - 7 = <span class="blank"></span></div>
+      <div class="item">6. 12 - 6 = <span class="blank"></span></div>
+      <div class="item">7. 14 - 9 = <span class="blank"></span></div>
+      <div class="item">8. 16 - 8 = <span class="blank"></span></div>
+      <div class="item">9. 11 - 5 = <span class="blank"></span></div>
+      <div class="item">10. 18 - 9 = <span class="blank"></span></div>
+      <div class="item">11. 12 - 7 = <span class="blank"></span></div>
+    </section>
+    <h2>三、横式退位：先说链条，再写答案。</h2>
+    <section class="problem-grid">
+      <div class="problem">
+        12. 70 - 28 = <span class="blank"></span>
+        <div class="chain">个位：10 - 8 = <span class="blank"></span></div>
+        <div class="chain">十位：7 借走 1 后变 <span class="blank"></span>，还要减 2。</div>
+      </div>
+      <div class="problem">
+        13. 60 - 27 = <span class="blank"></span>
+        <div class="chain">个位：10 - 7 = <span class="blank"></span></div>
+        <div class="chain">十位：6 借走 1 后变 <span class="blank"></span>，还要减 2。</div>
+      </div>
+      <div class="problem">
+        14. 80 - 36 = <span class="blank"></span>
+        <div class="chain">个位：10 - 6 = <span class="blank"></span></div>
+        <div class="chain">十位：8 借走 1 后变 <span class="blank"></span>，还要减 3。</div>
+      </div>
+      <div class="problem">
+        15. 90 - 58 = <span class="blank"></span>
+        <div class="chain">个位：10 - 8 = <span class="blank"></span></div>
+        <div class="chain">十位：9 借走 1 后变 <span class="blank"></span>，还要减 5。</div>
+      </div>
+    </section>
+    <h2>四、自己算。两位数题必须在旁边写小竖式。</h2>
+    <section class="mental-grid">
+      <div class="item">16. 52 - 28 = <span class="blank"></span></div>
+      <div class="item">17. 73 - 46 = <span class="blank"></span></div>
+      <div class="item">18. 64 - 37 = <span class="blank"></span></div>
+      <div class="item">19. 81 - 54 = <span class="blank"></span></div>
+      <div class="item">20. 75 - 39 = <span class="blank"></span></div>
+      <div class="item">21. 43 - 18 = <span class="blank"></span></div>
+    </section>
+    <h2>五、再练一组：横式也要想竖式。</h2>
+    <section class="compact-grid">
+      <div class="item">22. 60 - 34 = <span class="blank"></span></div>
+      <div class="item">23. 70 - 46 = <span class="blank"></span></div>
+      <div class="item">24. 80 - 57 = <span class="blank"></span></div>
+      <div class="item">25. 90 - 69 = <span class="blank"></span></div>
+      <div class="item">26. 54 - 29 = <span class="blank"></span></div>
+      <div class="item">27. 62 - 38 = <span class="blank"></span></div>
+      <div class="item">28. 71 - 45 = <span class="blank"></span></div>
+      <div class="item">29. 83 - 56 = <span class="blank"></span></div>
+      <div class="item">30. 92 - 68 = <span class="blank"></span></div>
+    </section>
+    <h2>六、检查两题：差 + 减数 = 被减数。</h2>
+    <section class="check-grid">
+      <div class="check-card">
+        31. 70 - 28 = <span class="blank"></span><br>
+        检查：<span class="blank"></span> + 28 = 70
+      </div>
+      <div class="check-card">
+        32. 60 - 27 = <span class="blank"></span><br>
+        检查：<span class="blank"></span> + 27 = 60
+      </div>
+    </section>
+    <h2>七、最后一组：先写草稿，再写答案。</h2>
+    <section class="mental-grid">
+      <div class="item">33. 50 - 26 = <span class="blank"></span></div>
+      <div class="item">34. 61 - 35 = <span class="blank"></span></div>
+      <div class="item">35. 72 - 48 = <span class="blank"></span></div>
+      <div class="item">36. 83 - 59 = <span class="blank"></span></div>
+      <div class="item">37. 94 - 67 = <span class="blank"></span></div>
+      <div class="item">38. 51 - 29 = <span class="blank"></span></div>
+      <div class="item">39. 63 - 47 = <span class="blank"></span></div>
+      <div class="item">40. 82 - 56 = <span class="blank"></span></div>
+    </section>
+    <div class="footer">爸爸观察：先看有没有草稿和检查痕迹，再看答案对不对。</div>
+  </main>
+</body>
+</html>

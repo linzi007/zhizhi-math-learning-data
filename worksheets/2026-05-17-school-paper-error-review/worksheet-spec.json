@@ -1,0 +1,188 @@
+{
+  "version": 1,
+  "date": "2026-05-17",
+  "title": "学校卷同类变式巩固卷",
+  "topic": "学校卷错因复盘",
+  "grade": "一年级下册",
+  "target": "针对学校卷暴露的读题任务提取、横式两位数加减草稿习惯、退位减法复发、应用题最后一步和检查习惯；题目做同类变形，不重复原题。",
+  "template": "templates/worksheet/a4-single.html",
+  "worksheet_file": "worksheet.html",
+  "answer_key_file": "answer-key.md",
+  "page": {
+    "size": "A4",
+    "expected_pages": 2,
+    "verify_print": false,
+    "allow_multiple_pages": true
+  },
+  "fields": [
+    "姓名",
+    "日期",
+    "用时",
+    "正确题数"
+  ],
+  "reminder": "小提醒：每天5分钟口算；两位数横式必须写规范竖式；做完自己选1题检查。",
+  "footer": "",
+  "sections": [
+    {
+      "title": "一、先读题：圈关键词，再说任务。",
+      "layout": "cards-3",
+      "items": [
+        {
+          "type": "reading_task",
+          "text": "要使和是九十多，□里可以填几？"
+        },
+        {
+          "type": "reading_task",
+          "text": "70 元够吗？先算两样一共多少元。"
+        },
+        {
+          "type": "reading_task",
+          "text": "拿走一半后还剩，先算拿走多少。"
+        }
+      ]
+    },
+    {
+      "title": "二、条件填空：填可填的数。",
+      "layout": "problem-grid-2",
+      "items": [
+        {
+          "type": "fill_condition",
+          "prompt": "47 + 4□，要使和的十位上是 9，□里可填：[blank-wide]",
+          "answer_detail": "`3、4、5、6、7、8、9`。因为 `47+43=90`，再大也还是九十多。"
+        },
+        {
+          "type": "fill_condition",
+          "prompt": "47 + 4□，要使结果是八十多，□里可填：[blank-wide]",
+          "answer_detail": "`0、1、2`。因为结果要在 80 到 89。"
+        },
+        {
+          "type": "fill_condition",
+          "prompt": "8□ - 46 是一道退位减法，□里可填：[blank-wide]",
+          "answer_detail": "`0、1、2、3、4、5`。个位不够减 6 才退位。"
+        }
+      ]
+    },
+    {
+      "title": "三、横式计算：必须写小竖式或草稿。",
+      "layout": "problem-grid-2",
+      "items": [
+        {
+          "type": "scratch_equation",
+          "expr": "35 + 24",
+          "answer": "59",
+          "answer_detail": "`35 + 24 = 59`。"
+        },
+        {
+          "type": "scratch_equation",
+          "expr": "62 + 17",
+          "answer": "79",
+          "answer_detail": "`62 + 17 = 79`。"
+        },
+        {
+          "type": "scratch_equation",
+          "expr": "50 - 27",
+          "answer": "23",
+          "answer_detail": "`50 - 27 = 23`。个位借 1，十位从 5 变 4，`4-2=2`。"
+        },
+        {
+          "type": "scratch_equation",
+          "expr": "60 - 34",
+          "answer": "26",
+          "answer_detail": "`60 - 34 = 26`。个位借 1，十位从 6 变 5，`5-3=2`。"
+        }
+      ]
+    },
+    {
+      "title": "四、应用题：先列式，再写答句。",
+      "layout": "problem-grid-2",
+      "items": [
+        {
+          "type": "word_problem",
+          "prompt": "一盒彩笔 35 元，一个画本 24 元。小雨有 60 元，够买吗？",
+          "work_lines": 1,
+          "answer_prompt": "答：60 元",
+          "answer_suffix": "。",
+          "answer_detail": "`35+24=59`，`59<60`，所以 60 元够。"
+        },
+        {
+          "type": "word_problem",
+          "prompt": "一（1）班已经种了 18 棵。一（2）班要种 28 棵，还剩 9 棵没种。哪个班已经种得多？",
+          "work_lines": 1,
+          "answer_prompt": "答：一（",
+          "answer_suffix": "）班多。",
+          "answer_detail": "一（2）班已种 `28-9=19` 棵，`19>18`，所以一（2）班多。"
+        },
+        {
+          "type": "word_problem",
+          "prompt": "盒子里有 50 个球，拿走红球的一半后，还剩 32 个。原来有多少个红球？",
+          "work_lines": 2,
+          "answer_prompt": "答：原来有",
+          "answer_suffix": "个红球。",
+          "answer_detail": "`50-32=18`，拿走的一半是 18，原来红球是 `18+18=36` 个。"
+        }
+      ]
+    },
+    {
+      "title": "五、检查 2 题：要留下检查痕迹。",
+      "layout": "check-grid-2",
+      "items": [
+        {
+          "type": "check_equation",
+          "expr": "50 - 27",
+          "answer": "23",
+          "check": "+ 27 = 50",
+          "answer_detail": "`50 - 27 = 23`，检查：`23 + 27 = 50`。"
+        },
+        {
+          "type": "check_equation",
+          "expr": "35 + 24",
+          "answer": "59",
+          "check": "- 24 = 35",
+          "answer_detail": "`35 + 24 = 59`，检查：`59 - 24 = 35`。"
+        }
+      ]
+    }
+  ],
+  "grading": {
+    "error_labels": [
+      {
+        "name": "读题任务不清",
+        "description": "圈不出任务词，或说不出先做什么。"
+      },
+      {
+        "name": "数位条件不稳",
+        "description": "不会把“十位上是9”“八十多”“退位减法”转成可填数字范围。"
+      },
+      {
+        "name": "横式数位错",
+        "description": "两位数横式中十位、个位没有对齐思考。"
+      },
+      {
+        "name": "退位复发",
+        "description": "退位后忘记十位少 1，或少 1 后忘记继续减。"
+      },
+      {
+        "name": "应用题少一步",
+        "description": "只算出中间量，没有回到题目最终问题。"
+      },
+      {
+        "name": "草稿动作未完成",
+        "description": "两位数横式没有小竖式、拆分式或清楚草稿。"
+      },
+      {
+        "name": "检查动作未完成",
+        "description": "检查题没有留下检查式，或检查式没有真正算。"
+      }
+    ],
+    "reassessment": [
+      "15题中对 13题及以上，且第7-10题都有草稿痕迹：横式计算可暂回到 `待巩固`。",
+      "第9、10、13、14题任意错 2题及以上：退位减法继续保持 `复发`。",
+      "第11-13题错 2题及以上：两步应用题模型保持 `观察中`，下次单独练。",
+      "如果没有草稿或检查痕迹，即使答案对，也不能算习惯通过。"
+    ],
+    "next": [
+      "通过：下次减少专项提示，放入自然卷式混合题观察能否迁移。",
+      "未通过：下次改成少量大格草稿卷，先练落笔和检查流程，不增加题量。"
+    ]
+  }
+}

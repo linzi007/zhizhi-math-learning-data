@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>学校卷同类变式巩固卷</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 12mm;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 18px;
+      line-height: 1.32;
+      color: #111;
+      background: #fff;
+    }
+
+    .sheet {
+      max-width: 186mm;
+      margin: 0 auto;
+    }
+
+    h1 {
+      margin: 0 0 5px;
+      text-align: center;
+      font-size: 25px;
+      line-height: 1.15;
+    }
+
+    .meta {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 6px;
+      margin-bottom: 5px;
+      font-size: 15px;
+      line-height: 1.25;
+    }
+
+    .line {
+      display: inline-block;
+      min-width: 25mm;
+      border-bottom: 1px solid #222;
+      height: 17px;
+      vertical-align: bottom;
+    }
+
+    .tip {
+      border: 1px solid #222;
+      padding: 4px 8px;
+      margin-bottom: 5px;
+      font-size: 15px;
+      line-height: 1.25;
+    }
+
+    h2 {
+      margin: 5px 0 3px;
+      font-size: 17px;
+      line-height: 1.2;
+    }
+
+    .read-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 6px;
+      margin-bottom: 4px;
+    }
+
+    .read-card {
+      border: 1px solid #bbb;
+      min-height: 20mm;
+      padding: 4px 6px;
+      font-size: 15px;
+      line-height: 1.25;
+    }
+
+    .mental-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 3px 10px;
+      margin-bottom: 4px;
+    }
+
+    .compact-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 3px 10px;
+      margin-bottom: 4px;
+    }
+
+    .item {
+      white-space: nowrap;
+      min-height: 20px;
+      line-height: 1.25;
+    }
+
+    .blank {
+      display: inline-block;
+      width: 15mm;
+      border-bottom: 1px solid #222;
+      height: 18px;
+      vertical-align: bottom;
+    }
+
+    .blank-wide {
+      display: inline-block;
+      width: 24mm;
+      border-bottom: 1px solid #222;
+      height: 18px;
+      vertical-align: bottom;
+    }
+
+    .problem-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 5px 10px;
+    }
+
+    .problem {
+      border: 1px solid #bbb;
+      min-height: 24mm;
+      padding: 5px 6px;
+      break-inside: avoid;
+    }
+
+    .problem.tall {
+      min-height: 30mm;
+    }
+
+    .prompt {
+      font-size: 16px;
+      line-height: 1.25;
+    }
+
+    .work-line {
+      display: block;
+      margin-top: 4px;
+      height: 15px;
+      border-bottom: 1px solid #222;
+    }
+
+    .answer-line {
+      margin-top: 4px;
+      font-size: 16px;
+      line-height: 1.25;
+    }
+
+    .choice {
+      display: inline-block;
+      min-width: 11mm;
+      margin-right: 3mm;
+      border: 1px solid #999;
+      text-align: center;
+      line-height: 1.35;
+    }
+
+    .chain {
+      margin-top: 3px;
+      font-size: 15px;
+      line-height: 1.25;
+    }
+
+    .dash {
+      display: block;
+      margin-top: 2px;
+      height: 17px;
+      border-bottom: 1px dashed #888;
+    }
+
+    .check-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 5px 10px;
+    }
+
+    .check-card {
+      border: 1px solid #bbb;
+      min-height: 22mm;
+      padding: 5px 6px;
+      line-height: 1.3;
+    }
+
+    .footer {
+      margin-top: 5px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <main class="sheet">
+    <h1>学校卷同类变式巩固卷</h1>
+    <section class="meta">
+      <div>姓名：<span class="line"></span></div>
+      <div>日期：<span class="line"></span></div>
+      <div>用时：<span class="line"></span></div>
+      <div>正确题数：<span class="line"></span></div>
+    </section>
+    <section class="tip">小提醒：每天5分钟口算；两位数横式必须写规范竖式；做完自己选1题检查。</section>
+    <h2>一、先读题：圈关键词，再说任务。</h2>
+    <section class="read-grid">
+      <div class="read-card">
+        1. 要使和是九十多，□里可以填几？<br>
+        关键词：<span class="blank"></span><br>
+        任务：<span class="dash"></span>
+      </div>
+      <div class="read-card">
+        2. 70 元够吗？先算两样一共多少元。<br>
+        关键词：<span class="blank"></span><br>
+        任务：<span class="dash"></span>
+      </div>
+      <div class="read-card">
+        3. 拿走一半后还剩，先算拿走多少。<br>
+        关键词：<span class="blank"></span><br>
+        任务：<span class="dash"></span>
+      </div>
+    </section>
+    <h2>二、条件填空：填可填的数。</h2>
+    <section class="problem-grid">
+      <div class="problem">
+        <div class="prompt">4. 47 + 4□，要使和的十位上是 9，□里可填：<span class="blank-wide"></span></div>
+      </div>
+      <div class="problem">
+        <div class="prompt">5. 47 + 4□，要使结果是八十多，□里可填：<span class="blank-wide"></span></div>
+      </div>
+      <div class="problem">
+        <div class="prompt">6. 8□ - 46 是一道退位减法，□里可填：<span class="blank-wide"></span></div>
+      </div>
+    </section>
+    <h2>三、横式计算：必须写小竖式或草稿。</h2>
+    <section class="problem-grid">
+      <div class="problem">
+        7. 35 + 24 = <span class="blank"></span>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+      </div>
+      <div class="problem">
+        8. 62 + 17 = <span class="blank"></span>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+      </div>
+      <div class="problem">
+        9. 50 - 27 = <span class="blank"></span>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+      </div>
+      <div class="problem">
+        10. 60 - 34 = <span class="blank"></span>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+      </div>
+    </section>
+    <h2>四、应用题：先列式，再写答句。</h2>
+    <section class="problem-grid">
+      <div class="problem tall">
+        <div class="prompt">11. 一盒彩笔 35 元，一个画本 24 元。小雨有 60 元，够买吗？</div>
+        <span class="work-line"></span>
+        <div class="answer-line">答：60 元<span class="blank"></span>。</div>
+      </div>
+      <div class="problem tall">
+        <div class="prompt">12. 一（1）班已经种了 18 棵。一（2）班要种 28 棵，还剩 9 棵没种。哪个班已经种得多？</div>
+        <span class="work-line"></span>
+        <div class="answer-line">答：一（<span class="blank"></span>）班多。</div>
+      </div>
+      <div class="problem tall">
+        <div class="prompt">13. 盒子里有 50 个球，拿走红球的一半后，还剩 32 个。原来有多少个红球？</div>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+        <div class="answer-line">答：原来有<span class="blank"></span>个红球。</div>
+      </div>
+    </section>
+    <h2>五、检查 2 题：要留下检查痕迹。</h2>
+    <section class="check-grid">
+      <div class="check-card">
+        14. 50 - 27 = <span class="blank"></span><br>
+        检查：<span class="blank"></span> + 27 = 50
+      </div>
+      <div class="check-card">
+        15. 35 + 24 = <span class="blank"></span><br>
+        检查：<span class="blank"></span> - 24 = 35
+      </div>
+    </section>
+
+  </main>
+</body>
+</html>

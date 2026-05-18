@@ -1,0 +1,222 @@
+{
+  "version": 1,
+  "date": "2026-05-17",
+  "title": "多步应用题和排队问题小练",
+  "topic": "多步应用题里的退位 + 排队问题",
+  "grade": "一年级下册",
+  "target": "巩固带条件判断的两步应用题，练习先读懂条件用不用、再列两个以上的式子；同时少量验证排队问题中“之间不算两头”和“从后往前数换位置”。",
+  "template": "templates/worksheet/a4-single.html",
+  "worksheet_file": "worksheet.html",
+  "answer_key_file": "answer-key.md",
+  "page": {
+    "size": "A4",
+    "expected_pages": 2,
+    "verify_print": false,
+    "allow_multiple_pages": true
+  },
+  "fields": ["姓名", "日期", "用时", "正确题数"],
+  "reminder": "小提醒：每天5分钟口算；应用题先圈条件用不用，再写2个以上式子；两位数横式写竖式或小帽子；做完自己选1题检查。",
+  "footer": "",
+  "sections": [
+    {
+      "title": "一、先读题：圈关键词。",
+      "layout": "cards-3",
+      "items": [
+        {
+          "type": "reading_task",
+          "text": "先圈题目问什么：够不够、还要多少、比谁多多少。"
+        },
+        {
+          "type": "reading_task",
+          "text": "有些条件要用，有些条件不用，先判断再列式。"
+        },
+        {
+          "type": "reading_task",
+          "text": "排队题问之间，两头都不算。"
+        }
+      ]
+    },
+    {
+      "title": "二、口算热身：先稳住基本数。",
+      "layout": "grid-4",
+      "items": [
+        {
+          "type": "equation",
+          "expr": "10 - 4",
+          "answer": "6"
+        },
+        {
+          "type": "equation",
+          "expr": "12 - 5",
+          "answer": "7"
+        },
+        {
+          "type": "equation",
+          "expr": "8 + 7",
+          "answer": "15"
+        },
+        {
+          "type": "equation",
+          "expr": "9 + 6",
+          "answer": "15"
+        }
+      ]
+    },
+    {
+      "title": "三、横式计算：写小竖式或小帽子。",
+      "layout": "problem-grid-2",
+      "items": [
+        {
+          "type": "scratch_equation",
+          "expr": "50 - 28",
+          "answer": "22",
+          "answer_detail": "`50 - 28 = 22`。个位借 1，十位从 5 变 4，`4-2=2`。"
+        },
+        {
+          "type": "scratch_equation",
+          "expr": "60 - 34",
+          "answer": "26",
+          "answer_detail": "`60 - 34 = 26`。个位借 1，十位从 6 变 5，`5-3=2`。"
+        },
+        {
+          "type": "scratch_equation",
+          "expr": "42 - 17",
+          "answer": "25",
+          "answer_detail": "`42 - 17 = 25`。个位不够减要退位，十位从 4 变 3。"
+        },
+        {
+          "type": "scratch_equation",
+          "expr": "35 + 24",
+          "answer": "59",
+          "answer_detail": "`35 + 24 = 59`。个位 `5+4=9`，十位 `3+2=5`。"
+        }
+      ]
+    },
+    {
+      "title": "四、应用题：先判断条件用不用，再列两步式。",
+      "layout": "problem-grid-2",
+      "items": [
+        {
+          "type": "word_problem",
+          "prompt": "文具店活动：购物满 50 元减 5 元。一个书包 36 元，一盒彩笔 18 元。芝芝带 50 元买这两样，钱够吗？",
+          "work_lines": 3,
+          "answer_prompt": "答：钱",
+          "answer_suffix": "。",
+          "answer_detail": "`36+18=54`，54 元满 50 元，要减 5 元；`54-5=49`，`49<50`，钱够。"
+        },
+        {
+          "type": "word_problem",
+          "prompt": "图书角原来有 60 本书。上午借走 27 本，下午又还回来 8 本。现在比原来少多少本？",
+          "work_lines": 3,
+          "answer_prompt": "答：现在比原来少",
+          "answer_suffix": "本。",
+          "answer_detail": "`60-27=33`，借走后剩 33 本；`33+8=41`，现在有 41 本；`60-41=19`，现在比原来少 19 本。"
+        },
+        {
+          "type": "word_problem",
+          "prompt": "一班计划种 50 棵树，上午种了 18 棵，下午种了 24 棵。二班已经种了 30 棵。一班还要种多少棵才能完成计划？",
+          "work_lines": 3,
+          "answer_prompt": "答：一班还要种",
+          "answer_suffix": "棵。",
+          "answer_detail": "`18+24=42`，一班已经种了 42 棵；二班 30 棵不用来算；`50-42=8`，一班还要种 8 棵。"
+        },
+        {
+          "type": "word_problem",
+          "prompt": "体育室有 50 根跳绳，借给一班 16 根，借给二班 18 根。借出去的比剩下的多多少根？",
+          "work_lines": 3,
+          "answer_prompt": "答：借出去的比剩下的多",
+          "answer_suffix": "根。",
+          "answer_detail": "`16+18=34`，一共借出去 34 根；`50-34=16`，还剩 16 根；`34-16=18`，借出去的比剩下的多 18 根。"
+        }
+      ]
+    },
+    {
+      "title": "五、排队问题：先标位置，再看算不算两头。",
+      "layout": "problem-grid-2",
+      "items": [
+        {
+          "type": "word_problem",
+          "prompt": "同学们排队做操，小明排第 8，小红排第 14。小明和小红之间有几个人？",
+          "work_lines": 2,
+          "answer_prompt": "答：之间有",
+          "answer_suffix": "个人。",
+          "answer_detail": "`14-8-1=5`，之间有 5 个人。问“之间”，两头都不算。"
+        },
+        {
+          "type": "word_problem",
+          "prompt": "一队有 18 个小朋友。从前往后数，乐乐排第 6；从后往前数，朵朵排第 5。乐乐和朵朵之间有几个人？",
+          "work_lines": 2,
+          "answer_prompt": "答：之间有",
+          "answer_suffix": "个人。",
+          "answer_detail": "朵朵从前往后的位置是 `18-5+1=14`，再算 `14-6-1=7`，之间有 7 个人。"
+        },
+        {
+          "type": "word_problem",
+          "prompt": "排队上车，从第 7 个到第 15 个同学先上车，一共有几个同学先上车？",
+          "work_lines": 2,
+          "answer_prompt": "答：一共有",
+          "answer_suffix": "个同学先上车。",
+          "answer_detail": "`15-7+1=9`，从第 7 个到第 15 个两头都算，一共有 9 个同学。"
+        }
+      ]
+    },
+    {
+      "title": "六、自己选 1 题检查。",
+      "layout": "problem-grid-2",
+      "items": [
+        {
+          "type": "fill_condition",
+          "prompt": "我选第 [blank] 题检查。检查式：[blank-wide]",
+          "answer_detail": "不固定答案。要求能看出检查的是哪一题，并且检查式成立。"
+        }
+      ]
+    }
+  ],
+  "grading": {
+    "error_labels": [
+      {
+        "name": "关键词未圈出",
+        "description": "没有圈出“够不够”“还要”“比谁多多少”“之间”“从后往前数”等任务词。"
+      },
+      {
+        "name": "退位未迁移",
+        "description": "应用题中列出两位数减法后，没有给十位戴小帽子或写竖式，导致退位错。"
+      },
+      {
+        "name": "口算事实不稳",
+        "description": "如 `5+4`、`8+7`、`12-5` 等基础口算不稳，带错两位数计算。"
+      },
+      {
+        "name": "条件误用或漏用",
+        "description": "没有判断条件是否要用，如满 50 减 5、二班已经种了 30 棵等条件。"
+      },
+      {
+        "name": "两步逻辑漏步",
+        "description": "只写一个式子，未完成先算总价/剩余、再判断或继续计算的第二步。"
+      },
+      {
+        "name": "排队位置转换错",
+        "description": "从后往前数的位置没有先换成从前往后的位置。"
+      },
+      {
+        "name": "算不算两头混淆",
+        "description": "“之间”没有减 1，或“从第几到第几”忘记加 1。"
+      },
+      {
+        "name": "检查动作未完成",
+        "description": "最后没有自己选题检查，或检查式不成立。"
+      }
+    ],
+    "reassessment": [
+      "19题中对 16题及以上，且第12-15题至少 3题正确、第16-18题至少 2题正确：混合应用题可标为 `待巩固`。",
+      "第12-15题错 2题及以上，或条件连续用错：保持 `多步应用题阅读与逻辑` 为 `薄弱项`。",
+      "第12-15题计算式列对但退位错：保持 `应用题里的退位迁移不稳`。",
+      "第16-18题错 2题及以上：排队问题继续保持 `薄弱项`。",
+      "如果第19题没有检查痕迹，检查习惯继续保持 `薄弱项`。"
+    ],
+    "next": [
+      "通过：下次把条件判断、退位、比较、排队混在学校卷风格题里观察迁移。",
+      "未通过：按错因拆成 5 分钟小练；若条件用错，先练“条件用/不用”的圈选题。"
+    ]
+  }
+}

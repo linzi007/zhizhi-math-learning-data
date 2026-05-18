@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>退位减法专项练习</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 12mm;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 18px;
+      line-height: 1.45;
+      color: #111;
+      background: #fff;
+    }
+
+    .sheet {
+      max-width: 186mm;
+      margin: 0 auto;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      text-align: center;
+      font-size: 28px;
+      letter-spacing: 0;
+    }
+
+    .meta {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 8px;
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+
+    .line {
+      display: inline-block;
+      min-width: 34mm;
+      border-bottom: 1px solid #222;
+      height: 20px;
+      vertical-align: bottom;
+    }
+
+    .tip {
+      border: 1px solid #222;
+      padding: 7px 10px;
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+
+    h2 {
+      margin: 10px 0 6px;
+      font-size: 19px;
+    }
+
+    .judge-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 6px 16px;
+      margin-bottom: 8px;
+    }
+
+    .judge-item {
+      white-space: nowrap;
+    }
+
+    .blank {
+      display: inline-block;
+      width: 24mm;
+      border-bottom: 1px solid #222;
+      height: 22px;
+      vertical-align: bottom;
+    }
+
+    .calc-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 8px 12px;
+    }
+
+    .problem {
+      min-height: 38mm;
+      border: 1px solid #bbb;
+      padding: 6px 8px;
+      break-inside: avoid;
+    }
+
+    .vertical {
+      display: inline-grid;
+      grid-template-columns: 18px 28px 28px;
+      grid-template-rows: repeat(4, 24px);
+      align-items: center;
+      justify-items: center;
+      font-size: 22px;
+      margin-top: 3px;
+    }
+
+    .op {
+      grid-column: 1;
+      grid-row: 2;
+    }
+
+    .tens {
+      grid-column: 2;
+    }
+
+    .ones {
+      grid-column: 3;
+    }
+
+    .top {
+      grid-row: 1;
+    }
+
+    .bottom {
+      grid-row: 2;
+    }
+
+    .bar {
+      grid-column: 1 / 4;
+      grid-row: 3;
+      width: 74px;
+      border-top: 2px solid #111;
+      height: 1px;
+    }
+
+    .work-line {
+      margin-top: 4px;
+      border-bottom: 1px dashed #888;
+      height: 22px;
+    }
+
+    .check-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 8px 14px;
+    }
+
+    .check-item {
+      border: 1px solid #bbb;
+      min-height: 34mm;
+      padding: 7px 8px;
+    }
+
+    .footer {
+      margin-top: 8px;
+      font-size: 15px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <main class="sheet">
+    <h1>退位减法专项练习</h1>
+
+    <section class="meta">
+      <div>姓名：<span class="line"></span></div>
+      <div>日期：<span class="line"></span></div>
+      <div>用时：<span class="line"></span></div>
+      <div>正确题数：<span class="line"></span></div>
+    </section>
+
+    <section class="tip">
+      小提醒：先看个位。个位不够减，就向十位借 1；十位要少 1。
+    </section>
+
+    <h2>一、先判断：要退位吗？圈一圈。</h2>
+    <section class="judge-grid">
+      <div class="judge-item">1. 34 - 18：要 / 不要</div>
+      <div class="judge-item">2. 56 - 24：要 / 不要</div>
+      <div class="judge-item">3. 72 - 39：要 / 不要</div>
+      <div class="judge-item">4. 85 - 31：要 / 不要</div>
+    </section>
+
+    <h2>二、竖式计算。</h2>
+    <section class="calc-grid">
+      <div class="problem">
+        <div>5.</div>
+        <div class="vertical">
+          <span class="tens top">4</span><span class="ones top">5</span>
+          <span class="op">-</span><span class="tens bottom">2</span><span class="ones bottom">7</span>
+          <span class="bar"></span>
+        </div>
+        <div class="work-line"></div>
+      </div>
+      <div class="problem">
+        <div>6.</div>
+        <div class="vertical">
+          <span class="tens top">6</span><span class="ones top">2</span>
+          <span class="op">-</span><span class="tens bottom">3</span><span class="ones bottom">8</span>
+          <span class="bar"></span>
+        </div>
+        <div class="work-line"></div>
+      </div>
+      <div class="problem">
+        <div>7.</div>
+        <div class="vertical">
+          <span class="tens top">7</span><span class="ones top">1</span>
+          <span class="op">-</span><span class="tens bottom">4</span><span class="ones bottom">6</span>
+          <span class="bar"></span>
+        </div>
+        <div class="work-line"></div>
+      </div>
+      <div class="problem">
+        <div>8.</div>
+        <div class="vertical">
+          <span class="tens top">5</span><span class="ones top">3</span>
+          <span class="op">-</span><span class="tens bottom">2</span><span class="ones bottom">9</span>
+          <span class="bar"></span>
+        </div>
+        <div class="work-line"></div>
+      </div>
+      <div class="problem">
+        <div>9.</div>
+        <div class="vertical">
+          <span class="tens top">8</span><span class="ones top">0</span>
+          <span class="op">-</span><span class="tens bottom">3</span><span class="ones bottom">6</span>
+          <span class="bar"></span>
+        </div>
+        <div class="work-line"></div>
+      </div>
+      <div class="problem">
+        <div>10.</div>
+        <div class="vertical">
+          <span class="tens top">9</span><span class="ones top">4</span>
+          <span class="op">-</span><span class="tens bottom">5</span><span class="ones bottom">8</span>
+          <span class="bar"></span>
+        </div>
+        <div class="work-line"></div>
+      </div>
+      <div class="problem">
+        <div>11.</div>
+        <div class="vertical">
+          <span class="tens top">4</span><span class="ones top">0</span>
+          <span class="op">-</span><span class="tens bottom">1</span><span class="ones bottom">7</span>
+          <span class="bar"></span>
+        </div>
+        <div class="work-line"></div>
+      </div>
+      <div class="problem">
+        <div>12.</div>
+        <div class="vertical">
+          <span class="tens top">6</span><span class="ones top">3</span>
+          <span class="op">-</span><span class="tens bottom">4</span><span class="ones bottom">5</span>
+          <span class="bar"></span>
+        </div>
+        <div class="work-line"></div>
+      </div>
+    </section>
+
+    <h2>三、算一算，再用加法检查。</h2>
+    <section class="check-grid">
+      <div class="check-item">
+        13. 51 - 26 = <span class="blank"></span><br>
+        检查：<span class="blank"></span> + 26 = 51
+      </div>
+      <div class="check-item">
+        14. 70 - 28 = <span class="blank"></span><br>
+        检查：<span class="blank"></span> + 28 = 70
+      </div>
+    </section>
+
+    <div class="footer">做题时每题轻声说一遍：个位够不够？借 1 后十位少 1。</div>
+  </main>
+</body>
+</html>
