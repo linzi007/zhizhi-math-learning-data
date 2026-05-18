@@ -1,0 +1,106 @@
+{
+  "title": "每日口算小练：100以内减法",
+  "date": "2026-05-18",
+  "topic": "100以内减法口算熟练度",
+  "grade": "一年级下学期",
+  "target": "每天5分钟，观察100以内减法是否能又准又顺，尤其是退位和整十借位。",
+  "fields": ["姓名", "日期", "用时", "正确题数"],
+  "reminder": "目标：5分钟内尽量做完。先口算；卡住超过5秒，马上在旁边写小竖式或给十位戴小帽子。做完选1题检查。",
+  "sections": [
+    {
+      "title": "一、不退位，先热身",
+      "layout": "grid-4",
+      "items": [
+        {"type": "equation", "expr": "57 - 23", "answer": "34"},
+        {"type": "equation", "expr": "68 - 35", "answer": "33"},
+        {"type": "equation", "expr": "94 - 42", "answer": "52"},
+        {"type": "equation", "expr": "76 - 41", "answer": "35"},
+        {"type": "equation", "expr": "89 - 56", "answer": "33"},
+        {"type": "equation", "expr": "65 - 24", "answer": "41"},
+        {"type": "equation", "expr": "48 - 17", "answer": "31"},
+        {"type": "equation", "expr": "99 - 63", "answer": "36"},
+        {"type": "equation", "expr": "72 - 31", "answer": "41"},
+        {"type": "equation", "expr": "84 - 52", "answer": "32"},
+        {"type": "equation", "expr": "39 - 18", "answer": "21"},
+        {"type": "equation", "expr": "58 - 26", "answer": "32"}
+      ]
+    },
+    {
+      "title": "二、重点：退位减法",
+      "layout": "grid-4",
+      "items": [
+        {"type": "equation", "expr": "42 - 18", "answer": "24"},
+        {"type": "equation", "expr": "53 - 27", "answer": "26"},
+        {"type": "equation", "expr": "61 - 34", "answer": "27"},
+        {"type": "equation", "expr": "70 - 25", "answer": "45"},
+        {"type": "equation", "expr": "85 - 48", "answer": "37"},
+        {"type": "equation", "expr": "94 - 59", "answer": "35"},
+        {"type": "equation", "expr": "73 - 46", "answer": "27"},
+        {"type": "equation", "expr": "62 - 38", "answer": "24"},
+        {"type": "equation", "expr": "51 - 29", "answer": "22"},
+        {"type": "equation", "expr": "80 - 37", "answer": "43"},
+        {"type": "equation", "expr": "90 - 56", "answer": "34"},
+        {"type": "equation", "expr": "100 - 64", "answer": "36"},
+        {"type": "equation", "expr": "36 - 19", "answer": "17"},
+        {"type": "equation", "expr": "45 - 28", "answer": "17"},
+        {"type": "equation", "expr": "74 - 39", "answer": "35"},
+        {"type": "equation", "expr": "83 - 57", "answer": "26"}
+      ]
+    },
+    {
+      "title": "三、整十借位",
+      "layout": "grid-4",
+      "items": [
+        {"type": "equation", "expr": "60 - 7", "answer": "53"},
+        {"type": "equation", "expr": "50 - 9", "answer": "41"},
+        {"type": "equation", "expr": "80 - 6", "answer": "74"},
+        {"type": "equation", "expr": "100 - 8", "answer": "92"},
+        {"type": "equation", "expr": "70 - 32", "answer": "38"},
+        {"type": "equation", "expr": "90 - 45", "answer": "45"},
+        {"type": "equation", "expr": "60 - 24", "answer": "36"},
+        {"type": "equation", "expr": "40 - 18", "answer": "22"}
+      ]
+    },
+    {
+      "title": "四、混合4题，做完检查1题",
+      "layout": "grid-4",
+      "items": [
+        {"type": "equation", "expr": "63 - 8", "answer": "55"},
+        {"type": "equation", "expr": "72 - 9", "answer": "63"},
+        {"type": "equation", "expr": "81 - 7", "answer": "74"},
+        {"type": "equation", "expr": "55 - 26", "answer": "29"}
+      ]
+    }
+  ],
+  "footer": "爸爸批改：标出错题属于“不退位错 / 退位错 / 整十借位错 / 正确但慢”。",
+  "grading": {
+    "error_labels": [
+      {
+        "name": "不退位错",
+        "description": "不需要退位也算错，多半是基础口算事实或数位对齐不稳。"
+      },
+      {
+        "name": "退位错",
+        "description": "个位不够减时，忘记借10、十位忘记减1，或小帽子没有用到底。"
+      },
+      {
+        "name": "整十借位错",
+        "description": "遇到50、60、70、80、90、100这类个位是0的被减数，借位过程不稳。"
+      },
+      {
+        "name": "正确但慢",
+        "description": "概念可能会，但基本事实提取慢，需要继续每天5分钟短练。"
+      }
+    ],
+    "reassessment": [
+      "40题正确36题以上，且5到8分钟内完成：100以内减法口算可暂标为待巩固。",
+      "退位错超过2题：下一张只练退位和整十借位，不增加应用题。",
+      "正确率高但用时长：继续每日5分钟，重点练十几减几和整十借位。",
+      "若错题集中在整十借位：单独练60-7、70-32、90-45这类题。"
+    ],
+    "next": [
+      "批改时记录用时、正确数、错题类型。",
+      "如果今天已经做了这张，明天不要加量，继续5分钟即可。"
+    ]
+  }
+}
