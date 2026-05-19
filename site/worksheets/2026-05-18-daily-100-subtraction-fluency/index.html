@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>每日口算小练：100以内减法</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 12mm;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 18px;
+      line-height: 1.32;
+      color: #111;
+      background: #fff;
+    }
+
+    .sheet {
+      max-width: 186mm;
+      margin: 0 auto;
+    }
+
+    h1 {
+      margin: 0 0 5px;
+      text-align: center;
+      font-size: 25px;
+      line-height: 1.15;
+    }
+
+    .meta {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 6px;
+      margin-bottom: 5px;
+      font-size: 15px;
+      line-height: 1.25;
+    }
+
+    .line {
+      display: inline-block;
+      min-width: 25mm;
+      border-bottom: 1px solid #222;
+      height: 17px;
+      vertical-align: bottom;
+    }
+
+    .tip {
+      border: 1px solid #222;
+      padding: 4px 8px;
+      margin-bottom: 5px;
+      font-size: 15px;
+      line-height: 1.25;
+    }
+
+    h2 {
+      margin: 5px 0 3px;
+      font-size: 17px;
+      line-height: 1.2;
+    }
+
+    .read-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 6px;
+      margin-bottom: 4px;
+    }
+
+    .read-card {
+      border: 1px solid #bbb;
+      min-height: 20mm;
+      padding: 4px 6px;
+      font-size: 15px;
+      line-height: 1.25;
+    }
+
+    .mental-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 3px 10px;
+      margin-bottom: 4px;
+    }
+
+    .compact-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 3px 10px;
+      margin-bottom: 4px;
+    }
+
+    .item {
+      white-space: nowrap;
+      min-height: 20px;
+      line-height: 1.25;
+    }
+
+    .blank {
+      display: inline-block;
+      width: 15mm;
+      border-bottom: 1px solid #222;
+      height: 18px;
+      vertical-align: bottom;
+    }
+
+    .blank-wide {
+      display: inline-block;
+      width: 24mm;
+      border-bottom: 1px solid #222;
+      height: 18px;
+      vertical-align: bottom;
+    }
+
+    .problem-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 5px 10px;
+    }
+
+    .problem {
+      border: 1px solid #bbb;
+      min-height: 24mm;
+      padding: 5px 6px;
+      break-inside: avoid;
+    }
+
+    .problem.tall {
+      min-height: 30mm;
+    }
+
+    .prompt {
+      font-size: 16px;
+      line-height: 1.25;
+    }
+
+    .work-line {
+      display: block;
+      margin-top: 4px;
+      height: 15px;
+      border-bottom: 1px solid #222;
+    }
+
+    .answer-line {
+      margin-top: 4px;
+      font-size: 16px;
+      line-height: 1.25;
+    }
+
+    .choice {
+      display: inline-block;
+      min-width: 11mm;
+      margin-right: 3mm;
+      border: 1px solid #999;
+      text-align: center;
+      line-height: 1.35;
+    }
+
+    .chain {
+      margin-top: 3px;
+      font-size: 15px;
+      line-height: 1.25;
+    }
+
+    .dash {
+      display: block;
+      margin-top: 2px;
+      height: 17px;
+      border-bottom: 1px dashed #888;
+    }
+
+    .check-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 5px 10px;
+    }
+
+    .check-card {
+      border: 1px solid #bbb;
+      min-height: 22mm;
+      padding: 5px 6px;
+      line-height: 1.3;
+    }
+
+    .footer {
+      margin-top: 5px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <main class="sheet">
+    <h1>每日口算小练：100以内减法</h1>
+    <section class="meta">
+      <div>姓名：<span class="line"></span></div>
+      <div>日期：<span class="line"></span></div>
+      <div>用时：<span class="line"></span></div>
+      <div>正确题数：<span class="line"></span></div>
+    </section>
+    <section class="tip">目标：5分钟内尽量做完。先口算；卡住超过5秒，马上在旁边写小竖式或给十位戴小帽子。做完选1题检查。</section>
+    <h2>一、不退位，先热身</h2>
+    <section class="mental-grid">
+      <div class="item">1. 57 - 23 = <span class="blank"></span></div>
+      <div class="item">2. 68 - 35 = <span class="blank"></span></div>
+      <div class="item">3. 94 - 42 = <span class="blank"></span></div>
+      <div class="item">4. 76 - 41 = <span class="blank"></span></div>
+      <div class="item">5. 89 - 56 = <span class="blank"></span></div>
+      <div class="item">6. 65 - 24 = <span class="blank"></span></div>
+      <div class="item">7. 48 - 17 = <span class="blank"></span></div>
+      <div class="item">8. 99 - 63 = <span class="blank"></span></div>
+      <div class="item">9. 72 - 31 = <span class="blank"></span></div>
+      <div class="item">10. 84 - 52 = <span class="blank"></span></div>
+      <div class="item">11. 39 - 18 = <span class="blank"></span></div>
+      <div class="item">12. 58 - 26 = <span class="blank"></span></div>
+    </section>
+    <h2>二、重点：退位减法</h2>
+    <section class="mental-grid">
+      <div class="item">13. 42 - 18 = <span class="blank"></span></div>
+      <div class="item">14. 53 - 27 = <span class="blank"></span></div>
+      <div class="item">15. 61 - 34 = <span class="blank"></span></div>
+      <div class="item">16. 70 - 25 = <span class="blank"></span></div>
+      <div class="item">17. 85 - 48 = <span class="blank"></span></div>
+      <div class="item">18. 94 - 59 = <span class="blank"></span></div>
+      <div class="item">19. 73 - 46 = <span class="blank"></span></div>
+      <div class="item">20. 62 - 38 = <span class="blank"></span></div>
+      <div class="item">21. 51 - 29 = <span class="blank"></span></div>
+      <div class="item">22. 80 - 37 = <span class="blank"></span></div>
+      <div class="item">23. 90 - 56 = <span class="blank"></span></div>
+      <div class="item">24. 100 - 64 = <span class="blank"></span></div>
+      <div class="item">25. 36 - 19 = <span class="blank"></span></div>
+      <div class="item">26. 45 - 28 = <span class="blank"></span></div>
+      <div class="item">27. 74 - 39 = <span class="blank"></span></div>
+      <div class="item">28. 83 - 57 = <span class="blank"></span></div>
+    </section>
+    <h2>三、整十借位</h2>
+    <section class="mental-grid">
+      <div class="item">29. 60 - 7 = <span class="blank"></span></div>
+      <div class="item">30. 50 - 9 = <span class="blank"></span></div>
+      <div class="item">31. 80 - 6 = <span class="blank"></span></div>
+      <div class="item">32. 100 - 8 = <span class="blank"></span></div>
+      <div class="item">33. 70 - 32 = <span class="blank"></span></div>
+      <div class="item">34. 90 - 45 = <span class="blank"></span></div>
+      <div class="item">35. 60 - 24 = <span class="blank"></span></div>
+      <div class="item">36. 40 - 18 = <span class="blank"></span></div>
+    </section>
+    <h2>四、混合4题，做完检查1题</h2>
+    <section class="mental-grid">
+      <div class="item">37. 63 - 8 = <span class="blank"></span></div>
+      <div class="item">38. 72 - 9 = <span class="blank"></span></div>
+      <div class="item">39. 81 - 7 = <span class="blank"></span></div>
+      <div class="item">40. 55 - 26 = <span class="blank"></span></div>
+    </section>
+    <div class="footer">爸爸批改：标出错题属于“不退位错 / 退位错 / 整十借位错 / 正确但慢”。</div>
+  </main>
+</body>
+</html>
