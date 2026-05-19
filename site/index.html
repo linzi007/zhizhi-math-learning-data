@@ -6,22 +6,62 @@
   <title>Zhizhi Math Coach Worksheets</title>
   <style>
     body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #111; background: #f7f7f7; }
-    main { max-width: 860px; margin: 0 auto; padding: 32px 18px; }
+    main { max-width: 1120px; margin: 0 auto; padding: 32px 18px; }
     h1 { margin: 0 0 8px; font-size: 28px; }
     p { margin: 0 0 20px; color: #555; }
-    ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
-    li { background: #fff; border: 1px solid #ddd; border-radius: 6px; padding: 14px 16px; }
+    .table-wrap { overflow-x: auto; background: #fff; border: 1px solid #ddd; border-radius: 6px; }
+    table { width: 100%; min-width: 900px; border-collapse: collapse; }
+    th, td { padding: 12px 14px; border-bottom: 1px solid #e6e6e6; text-align: left; vertical-align: top; font-size: 14px; }
+    th { background: #f1f3f5; color: #333; font-weight: 700; white-space: nowrap; }
+    tr:last-child td { border-bottom: 0; }
     a { color: #0645d8; font-weight: 650; text-decoration: none; }
     a:hover { text-decoration: underline; }
+    .status { display: inline-block; min-width: 48px; padding: 3px 8px; border-radius: 999px; font-size: 13px; font-weight: 700; text-align: center; }
+    .status.done { color: #116329; background: #dafbe1; }
+    .status.todo { color: #7d4e00; background: #fff1c2; }
+    ul { list-style: none; margin: 0; padding: 0; display: none; gap: 10px; }
+    li { background: #fff; border: 1px solid #ddd; border-radius: 6px; padding: 14px 16px; }
     .meta { display: block; margin-top: 6px; font-size: 14px; color: #666; }
+    @media (max-width: 760px) {
+      .table-wrap { display: none; }
+      ul { display: grid; }
+    }
   </style>
 </head>
 <body>
   <main>
     <h1>Zhizhi Math Coach 练习卷</h1>
-    <p>这里只发布学生可见练习卷；答案、批改记录和学习档案不进入公开站点。</p>
+    <p>按日期倒序展示学生可见练习卷；答案、批改记录和学习档案不进入公开站点。</p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>日期</th>
+            <th>状态</th>
+            <th>练习卷</th>
+            <th>主题</th>
+            <th>年级</th>
+            <th>题量</th>
+            <th>完成情况</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>2026-05-18</td><td><span class="status done">已练习</span></td><td><a href="worksheets/2026-05-18-daily-100-subtraction-fluency/">每日口算小练：100以内减法</a></td><td>100以内减法口算熟练度</td><td>一年级下学期</td><td>40题</td><td>35/40，用时14分钟</td></tr>
+          <tr><td>2026-05-17</td><td><span class="status done">已练习</span></td><td><a href="worksheets/2026-05-17-school-paper-error-review/">学校卷同类变式巩固卷</a></td><td>学校卷错因复盘</td><td>一年级下册</td><td>15题</td><td>13/15，用时20分钟</td></tr>
+          <tr><td>2026-05-17</td><td><span class="status done">已练习</span></td><td><a href="worksheets/2026-05-17-hidden-borrowing-word-problems/">多步应用题和排队问题小练</a></td><td>多步应用题里的退位 + 排队问题</td><td>一年级下册</td><td>19题</td><td>已完成反馈；至少第13、14题错</td></tr>
+          <tr><td>2026-05-16</td><td><span class="status done">已练习</span></td><td><a href="worksheets/2026-05-16-borrowing-horizontal-review/">横式退位减法巩固卷</a></td><td>两位数退位减法</td><td>一年级下册</td><td>40题</td><td>40/40，用时约19分钟</td></tr>
+          <tr><td>2026-05-16</td><td><span class="status done">已练习</span></td><td><a href="worksheets/2026-05-16-borrowing-subtraction/">两位数退位减法专项</a></td><td></td><td></td><td></td><td>12/14，用时 9分48秒</td></tr>
+          <tr><td>2026-05-16</td><td><span class="status done">已练习</span></td><td><a href="worksheets/2026-05-16-oral-calculation-fluency/">20以内口算熟练度</a></td><td></td><td></td><td></td><td>40/40，用时 7分18秒</td></tr>
+        </tbody>
+      </table>
+    </div>
     <ul>
-      <li><a href="worksheets/2026-05-18-daily-100-subtraction-fluency/">每日口算小练：100以内减法</a><span class="meta">2026-05-18 / 100以内减法口算熟练度</span></li>
+      <li><div><span class="status done">已练习</span></div><a href="worksheets/2026-05-18-daily-100-subtraction-fluency/">每日口算小练：100以内减法</a><span class="meta">2026-05-18 / 100以内减法口算熟练度 / 一年级下学期 / 40题</span><span class="meta">完成情况：35/40，用时14分钟</span></li>
+      <li><div><span class="status done">已练习</span></div><a href="worksheets/2026-05-17-school-paper-error-review/">学校卷同类变式巩固卷</a><span class="meta">2026-05-17 / 学校卷错因复盘 / 一年级下册 / 15题</span><span class="meta">完成情况：13/15，用时20分钟</span></li>
+      <li><div><span class="status done">已练习</span></div><a href="worksheets/2026-05-17-hidden-borrowing-word-problems/">多步应用题和排队问题小练</a><span class="meta">2026-05-17 / 多步应用题里的退位 + 排队问题 / 一年级下册 / 19题</span><span class="meta">完成情况：已完成反馈；至少第13、14题错</span></li>
+      <li><div><span class="status done">已练习</span></div><a href="worksheets/2026-05-16-borrowing-horizontal-review/">横式退位减法巩固卷</a><span class="meta">2026-05-16 / 两位数退位减法 / 一年级下册 / 40题</span><span class="meta">完成情况：40/40，用时约19分钟</span></li>
+      <li><div><span class="status done">已练习</span></div><a href="worksheets/2026-05-16-borrowing-subtraction/">两位数退位减法专项</a><span class="meta">2026-05-16</span><span class="meta">完成情况：12/14，用时 9分48秒</span></li>
+      <li><div><span class="status done">已练习</span></div><a href="worksheets/2026-05-16-oral-calculation-fluency/">20以内口算熟练度</a><span class="meta">2026-05-16</span><span class="meta">完成情况：40/40，用时 7分18秒</span></li>
     </ul>
   </main>
 </body>
