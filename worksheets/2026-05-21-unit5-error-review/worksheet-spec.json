@@ -1,0 +1,193 @@
+{
+  "title": "第五单元错题变式小练",
+  "date": "2026-05-21",
+  "topic": "第五单元错题复练：退位、未知数、找规律、两步题",
+  "grade": "一年级下学期",
+  "strategy": "wrong_question_variant",
+  "diagnostic_target": "根据学校第五单元练习卷错题，验证退位小帽子、反向求未知数、找规律和两步题中间量是否补上。",
+  "review_status": "approved",
+  "target": "少量变式复练本次错题。退位先戴小帽子，未知数先写□式，应用题先圈最后问法。",
+  "fields": ["姓名", "日期", "用时", "正确题数"],
+  "reminder": "退位题：先看个位够不够，先戴小帽子，再写个位和十位。未知数题：先写□式。应用题：先圈最后问什么。",
+  "sections": [
+    {
+      "title": "一、退位先戴小帽子",
+      "layout": "problem-grid-2",
+      "items": [
+        {
+          "type": "scratch_equation",
+          "expr": "62 - 35",
+          "answer": "27",
+          "check": "+ 35 = 62",
+          "answer_detail": "`62 - 35 = 27`，检查：`27 + 35 = 62`。"
+        },
+        {
+          "type": "scratch_equation",
+          "expr": "90 - 53",
+          "answer": "37",
+          "check": "+ 53 = 90",
+          "answer_detail": "`90 - 53 = 37`，个位0不够减3，十位9先戴小帽子变8。检查：`37 + 53 = 90`。"
+        },
+        {
+          "type": "scratch_equation",
+          "expr": "65 - 19",
+          "answer": "46",
+          "check": "+ 19 = 65",
+          "answer_detail": "`65 - 19 = 46`，检查：`46 + 19 = 65`。"
+        },
+        {
+          "type": "scratch_equation",
+          "expr": "84 - 37",
+          "answer": "47",
+          "check": "+ 37 = 84",
+          "answer_detail": "`84 - 37 = 47`，检查：`47 + 37 = 84`。"
+        },
+        {
+          "type": "scratch_equation",
+          "expr": "70 - 38",
+          "answer": "32",
+          "check": "+ 38 = 70",
+          "answer_detail": "`70 - 38 = 32`，整十借位时先给7戴小帽子。"
+        },
+        {
+          "type": "scratch_equation",
+          "expr": "56 - 28",
+          "answer": "28",
+          "check": "+ 28 = 56",
+          "answer_detail": "`56 - 28 = 28`，检查：`28 + 28 = 56`。"
+        }
+      ]
+    },
+    {
+      "title": "二、先写□式，再求未知数",
+      "layout": "problem-grid-2",
+      "items": [
+        {
+          "type": "fill_condition",
+          "prompt": "70 - [blank] = 38",
+          "answer_detail": "`70 - □ = 38`，所以 `□ = 70 - 38 = 32`。"
+        },
+        {
+          "type": "fill_condition",
+          "prompt": "37 + [blank] = 84",
+          "answer_detail": "`37 + □ = 84`，所以 `□ = 84 - 37 = 47`。"
+        },
+        {
+          "type": "fill_condition",
+          "prompt": "[blank] - 29 = 45",
+          "answer_detail": "`□ - 29 = 45`，所以 `□ = 45 + 29 = 74`。"
+        },
+        {
+          "type": "fill_condition",
+          "prompt": "□ + □ = 50，△ + □ = 86，△ = [blank]",
+          "answer_detail": "`□ = 25`，所以 `△ = 86 - 25 = 61`。"
+        },
+        {
+          "type": "fill_condition",
+          "prompt": "一个加数31错写成87，错误和是98，正确和是 [blank]",
+          "answer_detail": "87比31多56，正确和是 `98 - 56 = 42`。"
+        },
+        {
+          "type": "fill_condition",
+          "prompt": "65 - 19 > □，□最大是 [blank]",
+          "answer_detail": "`65 - 19 = 46`，要小于46，最大是45。"
+        }
+      ]
+    },
+    {
+      "title": "三、找规律，先写+几或-几",
+      "layout": "compact-3",
+      "items": [
+        {
+          "type": "fill_condition",
+          "prompt": "8，24，40，[blank]，[blank]，88",
+          "answer_detail": "每次加16，答案是56、72。"
+        },
+        {
+          "type": "fill_condition",
+          "prompt": "97，82，67，[blank]，37，[blank]",
+          "answer_detail": "每次减15，答案是52、22。"
+        },
+        {
+          "type": "fill_condition",
+          "prompt": "13，30，47，[blank]，[blank]，98",
+          "answer_detail": "每次加17，答案是64、81。"
+        },
+        {
+          "type": "fill_condition",
+          "prompt": "90，78，66，[blank]，42，[blank]",
+          "answer_detail": "每次减12，答案是54、30。"
+        }
+      ]
+    },
+    {
+      "title": "四、应用题：第一步是不是最终答案？",
+      "layout": "problem-grid-2",
+      "items": [
+        {
+          "type": "word_problem",
+          "prompt": "操场上踢足球的有17人，打篮球的有19人。踢足球的和打篮球的一共有多少人？",
+          "answer_prompt": "答：一共有",
+          "answer_suffix": "人",
+          "work_lines": 2,
+          "answer_detail": "`17 + 19 = 36`，答：一共有36人。"
+        },
+        {
+          "type": "multi_step_word_problem",
+          "prompt": "一瓶果汁连瓶重90克，喝了一半果汁后连瓶重54克。果汁原来重多少克？空瓶重多少克？",
+          "answer_prompt": "答：果汁原来重",
+          "answer_suffix": "克，空瓶重____克",
+          "work_lines": 4,
+          "review_status": "approved",
+          "problem_structure": "先求喝掉的一半果汁，再翻倍求原来果汁重量，最后求空瓶重量。",
+          "answer_detail": "`90 - 54 = 36`，36克是一半果汁；`36 + 36 = 72`，果汁原来重72克；`90 - 72 = 18`，空瓶重18克。"
+        },
+        {
+          "type": "multi_step_word_problem",
+          "prompt": "小明买一本故事书后还剩18元，如果买两本同样的故事书，还差12元。一本故事书多少元？",
+          "answer_prompt": "答：一本故事书",
+          "answer_suffix": "元",
+          "work_lines": 4,
+          "review_status": "approved",
+          "problem_structure": "两种买法相差一本书，同时剩18元和差12元合起来就是一本书的价格。",
+          "answer_detail": "买一本剩18元，买两本差12元；多买一本需要 `18 + 12 = 30` 元，所以一本故事书30元。"
+        }
+      ]
+    }
+  ],
+  "footer": "做完后自己选1道最容易错的题检查。",
+  "grading": {
+    "error_labels": [
+      {
+        "name": "退位未标记",
+        "description": "个位不够减时没有先戴小帽子或写小竖式。"
+      },
+      {
+        "name": "未知数未列式",
+        "description": "看到“我/□/符号”没有先写出含□的等式。"
+      },
+      {
+        "name": "规律未写差",
+        "description": "找规律时没有先写出每次加几或减几。"
+      },
+      {
+        "name": "中间量当答案",
+        "description": "第一步结果还不是题目最后问的答案。"
+      },
+      {
+        "name": "口算/进退位错",
+        "description": "式子对，但加减法事实或进退位过程出错。"
+      }
+    ],
+    "reassessment": [
+      "19题中错0-2题，且退位题都有小帽子/小竖式：本次错题进入待巩固。",
+      "退位题仍有2题以上答案大10：整十/退位借位继续保持薄弱项。",
+      "未知数题错2题以上：继续单独练含□等式和符号替换。",
+      "应用题把中间量当答案：继续做3题以内两步题，先圈最终问法。"
+    ],
+    "next": [
+      "做完只检查1题：选一道最容易错的退位题，用加法反查。",
+      "若本卷耗时过长，下次拆成两天做，不加量。"
+    ]
+  }
+}
