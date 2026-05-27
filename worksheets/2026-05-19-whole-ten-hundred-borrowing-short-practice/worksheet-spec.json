@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "title": "今日口算短练：整十/整百减两位数",
+  "date": "2026-05-19",
+  "topic": "整十/整百减两位数借位",
+  "grade": "一年级下学期",
+  "strategy": "weak_point_drill",
+  "diagnostic_target": "整十/整百减两位数时，是否能先标小帽子，再算个位和十位，避免答案大10。",
+  "review_status": "薄弱项专项短练",
+  "student_goal": "先戴小帽子，再写个位，最后写十位。不要追求快，先把步骤做稳。",
+  "parent_note": "今日不要做40题大卷。重点看每题有没有先标小帽子；如果没标，即使答案对，也记录为过程未稳。",
+  "sections": [
+    {
+      "title": "一、先热身：整十减个位数",
+      "layout": "grid-4",
+      "items": [
+        {"type": "equation", "expr": "70 - 8", "answer": "62", "answer_detail": "70-8=62，整十减个位数，先借1个十给个位。"},
+        {"type": "equation", "expr": "50 - 6", "answer": "44", "answer_detail": "50-6=44。"},
+        {"type": "equation", "expr": "90 - 7", "answer": "83", "answer_detail": "90-7=83。"},
+        {"type": "equation", "expr": "100 - 9", "answer": "91", "answer_detail": "100-9=91。"}
+      ]
+    },
+    {
+      "title": "二、主练：先给十位戴小帽子",
+      "layout": "problem-grid-2",
+      "items": [
+        {"type": "borrowing_chain", "expr": "30 - 12", "answer": "18", "steps": ["0不够减2，先借1个十，十位3变2", "个位：10 - 2 = 8", "十位：2 - 1 = 1"], "answer_detail": "30-12=18；如果写28，说明十位没有少1。"},
+        {"type": "borrowing_chain", "expr": "50 - 21", "answer": "29", "steps": ["0不够减1，先借1个十，十位5变4", "个位：10 - 1 = 9", "十位：4 - 2 = 2"], "answer_detail": "50-21=29。"},
+        {"type": "borrowing_chain", "expr": "70 - 43", "answer": "27", "steps": ["0不够减3，先借1个十，十位7变6", "个位：10 - 3 = 7", "十位：6 - 4 = 2"], "answer_detail": "70-43=27；易错37。"},
+        {"type": "borrowing_chain", "expr": "80 - 56", "answer": "24", "steps": ["0不够减6，先借1个十，十位8变7", "个位：10 - 6 = 4", "十位：7 - 5 = 2"], "answer_detail": "80-56=24；易错34。"},
+        {"type": "borrowing_chain", "expr": "90 - 27", "answer": "63", "steps": ["0不够减7，先借1个十，十位9变8", "个位：10 - 7 = 3", "十位：8 - 2 = 6"], "answer_detail": "90-27=63；易错73。"},
+        {"type": "borrowing_chain", "expr": "60 - 38", "answer": "22", "steps": ["0不够减8，先借1个十，十位6变5", "个位：10 - 8 = 2", "十位：5 - 3 = 2"], "answer_detail": "60-38=22；易错32。"},
+        {"type": "borrowing_chain", "expr": "100 - 45", "answer": "55", "steps": ["100看成10个十；借1个十给个位后，还剩9个十", "个位：10 - 5 = 5", "十位：9 - 4 = 5"], "answer_detail": "100-45=55。"},
+        {"type": "borrowing_chain", "expr": "100 - 73", "answer": "27", "steps": ["100看成10个十；借1个十给个位后，还剩9个十", "个位：10 - 3 = 7", "十位：9 - 7 = 2"], "answer_detail": "100-73=27；易错37。"}
+      ]
+    },
+    {
+      "title": "三、自己检查1题",
+      "layout": "check-grid-2",
+      "items": [
+        {"type": "check_equation", "expr": "80 - 56 = 24", "answer": "24", "check": "24 + 56 = 80", "answer_detail": "用差+减数=被减数检查：24+56=80。"},
+        {"type": "check_equation", "expr": "100 - 73 = 27", "answer": "27", "check": "27 + 73 = 100", "answer_detail": "用27+73=100检查。"}
+      ]
+    }
+  ],
+  "grading": {
+    "total_items": 14,
+    "mastery": "主练8题中至少7题正确，且每题都有小帽子/借位标记，可记为待巩固。",
+    "consolidating": "主练8题中6题正确，或答案正确但漏标小帽子，继续做同类8题。",
+    "weak": "主练8题错3题以上，尤其答案普遍大10，回到30-12、50-21这类题口头讲步骤。",
+    "next_action": "若通过，下次把整十/整百减两位数放回2-3道应用题里验证迁移。"
+  }
+}
