@@ -4,9 +4,12 @@
   "topic": "第五单元错题复练：退位、未知数、找规律、两步题",
   "strategy": "wrong_question_variant",
   "source_worksheet": "worksheets/2026-05-21-unit5-error-review/worksheet.html",
+  "source_pdf": "worksheets/2026-05-21-unit5-error-review/worksheet.pdf",
   "source_spec": "worksheets/2026-05-21-unit5-error-review/worksheet-spec.json",
   "site_path": "site/worksheets/2026-05-21-unit5-error-review/index.html",
+  "site_pdf_path": "site/worksheets/2026-05-21-unit5-error-review/worksheet.pdf",
   "url": "https://linzi007.github.io/zhizhi-math-learning-data/worksheets/2026-05-21-unit5-error-review/",
+  "pdf_url": "https://linzi007.github.io/zhizhi-math-learning-data/worksheets/2026-05-21-unit5-error-review/worksheet.pdf",
   "visibility": "public-child-facing",
   "published_at": "2026-05-21T13:16:55+00:00"
 }

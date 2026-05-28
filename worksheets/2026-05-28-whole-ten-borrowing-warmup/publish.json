@@ -1,0 +1,15 @@
+{
+  "title": "专项一：整十借位热身小练",
+  "date": "2026-05-28",
+  "topic": "整十减个位数 + 整十/整百减两位数借位",
+  "strategy": "relapse_repair",
+  "source_worksheet": "worksheets/2026-05-28-whole-ten-borrowing-warmup/worksheet.html",
+  "source_pdf": "worksheets/2026-05-28-whole-ten-borrowing-warmup/worksheet.pdf",
+  "source_spec": "worksheets/2026-05-28-whole-ten-borrowing-warmup/worksheet-spec.json",
+  "site_path": "site/worksheets/2026-05-28-whole-ten-borrowing-warmup/index.html",
+  "site_pdf_path": "site/worksheets/2026-05-28-whole-ten-borrowing-warmup/worksheet.pdf",
+  "url": "https://linzi007.github.io/zhizhi-math-learning-data/worksheets/2026-05-28-whole-ten-borrowing-warmup/",
+  "pdf_url": "https://linzi007.github.io/zhizhi-math-learning-data/worksheets/2026-05-28-whole-ten-borrowing-warmup/worksheet.pdf",
+  "visibility": "public-child-facing",
+  "published_at": "2026-05-28T09:52:48+00:00"
+}

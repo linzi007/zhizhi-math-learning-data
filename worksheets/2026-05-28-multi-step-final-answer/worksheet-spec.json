@@ -8,58 +8,160 @@
   "diagnostic_target": "根据药瓶题、图书角题和植树题错因，验证能否先圈最后问法，判断条件用不用，并区分第一步中间量和最终答案。",
   "review_status": "approved",
   "target": "每题先回答：最后问什么？第一步结果是不是最终答案？",
-  "fields": ["姓名", "日期", "用时", "正确题数"],
+  "fields": [
+    "姓名",
+    "日期",
+    "用时",
+    "正确题数"
+  ],
   "reminder": "应用题先圈最后问法；每算一步问自己：这是最终答案吗？两位数减法要写小帽子或小竖式。",
   "sections": [
     {
       "title": "一、先读题：只圈最后问法",
       "layout": "cards-3",
       "items": [
-        {"type": "reading_task", "text": "一瓶墨水连瓶重80克，用去一半后连瓶重47克。墨水原来重多少克？", "answer_note": "圈：墨水原来重多少克。第一步80-47只是一半墨水，不是最终答案。"},
-        {"type": "reading_task", "text": "图书角原来有70本，借走26本，又还回9本。现在比原来少多少本？", "answer_note": "圈：现在比原来少多少本。要先算现在有多少，再比较。"},
-        {"type": "reading_task", "text": "有4个同学一共折了76只纸鹤，其中红色28只，蓝色多少只？", "answer_note": "圈：蓝色多少只。4个同学是干扰条件，不参与计算。"}
+        {
+          "type": "reading_task",
+          "text": "一瓶墨水连瓶重80克，用去一半后连瓶重47克。墨水原来重多少克？",
+          "answer_note": "圈：墨水原来重多少克。第一步80-47只是一半墨水，不是最终答案。"
+        },
+        {
+          "type": "reading_task",
+          "text": "图书角原来有70本，借走26本，又还回9本。现在比原来少多少本？",
+          "answer_note": "圈：现在比原来少多少本。要先算现在有多少，再比较。"
+        },
+        {
+          "type": "reading_task",
+          "text": "有4个同学一共折了76只纸鹤，其中红色28只，蓝色多少只？",
+          "answer_note": "圈：蓝色多少只。4个同学是干扰条件，不参与计算。"
+        }
       ]
     },
     {
       "title": "二、第一步是不是最终答案？",
       "layout": "problem-grid-2",
       "items": [
-        {"type": "multi_step_word_problem", "prompt": "一瓶墨水连瓶重80克，用去一半墨水后连瓶重47克。墨水原来重多少克？空瓶重多少克？", "answer_prompt": "答：墨水原来重", "answer_suffix": "克，空瓶重____克。", "work_lines": 4, "review_status": "approved", "problem_structure": "先求用去的一半墨水，再翻倍求原来墨水，最后求空瓶。", "answer_detail": "80-47=33，33克是一半墨水；33+33=66，墨水原来重66克；80-66=14，空瓶重14克。"},
-        {"type": "multi_step_word_problem", "prompt": "一盒糖连盒重90克，吃掉一半糖后连盒重56克。糖原来重多少克？盒子重多少克？", "answer_prompt": "答：糖原来重", "answer_suffix": "克，盒子重____克。", "work_lines": 4, "review_status": "approved", "problem_structure": "连盒重量差是一半糖，翻倍才是全部糖。", "answer_detail": "90-56=34，34克是一半糖；34+34=68，糖原来重68克；90-68=22，盒子重22克。"}
+        {
+          "type": "multi_step_word_problem",
+          "prompt": "一瓶墨水连瓶重80克，用去一半墨水后连瓶重47克。墨水原来重多少克？空瓶重多少克？",
+          "answer_prompt": "答：墨水原来重",
+          "answer_suffix": "克，空瓶重____克。",
+          "work_lines": 4,
+          "review_status": "approved",
+          "problem_structure": "先求用去的一半墨水，再翻倍求原来墨水，最后求空瓶。",
+          "answer_detail": "80-47=33，33克是一半墨水；33+33=66，墨水原来重66克；80-66=14，空瓶重14克。"
+        },
+        {
+          "type": "multi_step_word_problem",
+          "prompt": "一盒糖连盒重90克，吃掉一半糖后连盒重56克。糖原来重多少克？盒子重多少克？",
+          "answer_prompt": "答：糖原来重",
+          "answer_suffix": "克，盒子重____克。",
+          "work_lines": 4,
+          "review_status": "approved",
+          "problem_structure": "连盒重量差是一半糖，翻倍才是全部糖。",
+          "answer_detail": "90-56=34，34克是一半糖；34+34=68，糖原来重68克；90-68=22，盒子重22克。"
+        }
       ]
     },
     {
       "title": "三、条件用不用？先判断再列式",
       "layout": "problem-grid-2",
       "items": [
-        {"type": "condition_filtering_problem", "prompt": "4个同学一共折了76只纸鹤，其中红色纸鹤28只，蓝色纸鹤多少只？", "answer_prompt": "答：蓝色纸鹤", "answer_suffix": "只。", "work_lines": 2, "review_status": "approved", "used_conditions": ["一共76只", "红色28只"], "unused_conditions": ["4个同学"], "answer_detail": "76-28=48。4个同学不用来算，答：蓝色纸鹤48只。"},
-        {"type": "condition_filtering_problem", "prompt": "妈妈和芝芝一共买了65个贴纸，其中星星贴纸19个，爱心贴纸多少个？", "answer_prompt": "答：爱心贴纸", "answer_suffix": "个。", "work_lines": 2, "review_status": "approved", "used_conditions": ["一共65个", "星星19个"], "unused_conditions": ["妈妈和芝芝"], "answer_detail": "65-19=46。妈妈和芝芝表示谁买的，不参与计算，答：爱心贴纸46个。"}
+        {
+          "type": "condition_filtering_problem",
+          "prompt": "4个同学一共折了76只纸鹤，其中红色纸鹤28只，蓝色纸鹤多少只？",
+          "answer_prompt": "答：蓝色纸鹤",
+          "answer_suffix": "只。",
+          "work_lines": 2,
+          "review_status": "approved",
+          "used_conditions": [
+            "一共76只",
+            "红色28只"
+          ],
+          "unused_conditions": [
+            "4个同学"
+          ],
+          "answer_detail": "76-28=48。4个同学不用来算，答：蓝色纸鹤48只。"
+        },
+        {
+          "type": "condition_filtering_problem",
+          "prompt": "妈妈和芝芝一共买了65个贴纸，其中星星贴纸19个，爱心贴纸多少个？",
+          "answer_prompt": "答：爱心贴纸",
+          "answer_suffix": "个。",
+          "work_lines": 2,
+          "review_status": "approved",
+          "used_conditions": [
+            "一共65个",
+            "星星19个"
+          ],
+          "unused_conditions": [
+            "妈妈和芝芝"
+          ],
+          "answer_detail": "65-19=46。妈妈和芝芝表示谁买的，不参与计算，答：爱心贴纸46个。"
+        }
       ]
     },
     {
       "title": "四、现在比原来少多少？",
       "layout": "problem-grid-2",
       "items": [
-        {"type": "compare_after_intermediate_problem", "prompt": "图书角原来有70本书，上午借走26本，下午还回来9本。现在比原来少多少本？", "answer_prompt": "答：现在比原来少", "answer_suffix": "本。", "work_lines": 4, "review_status": "approved", "intermediate_quantity": "现在有53本", "answer_detail": "70-26=44，借走后剩44本；44+9=53，现在有53本；70-53=17，现在比原来少17本。也可想实际少了26-9=17本。"},
-        {"type": "compare_after_intermediate_problem", "prompt": "体育室原来有60根跳绳，借给一班18根，又收回7根。现在比原来少多少根？", "answer_prompt": "答：现在比原来少", "answer_suffix": "根。", "work_lines": 4, "review_status": "approved", "intermediate_quantity": "现在有49根", "answer_detail": "60-18=42，借出后剩42根；42+7=49，现在有49根；60-49=11，现在比原来少11根。也可想实际少了18-7=11根。"}
+        {
+          "type": "compare_after_intermediate_problem",
+          "prompt": "图书角原来有70本书，上午借走26本，下午还回来9本。现在比原来少多少本？",
+          "answer_prompt": "答：现在比原来少",
+          "answer_suffix": "本。",
+          "work_lines": 4,
+          "review_status": "approved",
+          "intermediate_quantity": "现在有53本",
+          "answer_detail": "70-26=44，借走后剩44本；44+9=53，现在有53本；70-53=17，现在比原来少17本。也可想实际少了26-9=17本。"
+        },
+        {
+          "type": "compare_after_intermediate_problem",
+          "prompt": "体育室原来有60根跳绳，借给一班18根，又收回7根。现在比原来少多少根？",
+          "answer_prompt": "答：现在比原来少",
+          "answer_suffix": "根。",
+          "work_lines": 4,
+          "review_status": "approved",
+          "intermediate_quantity": "现在有49根",
+          "answer_detail": "60-18=42，借出后剩42根；42+7=49，现在有49根；60-49=11，现在比原来少11根。也可想实际少了18-7=11根。"
+        }
       ]
     },
     {
       "title": "五、检查答句有没有填完整",
       "layout": "problem-grid-2",
       "items": [
-        {"type": "fill_condition", "prompt": "我检查第[blank]题。最后问法是：[blank-wide]。我的答句填完整了吗？ 是 / 否", "answer_detail": "不固定答案。重点看孩子是否回到最后问法，并检查答句空格。"}
+        {
+          "type": "fill_condition",
+          "prompt": "我检查第[blank]题。最后问法是：[blank-wide]。我的答句填完整了吗？ 是 / 否",
+          "answer_detail": "不固定答案。重点看孩子是否回到最后问法，并检查答句空格。"
+        }
       ]
     }
   ],
-  "footer": "爸爸批改重点：如果第一步算对但填成最终答案，标记“中间量当答案”。",
+  "footer": "做完后自己选1题检查：最后答句有没有回答题目最后问法？",
   "grading": {
     "error_labels": [
-      {"name": "中间量当答案", "description": "第一步结果只是半瓶/现在量/已借走量，却直接填成最终答案。"},
-      {"name": "条件误用", "description": "把人数、人物等干扰条件拿去计算，或漏用总数/其中一部分。"},
-      {"name": "最终问法未圈出", "description": "没有先说清题目最后问什么。"},
-      {"name": "退位计算迁移错", "description": "式子列对，但两位数减法没有小帽子或竖式导致错。"},
-      {"name": "答句漏填", "description": "算式写对，但答句空格没有填完整。"}
+      {
+        "name": "中间量当答案",
+        "description": "第一步结果只是半瓶/现在量/已借走量，却直接填成最终答案。"
+      },
+      {
+        "name": "条件误用",
+        "description": "把人数、人物等干扰条件拿去计算，或漏用总数/其中一部分。"
+      },
+      {
+        "name": "最终问法未圈出",
+        "description": "没有先说清题目最后问什么。"
+      },
+      {
+        "name": "退位计算迁移错",
+        "description": "式子列对，但两位数减法没有小帽子或竖式导致错。"
+      },
+      {
+        "name": "答句漏填",
+        "description": "算式写对，但答句空格没有填完整。"
+      }
     ],
     "reassessment": [
       "8道正式题中对6题以上，且第4-5题没有把一半当最终答案：多步题进入待巩固。",
@@ -67,6 +169,8 @@
       "第6-7题条件用错：下次先做条件用/不用圈选，不急着做复杂计算。",
       "第8-9题式子对但退位错：回到整十借位专项，不把原因全归为应用题。"
     ],
-    "next": ["通过后下次只在综合卷中放2道两步题抽查；未通过则拆成3题以内短练。"]
+    "next": [
+      "通过后下次只在综合卷中放2道两步题抽查；未通过则拆成3题以内短练。"
+    ]
   }
 }

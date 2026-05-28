@@ -1,0 +1,15 @@
+{
+  "title": "专项二：错法结果比较小练",
+  "date": "2026-05-28",
+  "topic": "错把加减看反后的结果比较 + 未知数等式",
+  "strategy": "transfer_check",
+  "source_worksheet": "worksheets/2026-05-28-wrong-result-comparison/worksheet.html",
+  "source_pdf": "worksheets/2026-05-28-wrong-result-comparison/worksheet.pdf",
+  "source_spec": "worksheets/2026-05-28-wrong-result-comparison/worksheet-spec.json",
+  "site_path": "site/worksheets/2026-05-28-wrong-result-comparison/index.html",
+  "site_pdf_path": "site/worksheets/2026-05-28-wrong-result-comparison/worksheet.pdf",
+  "url": "https://linzi007.github.io/zhizhi-math-learning-data/worksheets/2026-05-28-wrong-result-comparison/",
+  "pdf_url": "https://linzi007.github.io/zhizhi-math-learning-data/worksheets/2026-05-28-wrong-result-comparison/worksheet.pdf",
+  "visibility": "public-child-facing",
+  "published_at": "2026-05-28T09:52:48+00:00"
+}

@@ -4,9 +4,12 @@
   "topic": "学校卷错因复盘",
   "strategy": "",
   "source_worksheet": "worksheets/2026-05-17-school-paper-error-review/worksheet.html",
+  "source_pdf": "",
   "source_spec": "worksheets/2026-05-17-school-paper-error-review/worksheet-spec.json",
   "site_path": "site/worksheets/2026-05-17-school-paper-error-review/index.html",
+  "site_pdf_path": "",
   "url": "https://linzi007.github.io/zhizhi-math-learning-data/worksheets/2026-05-17-school-paper-error-review/",
+  "pdf_url": "",
   "visibility": "public-child-facing",
   "published_at": "2026-05-19T03:20:00+00:00"
 }
