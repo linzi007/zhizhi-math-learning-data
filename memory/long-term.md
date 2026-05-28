@@ -62,3 +62,5 @@
 
 - learning data 仓库中应归档的学习数据，默认在提交后推送到 GitHub；除非家长明确说只本地保存、不推送。
 - 推送前仍需先做 git sync preflight，确认 remote 和 push 权限正常。
+- 生成或补齐练习卷后，如果该练习卷需要出现在公开练习页面，不能只提交 `worksheets/`；还必须运行 `publish_html_site.py` 更新 `site/`，提交并推送 `site/` 变更。
+- `site/` 只发布 child-facing `worksheet.html` / `worksheet.pdf` 和索引，不发布答案、诊断、错题记录、memory、weak-points 或学生照片。
