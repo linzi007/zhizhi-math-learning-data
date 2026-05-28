@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>专项二：错法结果比较小练</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 12mm;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 18px;
+      line-height: 1.32;
+      color: #111;
+      background: #fff;
+    }
+
+    .sheet {
+      max-width: 186mm;
+      margin: 0 auto;
+    }
+
+    h1 {
+      margin: 0 0 5px;
+      text-align: center;
+      font-size: 25px;
+      line-height: 1.15;
+    }
+
+    .meta {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 6px;
+      margin-bottom: 5px;
+      font-size: 15px;
+      line-height: 1.25;
+    }
+
+    .line {
+      display: inline-block;
+      min-width: 25mm;
+      border-bottom: 1px solid #222;
+      height: 17px;
+      vertical-align: bottom;
+    }
+
+    .tip {
+      border: 1px solid #222;
+      padding: 4px 8px;
+      margin-bottom: 5px;
+      font-size: 15px;
+      line-height: 1.25;
+    }
+
+    h2 {
+      margin: 5px 0 3px;
+      font-size: 17px;
+      line-height: 1.2;
+    }
+
+    .read-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 6px;
+      margin-bottom: 4px;
+    }
+
+    .read-card {
+      border: 1px solid #bbb;
+      min-height: 20mm;
+      padding: 4px 6px;
+      font-size: 15px;
+      line-height: 1.25;
+    }
+
+    .mental-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 3px 10px;
+      margin-bottom: 4px;
+    }
+
+    .compact-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 3px 10px;
+      margin-bottom: 4px;
+    }
+
+    .item {
+      white-space: nowrap;
+      min-height: 20px;
+      line-height: 1.25;
+    }
+
+    .blank {
+      display: inline-block;
+      width: 15mm;
+      border-bottom: 1px solid #222;
+      height: 18px;
+      vertical-align: bottom;
+    }
+
+    .blank-wide {
+      display: inline-block;
+      width: 24mm;
+      border-bottom: 1px solid #222;
+      height: 18px;
+      vertical-align: bottom;
+    }
+
+    .problem-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 5px 10px;
+    }
+
+    .geometry-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 7px;
+      margin-bottom: 4px;
+    }
+
+    .problem {
+      border: 1px solid #bbb;
+      min-height: 24mm;
+      padding: 5px 6px;
+      break-inside: avoid;
+    }
+
+    .problem.tall {
+      min-height: 30mm;
+    }
+
+    .geometry-diagram {
+      display: block;
+      width: 100%;
+      max-width: 78mm;
+      height: auto;
+      margin: 5px auto 3px;
+    }
+
+    .geometry-diagram text {
+      font-size: 12px;
+      dominant-baseline: middle;
+      text-anchor: middle;
+    }
+
+    .prompt {
+      font-size: 16px;
+      line-height: 1.25;
+    }
+
+    .work-line {
+      display: block;
+      margin-top: 4px;
+      height: 15px;
+      border-bottom: 1px solid #222;
+    }
+
+    .answer-line {
+      margin-top: 4px;
+      font-size: 16px;
+      line-height: 1.25;
+    }
+
+    .choice {
+      display: inline-block;
+      min-width: 11mm;
+      margin-right: 3mm;
+      border: 1px solid #999;
+      text-align: center;
+      line-height: 1.35;
+    }
+
+    .chain {
+      margin-top: 3px;
+      font-size: 15px;
+      line-height: 1.25;
+    }
+
+    .dash {
+      display: block;
+      margin-top: 2px;
+      height: 17px;
+      border-bottom: 1px dashed #888;
+    }
+
+    .check-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 5px 10px;
+    }
+
+    .check-card {
+      border: 1px solid #bbb;
+      min-height: 22mm;
+      padding: 5px 6px;
+      line-height: 1.3;
+    }
+
+    .footer {
+      margin-top: 5px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <main class="sheet">
+    <h1>专项二：错法结果比较小练</h1>
+    <section class="meta">
+      <div>姓名：<span class="line"></span></div>
+      <div>日期：<span class="line"></span></div>
+      <div>用时：<span class="line"></span></div>
+      <div>正确题数：<span class="line"></span></div>
+    </section>
+    <section class="tip">看到“算成了”“错写成了”，不要只看变化的那个数；先写正确算式，再写错误算式，最后比较。</section>
+    <h2>一、先读题：圈出“正确”和“错误”</h2>
+    <section class="read-grid">
+      <div class="read-card">
+        1. 计算45-12时，错算成45+12，错误结果比正确结果多多少？<br>
+        关键词：<span class="blank"></span><br>
+        任务：<span class="dash"></span>
+      </div>
+      <div class="read-card">
+        2. 计算58+20时，错算成58-20，错误结果比正确结果少多少？<br>
+        关键词：<span class="blank"></span><br>
+        任务：<span class="dash"></span>
+      </div>
+      <div class="read-card">
+        3. 一个数错写大了，结果也会跟着变大吗？先想多了多少。<br>
+        关键词：<span class="blank"></span><br>
+        任务：<span class="dash"></span>
+      </div>
+    </section>
+    <h2>二、两条算式并排写</h2>
+    <section class="problem-grid">
+      <div class="problem tall">
+        <div class="prompt">4. 明明计算45-12时，错算成45+12。错误结果比正确结果多多少？</div>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+        <div class="answer-line">答：错误结果比正确结果多<span class="blank"></span>。</div>
+      </div>
+      <div class="problem tall">
+        <div class="prompt">5. 计算58+20时，小兰错算成58-20。错误结果比正确结果少多少？</div>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+        <div class="answer-line">答：错误结果比正确结果少<span class="blank"></span>。</div>
+      </div>
+      <div class="problem tall">
+        <div class="prompt">6. 亮亮计算70-15时，错算成70+15。错误结果比正确结果多多少？</div>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+        <div class="answer-line">答：错误结果比正确结果多<span class="blank"></span>。</div>
+      </div>
+      <div class="problem tall">
+        <div class="prompt">7. 计算26+13时，小明错算成26-13。错误结果比正确结果少多少？</div>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+        <div class="answer-line">答：错误结果比正确结果少<span class="blank"></span>。</div>
+      </div>
+    </section>
+    <h2>三、错写数字求正确结果</h2>
+    <section class="problem-grid">
+      <div class="problem">
+        <div class="prompt">8. 一个加数24错写成54，错误和是80，正确和是<span class="blank"></span>。</div>
+      </div>
+      <div class="problem">
+        <div class="prompt">9. 一个加数63错写成36，错误和是90，正确和是<span class="blank"></span>。</div>
+      </div>
+      <div class="problem">
+        <div class="prompt">10. 计算72-<span class="blank"></span>=45，□里应填多少？</div>
+      </div>
+      <div class="problem">
+        <div class="prompt">11. <span class="blank"></span>+28=65，□里应填多少？</div>
+      </div>
+    </section>
+    <div class="footer">爸爸批改重点：有没有写出“正确算式”和“错误算式”。只写一个变化数，不算过程通过。</div>
+  </main>
+</body>
+</html>

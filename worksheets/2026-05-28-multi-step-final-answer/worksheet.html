@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>专项三：两步应用题最终答案小练</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 12mm;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 18px;
+      line-height: 1.32;
+      color: #111;
+      background: #fff;
+    }
+
+    .sheet {
+      max-width: 186mm;
+      margin: 0 auto;
+    }
+
+    h1 {
+      margin: 0 0 5px;
+      text-align: center;
+      font-size: 25px;
+      line-height: 1.15;
+    }
+
+    .meta {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 6px;
+      margin-bottom: 5px;
+      font-size: 15px;
+      line-height: 1.25;
+    }
+
+    .line {
+      display: inline-block;
+      min-width: 25mm;
+      border-bottom: 1px solid #222;
+      height: 17px;
+      vertical-align: bottom;
+    }
+
+    .tip {
+      border: 1px solid #222;
+      padding: 4px 8px;
+      margin-bottom: 5px;
+      font-size: 15px;
+      line-height: 1.25;
+    }
+
+    h2 {
+      margin: 5px 0 3px;
+      font-size: 17px;
+      line-height: 1.2;
+    }
+
+    .read-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 6px;
+      margin-bottom: 4px;
+    }
+
+    .read-card {
+      border: 1px solid #bbb;
+      min-height: 20mm;
+      padding: 4px 6px;
+      font-size: 15px;
+      line-height: 1.25;
+    }
+
+    .mental-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 3px 10px;
+      margin-bottom: 4px;
+    }
+
+    .compact-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 3px 10px;
+      margin-bottom: 4px;
+    }
+
+    .item {
+      white-space: nowrap;
+      min-height: 20px;
+      line-height: 1.25;
+    }
+
+    .blank {
+      display: inline-block;
+      width: 15mm;
+      border-bottom: 1px solid #222;
+      height: 18px;
+      vertical-align: bottom;
+    }
+
+    .blank-wide {
+      display: inline-block;
+      width: 24mm;
+      border-bottom: 1px solid #222;
+      height: 18px;
+      vertical-align: bottom;
+    }
+
+    .problem-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 5px 10px;
+    }
+
+    .geometry-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 7px;
+      margin-bottom: 4px;
+    }
+
+    .problem {
+      border: 1px solid #bbb;
+      min-height: 24mm;
+      padding: 5px 6px;
+      break-inside: avoid;
+    }
+
+    .problem.tall {
+      min-height: 30mm;
+    }
+
+    .geometry-diagram {
+      display: block;
+      width: 100%;
+      max-width: 78mm;
+      height: auto;
+      margin: 5px auto 3px;
+    }
+
+    .geometry-diagram text {
+      font-size: 12px;
+      dominant-baseline: middle;
+      text-anchor: middle;
+    }
+
+    .prompt {
+      font-size: 16px;
+      line-height: 1.25;
+    }
+
+    .work-line {
+      display: block;
+      margin-top: 4px;
+      height: 15px;
+      border-bottom: 1px solid #222;
+    }
+
+    .answer-line {
+      margin-top: 4px;
+      font-size: 16px;
+      line-height: 1.25;
+    }
+
+    .choice {
+      display: inline-block;
+      min-width: 11mm;
+      margin-right: 3mm;
+      border: 1px solid #999;
+      text-align: center;
+      line-height: 1.35;
+    }
+
+    .chain {
+      margin-top: 3px;
+      font-size: 15px;
+      line-height: 1.25;
+    }
+
+    .dash {
+      display: block;
+      margin-top: 2px;
+      height: 17px;
+      border-bottom: 1px dashed #888;
+    }
+
+    .check-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 5px 10px;
+    }
+
+    .check-card {
+      border: 1px solid #bbb;
+      min-height: 22mm;
+      padding: 5px 6px;
+      line-height: 1.3;
+    }
+
+    .footer {
+      margin-top: 5px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <main class="sheet">
+    <h1>专项三：两步应用题最终答案小练</h1>
+    <section class="meta">
+      <div>姓名：<span class="line"></span></div>
+      <div>日期：<span class="line"></span></div>
+      <div>用时：<span class="line"></span></div>
+      <div>正确题数：<span class="line"></span></div>
+    </section>
+    <section class="tip">应用题先圈最后问法；每算一步问自己：这是最终答案吗？两位数减法要写小帽子或小竖式。</section>
+    <h2>一、先读题：只圈最后问法</h2>
+    <section class="read-grid">
+      <div class="read-card">
+        1. 一瓶墨水连瓶重80克，用去一半后连瓶重47克。墨水原来重多少克？<br>
+        关键词：<span class="blank"></span><br>
+        任务：<span class="dash"></span>
+      </div>
+      <div class="read-card">
+        2. 图书角原来有70本，借走26本，又还回9本。现在比原来少多少本？<br>
+        关键词：<span class="blank"></span><br>
+        任务：<span class="dash"></span>
+      </div>
+      <div class="read-card">
+        3. 有4个同学一共折了76只纸鹤，其中红色28只，蓝色多少只？<br>
+        关键词：<span class="blank"></span><br>
+        任务：<span class="dash"></span>
+      </div>
+    </section>
+    <h2>二、第一步是不是最终答案？</h2>
+    <section class="problem-grid">
+      <div class="problem tall">
+        <div class="prompt">4. 一瓶墨水连瓶重80克，用去一半墨水后连瓶重47克。墨水原来重多少克？空瓶重多少克？</div>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+        <div class="answer-line">答：墨水原来重<span class="blank"></span>克，空瓶重____克。</div>
+      </div>
+      <div class="problem tall">
+        <div class="prompt">5. 一盒糖连盒重90克，吃掉一半糖后连盒重56克。糖原来重多少克？盒子重多少克？</div>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+        <div class="answer-line">答：糖原来重<span class="blank"></span>克，盒子重____克。</div>
+      </div>
+    </section>
+    <h2>三、条件用不用？先判断再列式</h2>
+    <section class="problem-grid">
+      <div class="problem tall">
+        <div class="prompt">6. 4个同学一共折了76只纸鹤，其中红色纸鹤28只，蓝色纸鹤多少只？</div>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+        <div class="answer-line">答：蓝色纸鹤<span class="blank"></span>只。</div>
+      </div>
+      <div class="problem tall">
+        <div class="prompt">7. 妈妈和芝芝一共买了65个贴纸，其中星星贴纸19个，爱心贴纸多少个？</div>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+        <div class="answer-line">答：爱心贴纸<span class="blank"></span>个。</div>
+      </div>
+    </section>
+    <h2>四、现在比原来少多少？</h2>
+    <section class="problem-grid">
+      <div class="problem tall">
+        <div class="prompt">8. 图书角原来有70本书，上午借走26本，下午还回来9本。现在比原来少多少本？</div>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+        <div class="answer-line">答：现在比原来少<span class="blank"></span>本。</div>
+      </div>
+      <div class="problem tall">
+        <div class="prompt">9. 体育室原来有60根跳绳，借给一班18根，又收回7根。现在比原来少多少根？</div>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+        <div class="answer-line">答：现在比原来少<span class="blank"></span>根。</div>
+      </div>
+    </section>
+    <h2>五、检查答句有没有填完整</h2>
+    <section class="problem-grid">
+      <div class="problem">
+        <div class="prompt">10. 我检查第<span class="blank"></span>题。最后问法是：<span class="blank-wide"></span>。我的答句填完整了吗？ 是 / 否</div>
+      </div>
+    </section>
+    <div class="footer">爸爸批改重点：如果第一步算对但填成最终答案，标记“中间量当答案”。</div>
+  </main>
+</body>
+</html>

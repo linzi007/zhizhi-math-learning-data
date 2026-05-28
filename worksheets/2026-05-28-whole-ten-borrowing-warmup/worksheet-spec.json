@@ -1,0 +1,69 @@
+{
+  "version": 1,
+  "title": "专项一：整十借位热身小练",
+  "date": "2026-05-28",
+  "topic": "整十减个位数 + 整十/整百减两位数借位",
+  "grade": "一年级下学期",
+  "strategy": "relapse_repair",
+  "diagnostic_target": "根据5月25日短练错题，验证无步骤提示时能否说清“借1个十后还剩几个十”，并迁移到整十/整百减两位数。",
+  "review_status": "approved",
+  "target": "先稳住整十减个位数，再少量确认整十/整百减两位数是否还能先戴小帽子。",
+  "fields": ["姓名", "日期", "用时", "正确题数"],
+  "reminder": "整十减个位：先说“借1个十后还剩几个十”。整十/整百减两位数：先戴小帽子，再写个位和十位。",
+  "sections": [
+    {
+      "title": "一、口头说一说：借1个十后还剩几个十",
+      "layout": "grid-4",
+      "items": [
+        {"type": "equation", "expr": "40 - 7", "answer": "33", "answer_detail": "40有4个十，借1个十后还剩3个十，10-7=3，所以40-7=33。"},
+        {"type": "equation", "expr": "60 - 8", "answer": "52", "answer_detail": "60有6个十，借1个十后还剩5个十，10-8=2，所以60-8=52。"},
+        {"type": "equation", "expr": "80 - 9", "answer": "71", "answer_detail": "80有8个十，借1个十后还剩7个十，10-9=1，所以80-9=71。"},
+        {"type": "equation", "expr": "30 - 6", "answer": "24", "answer_detail": "30有3个十，借1个十后还剩2个十，10-6=4，所以30-6=24。"},
+        {"type": "equation", "expr": "90 - 4", "answer": "86", "answer_detail": "90有9个十，借1个十后还剩8个十，10-4=6，所以90-4=86。"},
+        {"type": "equation", "expr": "100 - 8", "answer": "92", "answer_detail": "100看成10个十，借1个十后还剩9个十，10-8=2，所以100-8=92。"}
+      ]
+    },
+    {
+      "title": "二、对比：个位数和两位数不一样",
+      "layout": "problem-grid-2",
+      "items": [
+        {"type": "scratch_equation", "expr": "70 - 6", "answer": "64", "answer_detail": "70-6=64。只减个位数6，十位借1后剩6个十。"},
+        {"type": "scratch_equation", "expr": "70 - 26", "answer": "44", "answer_detail": "70-26=44。个位借1后十位从7变6，还要再减2，十位是4。"},
+        {"type": "scratch_equation", "expr": "90 - 7", "answer": "83", "answer_detail": "90-7=83。"},
+        {"type": "scratch_equation", "expr": "90 - 47", "answer": "43", "answer_detail": "90-47=43。先戴小帽子，9借后变8，再减4。"}
+      ]
+    },
+    {
+      "title": "三、主练：先戴小帽子",
+      "layout": "problem-grid-2",
+      "items": [
+        {"type": "borrowing_chain", "expr": "50 - 18", "answer": "32", "steps": ["0不够减8，十位5先借1个十，变成[blank]", "个位：10 - 8 = [blank]", "十位：4 - 1 = [blank]"], "answer_detail": "50-18=32。易错42，说明十位忘记少1。"},
+        {"type": "borrowing_chain", "expr": "80 - 35", "answer": "45", "steps": ["0不够减5，十位8先借1个十，变成[blank]", "个位：10 - 5 = [blank]", "十位：7 - 3 = [blank]"], "answer_detail": "80-35=45。"},
+        {"type": "borrowing_chain", "expr": "60 - 27", "answer": "33", "steps": ["0不够减7，十位6先借1个十，变成[blank]", "个位：10 - 7 = [blank]", "十位：5 - 2 = [blank]"], "answer_detail": "60-27=33。"},
+        {"type": "borrowing_chain", "expr": "100 - 64", "answer": "36", "steps": ["100看成10个十，借1个十后还剩[blank]个十", "个位：10 - 4 = [blank]", "十位：9 - 6 = [blank]"], "answer_detail": "100-64=36。"}
+      ]
+    },
+    {
+      "title": "四、自己选1题检查",
+      "layout": "check-grid-2",
+      "items": [
+        {"type": "check_equation", "expr": "80 - 35", "answer": "45", "check": "+ 35 = 80", "answer_detail": "80-35=45，检查：45+35=80。"},
+        {"type": "check_equation", "expr": "100 - 64", "answer": "36", "check": "+ 64 = 100", "answer_detail": "100-64=36，检查：36+64=100。"}
+      ]
+    }
+  ],
+  "footer": "做完后问芝芝：整十减个位数，借走1个十后，十位还剩几个十？",
+  "grading": {
+    "error_labels": [
+      {"name": "整十减个位数十位提取错", "description": "如70-8写成52/72，说明借1个十后还剩几个十不稳。"},
+      {"name": "整十两位数答案大10", "description": "个位借了10，但十位忘记少1。"},
+      {"name": "过程未稳", "description": "答案对但没有小帽子、借位标记或口头说明。"}
+    ],
+    "reassessment": [
+      "16题中错0-2题，且第9-12题有小帽子/借位标记：整十借位可进入待巩固观察。",
+      "第1-6题错2题以上：先不练两位数，继续6题整十减个位数口头热身。",
+      "第9-12题出现答案大10：整十/整百减两位数借位继续保持薄弱项。"
+    ],
+    "next": ["通过后把整十借位放进应用题里复测；未通过则只做6题以内短练，不加量。"]
+  }
+}

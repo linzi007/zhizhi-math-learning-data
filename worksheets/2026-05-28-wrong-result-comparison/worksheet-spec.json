@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "title": "专项二：错法结果比较小练",
+  "date": "2026-05-28",
+  "topic": "错把加减看反后的结果比较 + 未知数等式",
+  "grade": "一年级下学期",
+  "strategy": "transfer_check",
+  "diagnostic_target": "根据5月27日订正错题，验证能否把正确算式和错误算式并排写出，再比较错误结果比正确结果多/少多少。",
+  "review_status": "approved",
+  "target": "每题先写两条算式：正确怎么算、错误怎么算，再比较两个结果。",
+  "fields": ["姓名", "日期", "用时", "正确题数"],
+  "reminder": "看到“算成了”“错写成了”，不要只看变化的那个数；先写正确算式，再写错误算式，最后比较。",
+  "sections": [
+    {
+      "title": "一、先读题：圈出“正确”和“错误”",
+      "layout": "cards-3",
+      "items": [
+        {"type": "reading_task", "text": "计算45-12时，错算成45+12，错误结果比正确结果多多少？", "answer_note": "关键词：45-12、45+12、比正确结果多多少。任务：写两条算式再比较。"},
+        {"type": "reading_task", "text": "计算58+20时，错算成58-20，错误结果比正确结果少多少？", "answer_note": "关键词：58+20、58-20、比正确结果少多少。任务：比较两个结果。"},
+        {"type": "reading_task", "text": "一个数错写大了，结果也会跟着变大吗？先想多了多少。", "answer_note": "关键词：错写大、结果变大、多多少。任务：找变化量。"}
+      ]
+    },
+    {
+      "title": "二、两条算式并排写",
+      "layout": "problem-grid-2",
+      "items": [
+        {"type": "multi_step_word_problem", "prompt": "明明计算45-12时，错算成45+12。错误结果比正确结果多多少？", "answer_prompt": "答：错误结果比正确结果多", "answer_suffix": "。", "work_lines": 3, "review_status": "approved", "problem_structure": "正确减12，错误加12，两个结果再相减。", "answer_detail": "正确：45-12=33；错误：45+12=57；57-33=24。答：多24。也可想一来一回差12+12=24。"},
+        {"type": "multi_step_word_problem", "prompt": "计算58+20时，小兰错算成58-20。错误结果比正确结果少多少？", "answer_prompt": "答：错误结果比正确结果少", "answer_suffix": "。", "work_lines": 3, "review_status": "approved", "problem_structure": "正确加20，错误减20，两个结果再比较。", "answer_detail": "正确：58+20=78；错误：58-20=38；78-38=40。答：少40。"},
+        {"type": "multi_step_word_problem", "prompt": "亮亮计算70-15时，错算成70+15。错误结果比正确结果多多少？", "answer_prompt": "答：错误结果比正确结果多", "answer_suffix": "。", "work_lines": 3, "review_status": "approved", "problem_structure": "正确减15，错误加15，一来一回差两份15。", "answer_detail": "正确：70-15=55；错误：70+15=85；85-55=30。答：多30。"},
+        {"type": "multi_step_word_problem", "prompt": "计算26+13时，小明错算成26-13。错误结果比正确结果少多少？", "answer_prompt": "答：错误结果比正确结果少", "answer_suffix": "。", "work_lines": 3, "review_status": "approved", "problem_structure": "正确加13，错误减13，一来一回差两份13。", "answer_detail": "正确：26+13=39；错误：26-13=13；39-13=26。答：少26。"}
+      ]
+    },
+    {
+      "title": "三、错写数字求正确结果",
+      "layout": "problem-grid-2",
+      "items": [
+        {"type": "fill_condition", "prompt": "一个加数24错写成54，错误和是80，正确和是[blank]。", "answer_detail": "54比24多30，错误和比正确和多30，所以正确和=80-30=50。"},
+        {"type": "fill_condition", "prompt": "一个加数63错写成36，错误和是90，正确和是[blank]。", "answer_detail": "63比36多27，原来少写了27，正确和=90+27=117。"},
+        {"type": "fill_condition", "prompt": "计算72-[blank]=45，□里应填多少？", "answer_detail": "72-□=45，所以□=72-45=27。"},
+        {"type": "fill_condition", "prompt": "[blank]+28=65，□里应填多少？", "answer_detail": "□+28=65，所以□=65-28=37。"}
+      ]
+    }
+  ],
+  "footer": "爸爸批改重点：有没有写出“正确算式”和“错误算式”。只写一个变化数，不算过程通过。",
+  "grading": {
+    "error_labels": [
+      {"name": "只看单个变化数", "description": "把多/少多少直接答成12、20、15、13，没有比较两个结果。"},
+      {"name": "正确/错误算式混淆", "description": "不知道哪条是原本应算、哪条是错算。"},
+      {"name": "未知数未列式", "description": "含□题没有先写出等式关系。"},
+      {"name": "退位计算带错", "description": "式子列对，但减法退位算错。"}
+    ],
+    "reassessment": [
+      "第4-7题至少做对3题，且都写两条算式：错法结果比较进入待巩固。",
+      "第4-7题仍只答一个变化数：继续用画线或实物解释“一来一回是两份变化量”。",
+      "第8-11题错2题以上：反向求未知数与等式推理继续保持薄弱项。"
+    ],
+    "next": ["通过后不再大题量刷，后续只在综合卷中放1题抽查。"]
+  }
+}
