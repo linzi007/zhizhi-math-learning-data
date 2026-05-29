@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "workspace_role": "personal-learning-data",
+  "student": {
+    "display_name": "Zhizhi"
+  },
+  "github": {
+    "owner": "linzi007",
+    "repo": "zhizhi-math-learning-data"
+  },
+  "git_sync": {
+    "enabled": true,
+    "remote": "origin",
+    "branch": "main",
+    "auto_pull_before_task": true,
+    "auto_commit_after_task": true,
+    "auto_push_after_task": true,
+    "sync_full_learning_data": true,
+    "public_repository_accepted": true,
+    "commit_scope": [
+      ".zhizhi-math-coach/config.json",
+      ".github/workflows/pages.yml",
+      "README.md",
+      "curriculum",
+      "knowledge-points",
+      "memory",
+      "mistakes",
+      "records",
+      "weak-points",
+      "worksheets",
+      "site"
+    ]
+  },
+  "pages": {
+    "enabled": true,
+    "source": "github-actions",
+    "auto_publish_worksheets": true,
+    "base_url": "https://linzi007.github.io/zhizhi-math-learning-data"
+  }
+}
