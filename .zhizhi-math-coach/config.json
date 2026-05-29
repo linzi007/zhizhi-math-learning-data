@@ -60,6 +60,19 @@
         "session": "isolated"
       }
     ],
-    "registered_jobs": []
+    "registered_jobs": [
+      {
+        "name": "Zhizhi daily math review reminder",
+        "job_id": "2c6f9278-97d9-4187-b828-5515e1bb56d3",
+        "cron": "30 20 * * *",
+        "timezone": "Asia/Shanghai"
+      },
+      {
+        "name": "Zhizhi weekly math review",
+        "job_id": "06afdbae-bcba-45be-9df7-30a7f7f85e95",
+        "cron": "0 20 * * 0",
+        "timezone": "Asia/Shanghai"
+      }
+    ]
   }
 }
