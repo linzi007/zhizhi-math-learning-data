@@ -36,5 +36,30 @@
     "source": "github-actions",
     "auto_publish_worksheets": true,
     "base_url": "https://linzi007.github.io/zhizhi-math-learning-data"
+  },
+  "automation": {
+    "enabled": true,
+    "scheduler": "openclaw-cron",
+    "auto_register_when_supported": true,
+    "timezone": "Asia/Shanghai",
+    "allow_record_writes": false,
+    "allow_auto_worksheet_generation": false,
+    "tasks": [
+      {
+        "name": "Zhizhi daily math review reminder",
+        "kind": "daily_review",
+        "enabled": true,
+        "cron": "30 20 * * *",
+        "session": "isolated"
+      },
+      {
+        "name": "Zhizhi weekly math review",
+        "kind": "weekly_review",
+        "enabled": true,
+        "cron": "0 20 * * 0",
+        "session": "isolated"
+      }
+    ],
+    "registered_jobs": []
   }
 }
