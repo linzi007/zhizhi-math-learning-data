@@ -2,6 +2,8 @@
 
 ## 当前阶段观察
 
+- 2026-06-03 工作流修正：学习数据仓库固定在 `/root/.openclaw/workspace/zhizhi-math-learning-data`；以后出卷不能只在聊天里贴题，必须按正式卷子生成、发布、提交、推送流程执行。
+
 - 2026-06-03 家长新增观察：芝芝“字一多就不会”，已生成 `worksheets/2026-06-03-long-word-problem-reading/worksheet.pdf`，目标是长文字应用题信息提取：圈数字、划关键词、说短话、再列式。
 
 - 日期：2026-05-21

@@ -74,5 +74,15 @@
         "timezone": "Asia/Shanghai"
       }
     ]
+  },
+  "local_workspace": {
+    "path": "/root/.openclaw/workspace/zhizhi-math-learning-data",
+    "note": "This is the fixed personal learning-data repository for Zhizhi Math Coach tasks in this OpenClaw workspace. Do not assume /root/.openclaw/workspace itself is the learning project root.",
+    "updated_at": "2026-06-03"
+  },
+  "workflow_preferences": {
+    "default_worksheet_flow": "For worksheet requests, create worksheet-spec.json, generate worksheet.html/worksheet.pdf/answer-key.md, publish site when pages.auto_publish_worksheets is true, then commit and push when git_sync auto flags are true.",
+    "worksheet_delivery": "Reply with the published GitHub Pages URL and concise summary; do not paste the full worksheet into chat unless explicitly asked.",
+    "updated_at": "2026-06-03"
   }
 }

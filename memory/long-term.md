@@ -58,6 +58,12 @@
 - 已经 `补齐理解` 的知识点后续再错，要判断是复发、迁移失败、间隔遗忘还是偶发失误。
 
 
+## 工作区与出卷流程
+
+- 芝芝数学个人学习数据仓库固定路径：`/root/.openclaw/workspace/zhizhi-math-learning-data`。后续 zhizhi-math-coach 的批改、出卷、发布、记录更新都应优先定位到这个仓库，不要误把 `/root/.openclaw/workspace` 根目录当成学习项目。
+- 每次出练习卷默认执行正式流程：先读取仓库内 `.zhizhi-math-coach/config.json`、`memory/`、`curriculum/`、`records/`、`worksheets/status.md`；再生成 `worksheet-spec.json`；运行 `generate_worksheet.py` 生成 `worksheet.html`、`worksheet.pdf`、`answer-key.md`；如果 Pages 开启，运行 `publish_html_site.py` 更新 `site/`；最后按 git_sync 配置提交并推送。
+- 如果生成脚本 `--verify-print` 因页数不是 1 页失败，但 HTML/PDF 已生成，应根据题型判断是否需要压缩；读题/书写型练习可以保留 2 页，优先保证书写空间和题型有效。
+
 ## Git 同步偏好
 
 - learning data 仓库中应归档的学习数据，默认在提交后推送到 GitHub；除非家长明确说只本地保存、不推送。
