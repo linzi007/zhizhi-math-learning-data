@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>长文字应用题：把长题变短专项练习</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 12mm;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 18px;
+      line-height: 1.32;
+      color: #111;
+      background: #fff;
+    }
+
+    .sheet {
+      max-width: 186mm;
+      margin: 0 auto;
+    }
+
+    h1 {
+      margin: 0 0 5px;
+      text-align: center;
+      font-size: 25px;
+      line-height: 1.15;
+    }
+
+    .meta {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 6px;
+      margin-bottom: 5px;
+      font-size: 15px;
+      line-height: 1.25;
+    }
+
+    .line {
+      display: inline-block;
+      min-width: 25mm;
+      border-bottom: 1px solid #222;
+      height: 17px;
+      vertical-align: bottom;
+    }
+
+    .tip {
+      border: 1px solid #222;
+      padding: 4px 8px;
+      margin-bottom: 5px;
+      font-size: 15px;
+      line-height: 1.25;
+    }
+
+    h2 {
+      margin: 5px 0 3px;
+      font-size: 17px;
+      line-height: 1.2;
+    }
+
+    .read-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 6px;
+      margin-bottom: 4px;
+    }
+
+    .read-card {
+      border: 1px solid #bbb;
+      min-height: 20mm;
+      padding: 4px 6px;
+      font-size: 15px;
+      line-height: 1.25;
+    }
+
+    .mental-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 3px 10px;
+      margin-bottom: 4px;
+    }
+
+    .compact-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 3px 10px;
+      margin-bottom: 4px;
+    }
+
+    .item {
+      white-space: nowrap;
+      min-height: 20px;
+      line-height: 1.25;
+    }
+
+    .blank {
+      display: inline-block;
+      width: 15mm;
+      border-bottom: 1px solid #222;
+      height: 18px;
+      vertical-align: bottom;
+    }
+
+    .blank-wide {
+      display: inline-block;
+      width: 24mm;
+      border-bottom: 1px solid #222;
+      height: 18px;
+      vertical-align: bottom;
+    }
+
+    .problem-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 5px 10px;
+    }
+
+    .geometry-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 7px;
+      margin-bottom: 4px;
+    }
+
+    .problem {
+      border: 1px solid #bbb;
+      min-height: 24mm;
+      padding: 5px 6px;
+      break-inside: avoid;
+    }
+
+    .problem.tall {
+      min-height: 30mm;
+    }
+
+    .geometry-diagram {
+      display: block;
+      width: 100%;
+      max-width: 78mm;
+      height: auto;
+      margin: 5px auto 3px;
+    }
+
+    .geometry-diagram text {
+      font-size: 12px;
+      dominant-baseline: middle;
+      text-anchor: middle;
+    }
+
+    .prompt {
+      font-size: 16px;
+      line-height: 1.25;
+    }
+
+    .work-line {
+      display: block;
+      margin-top: 4px;
+      height: 15px;
+      border-bottom: 1px solid #222;
+    }
+
+    .answer-line {
+      margin-top: 4px;
+      font-size: 16px;
+      line-height: 1.25;
+    }
+
+    .choice {
+      display: inline-block;
+      min-width: 11mm;
+      margin-right: 3mm;
+      border: 1px solid #999;
+      text-align: center;
+      line-height: 1.35;
+    }
+
+    .chain {
+      margin-top: 3px;
+      font-size: 15px;
+      line-height: 1.25;
+    }
+
+    .dash {
+      display: block;
+      margin-top: 2px;
+      height: 17px;
+      border-bottom: 1px dashed #888;
+    }
+
+    .check-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 5px 10px;
+    }
+
+    .check-card {
+      border: 1px solid #bbb;
+      min-height: 22mm;
+      padding: 5px 6px;
+      line-height: 1.3;
+    }
+
+    .footer {
+      margin-top: 5px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <main class="sheet">
+    <h1>长文字应用题：把长题变短专项练习</h1>
+    <section class="meta">
+      <div>姓名：<span class="line"></span></div>
+      <div>日期：<span class="line"></span></div>
+      <div>用时：<span class="line"></span></div>
+      <div>正确题数：<span class="line"></span></div>
+    </section>
+    <section class="tip">先读最后问什么；圈数字，划关键词，把长题说成一句短话。两位数加减需要写小竖式或小帽子。</section>
+    <h2>一、只读不算：圈数字，划最后问法</h2>
+    <section class="read-grid">
+      <div class="read-card">
+        1. 水果汤圆原来比芝麻汤圆多18个，后来又买水果汤圆12个，又买芝麻汤圆20个。现在谁多？多多少个？<br>
+        圈数字：<span class="blank"></span><br>
+        最后问法：<span class="dash"></span>
+      </div>
+      <div class="read-card">
+        2. 小敏第一周读28页，第二周比第一周少9页，第三周又读15页。小敏三周一共读了多少页？<br>
+        圈数字：<span class="blank"></span><br>
+        最后问法：<span class="dash"></span>
+      </div>
+      <div class="read-card">
+        3. 图书角原来有45本故事书，上午借走18本，下午又还回来9本。现在图书角有故事书多少本？<br>
+        圈数字：<span class="blank"></span><br>
+        最后问法：<span class="dash"></span>
+      </div>
+    </section>
+    <h2>二、把长题说短：先补短话，再列式</h2>
+    <section class="problem-grid">
+      <div class="problem tall">
+        <div class="prompt">4. 原来水果汤圆比芝麻汤圆多18个。后来妈妈又买了水果汤圆12个，又买了芝麻汤圆20个。现在水果汤圆和芝麻汤圆谁多？多多少个？
+      短话：原来水果多18个，水果又多12个，芝麻又多20个，所以差距先变大再变小。</div>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+        <div class="answer-line">答：现在<span class="blank"></span>汤圆多，多____个。</div>
+      </div>
+      <div class="problem tall">
+        <div class="prompt">5. 花店里红花比黄花多25朵。上午卖出红花13朵，卖出黄花5朵。现在红花比黄花多多少朵？
+      短话：原来红花多25朵，红花卖出13朵会让差距变小，黄花卖出5朵会让差距变大。</div>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+        <div class="answer-line">答：红花比黄花多<span class="blank"></span>朵。</div>
+      </div>
+      <div class="problem tall">
+        <div class="prompt">6. 小敏第一周读了28页，第二周比第一周少读9页，第三周又读了15页。小敏三周一共读了多少页？
+      短话：第一周28页，第二周要先算出来，再加第三周。</div>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+        <div class="answer-line">答：三周一共读了<span class="blank"></span>页。</div>
+      </div>
+      <div class="problem tall">
+        <div class="prompt">7. 冠军领奖台高60厘米。亚军领奖台比冠军矮18厘米，季军领奖台又比亚军矮9厘米。季军领奖台高多少厘米？
+      短话：冠军60厘米，亚军比冠军矮，季军又比亚军矮。</div>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+        <div class="answer-line">答：季军领奖台高<span class="blank"></span>厘米。</div>
+      </div>
+    </section>
+    <h2>三、自己抓关键词：不帮你写短话了</h2>
+    <section class="problem-grid">
+      <div class="problem tall">
+        <div class="prompt">8. 小红原来有36支铅笔，小明比小红少14支。后来小明又买了8支铅笔。现在小明有多少支铅笔？他比小红少多少支？
+      我的短话：______________________________</div>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+        <div class="answer-line">答：小明现在有<span class="blank"></span>支，比小红少____支。</div>
+      </div>
+      <div class="problem tall">
+        <div class="prompt">9. 食堂上午做了炒面24份，炒粉比炒面多16份。中午又做了炒面10份，又做了炒粉6份。现在炒粉比炒面多多少份？
+      我的短话：______________________________</div>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+        <div class="answer-line">答：炒粉比炒面多<span class="blank"></span>份。</div>
+      </div>
+      <div class="problem tall">
+        <div class="prompt">10. 图书角原来有45本故事书。上午借走18本，下午还回来9本。现在图书角有故事书多少本？
+      我的短话：______________________________</div>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+        <div class="answer-line">答：现在有故事书<span class="blank"></span>本。</div>
+      </div>
+      <div class="problem tall">
+        <div class="prompt">11. 乐乐跳了52下。明明比乐乐少跳17下，天天比明明多跳9下。天天跳了多少下？
+      我的短话：______________________________</div>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+        <div class="answer-line">答：天天跳了<span class="blank"></span>下。</div>
+      </div>
+    </section>
+    <h2>四、检查：我有没有真的读懂？</h2>
+    <section class="problem-grid">
+      <div class="problem">
+        <div class="prompt">12. 我检查第<span class="blank"></span>题。最后问法是：<span class="blank-wide"></span>。我圈出的有用数字是：<span class="blank-wide"></span>。</div>
+      </div>
+    </section>
+    <div class="footer">做完后选1题讲给家长听：先说短话，再说为什么这样列式。</div>
+  </main>
+</body>
+</html>

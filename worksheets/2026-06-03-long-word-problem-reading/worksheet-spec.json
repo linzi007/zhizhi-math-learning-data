@@ -1,0 +1,179 @@
+{
+  "version": 1,
+  "title": "长文字应用题：把长题变短专项练习",
+  "date": "2026-06-03",
+  "topic": "应用题读题与信息提取",
+  "grade": "一年级下学期",
+  "strategy": "weak_point_repair",
+  "diagnostic_target": "针对家长观察“字一多就不会”，训练长文字应用题中圈数字、划关键词、拆短句、判断最后问法，再列式。",
+  "review_status": "approved",
+  "target": "每题先圈有用数字和关键词，再用一句短话说题意，最后列式。",
+  "fields": ["姓名", "日期", "用时", "正确题数"],
+  "reminder": "先读最后问什么；圈数字，划关键词，把长题说成一句短话。两位数加减需要写小竖式或小帽子。",
+  "sections": [
+    {
+      "title": "一、只读不算：圈数字，划最后问法",
+      "layout": "cards-3",
+      "items": [
+        {
+          "type": "reading_task",
+          "text": "水果汤圆原来比芝麻汤圆多18个，后来又买水果汤圆12个，又买芝麻汤圆20个。现在谁多？多多少个？",
+          "keyword_label": "圈数字",
+          "task_label": "最后问法",
+          "answer_note": "圈18、12、20；最后问法：现在谁多，多多少个。"
+        },
+        {
+          "type": "reading_task",
+          "text": "小敏第一周读28页，第二周比第一周少9页，第三周又读15页。小敏三周一共读了多少页？",
+          "keyword_label": "圈数字",
+          "task_label": "最后问法",
+          "answer_note": "圈28、9、15；最后问法：三周一共读多少页。"
+        },
+        {
+          "type": "reading_task",
+          "text": "图书角原来有45本故事书，上午借走18本，下午又还回来9本。现在图书角有故事书多少本？",
+          "keyword_label": "圈数字",
+          "task_label": "最后问法",
+          "answer_note": "圈45、18、9；最后问法：现在有多少本。"
+        }
+      ]
+    },
+    {
+      "title": "二、把长题说短：先补短话，再列式",
+      "layout": "problem-grid-2",
+      "items": [
+        {
+          "type": "multi_step_word_problem",
+          "prompt": "原来水果汤圆比芝麻汤圆多18个。后来妈妈又买了水果汤圆12个，又买了芝麻汤圆20个。现在水果汤圆和芝麻汤圆谁多？多多少个？\n短话：原来水果多18个，水果又多12个，芝麻又多20个，所以差距先变大再变小。",
+          "answer_prompt": "答：现在",
+          "answer_suffix": "汤圆多，多____个。",
+          "work_lines": 3,
+          "review_status": "approved",
+          "problem_structure": "差距变化：原差距+水果新增-芝麻新增。",
+          "answer_detail": "18+12=30，30-20=10。答：现在水果汤圆多，多10个。"
+        },
+        {
+          "type": "multi_step_word_problem",
+          "prompt": "花店里红花比黄花多25朵。上午卖出红花13朵，卖出黄花5朵。现在红花比黄花多多少朵？\n短话：原来红花多25朵，红花卖出13朵会让差距变小，黄花卖出5朵会让差距变大。",
+          "answer_prompt": "答：红花比黄花多",
+          "answer_suffix": "朵。",
+          "work_lines": 3,
+          "review_status": "approved",
+          "problem_structure": "差距变化：原差距-红花卖出+黄花卖出。",
+          "answer_detail": "25-13=12，12+5=17。答：红花比黄花多17朵。"
+        },
+        {
+          "type": "multi_step_word_problem",
+          "prompt": "小敏第一周读了28页，第二周比第一周少读9页，第三周又读了15页。小敏三周一共读了多少页？\n短话：第一周28页，第二周要先算出来，再加第三周。",
+          "answer_prompt": "答：三周一共读了",
+          "answer_suffix": "页。",
+          "work_lines": 4,
+          "review_status": "approved",
+          "problem_structure": "先求第二周，再求三周总数。",
+          "answer_detail": "28-9=19，28+19=47，47+15=62。答：三周一共读了62页。"
+        },
+        {
+          "type": "multi_step_word_problem",
+          "prompt": "冠军领奖台高60厘米。亚军领奖台比冠军矮18厘米，季军领奖台又比亚军矮9厘米。季军领奖台高多少厘米？\n短话：冠军60厘米，亚军比冠军矮，季军又比亚军矮。",
+          "answer_prompt": "答：季军领奖台高",
+          "answer_suffix": "厘米。",
+          "work_lines": 3,
+          "review_status": "approved",
+          "problem_structure": "连续比少：先求亚军，再求季军。",
+          "answer_detail": "60-18=42，42-9=33。答：季军领奖台高33厘米。"
+        }
+      ]
+    },
+    {
+      "title": "三、自己抓关键词：不帮你写短话了",
+      "layout": "problem-grid-2",
+      "items": [
+        {
+          "type": "multi_step_word_problem",
+          "prompt": "小红原来有36支铅笔，小明比小红少14支。后来小明又买了8支铅笔。现在小明有多少支铅笔？他比小红少多少支？\n我的短话：______________________________",
+          "answer_prompt": "答：小明现在有",
+          "answer_suffix": "支，比小红少____支。",
+          "work_lines": 4,
+          "review_status": "approved",
+          "problem_structure": "先求小明原来，再求小明现在，最后比较。",
+          "answer_detail": "36-14=22，22+8=30，36-30=6。答：小明现在有30支，比小红少6支。"
+        },
+        {
+          "type": "multi_step_word_problem",
+          "prompt": "食堂上午做了炒面24份，炒粉比炒面多16份。中午又做了炒面10份，又做了炒粉6份。现在炒粉比炒面多多少份？\n我的短话：______________________________",
+          "answer_prompt": "答：炒粉比炒面多",
+          "answer_suffix": "份。",
+          "work_lines": 4,
+          "review_status": "approved",
+          "problem_structure": "可用差距法：原来多16，炒面新增让差距减少，炒粉新增让差距增加。",
+          "answer_detail": "差距法：16-10=6，6+6=12。答：炒粉比炒面多12份。也可分别求现在炒面34份、炒粉46份，再46-34=12。"
+        },
+        {
+          "type": "multi_step_word_problem",
+          "prompt": "图书角原来有45本故事书。上午借走18本，下午还回来9本。现在图书角有故事书多少本？\n我的短话：______________________________",
+          "answer_prompt": "答：现在有故事书",
+          "answer_suffix": "本。",
+          "work_lines": 3,
+          "review_status": "approved",
+          "problem_structure": "原来-借走+还回。",
+          "answer_detail": "45-18=27，27+9=36。答：现在有故事书36本。"
+        },
+        {
+          "type": "multi_step_word_problem",
+          "prompt": "乐乐跳了52下。明明比乐乐少跳17下，天天比明明多跳9下。天天跳了多少下？\n我的短话：______________________________",
+          "answer_prompt": "答：天天跳了",
+          "answer_suffix": "下。",
+          "work_lines": 3,
+          "review_status": "approved",
+          "problem_structure": "先求明明，再求天天。",
+          "answer_detail": "52-17=35，35+9=44。答：天天跳了44下。"
+        }
+      ]
+    },
+    {
+      "title": "四、检查：我有没有真的读懂？",
+      "layout": "problem-grid-2",
+      "items": [
+        {
+          "type": "fill_condition",
+          "prompt": "我检查第[blank]题。最后问法是：[blank-wide]。我圈出的有用数字是：[blank-wide]。",
+          "answer_detail": "不固定答案。重点看是否能回到最后问法，并列出真正有用的数字。"
+        }
+      ]
+    }
+  ],
+  "footer": "做完后选1题讲给家长听：先说短话，再说为什么这样列式。",
+  "grading": {
+    "error_labels": [
+      {
+        "name": "长题信息提取困难",
+        "description": "没有圈出关键数字或最后问法，无法把题目说成短句。"
+      },
+      {
+        "name": "差距变化方向错",
+        "description": "谁增加/减少会让差距变大或变小判断错误。"
+      },
+      {
+        "name": "中间量当答案",
+        "description": "第一步结果没有继续用于最终问题。"
+      },
+      {
+        "name": "两位数计算迁移错",
+        "description": "题意理解正确，但加减计算出错，需要小竖式或小帽子。"
+      },
+      {
+        "name": "答句未对准最后问法",
+        "description": "算式正确，但答句没有回答题目最后问什么。"
+      }
+    ],
+    "reassessment": [
+      "如果第1部分能圈对2题以上，说明读题入口可用。",
+      "如果第2部分4题中至少3题能独立写出短话和算式，长文字应用题进入待巩固。",
+      "如果第5-8题主要错在算式方向，下次继续练差距变化；如果主要错在计算，回到两位数加减小竖式。",
+      "如果需要家长读题才能做对，记录为文字信息提取仍需短练。"
+    ],
+    "next": [
+      "通过后下次综合卷只放2道长文字题抽查；未通过则每天3题，只做圈数字、划关键词、说短话。"
+    ]
+  }
+}
