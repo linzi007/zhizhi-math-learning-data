@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>期末前薄弱项综合诊断卷（一）</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 12mm;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 18px;
+      line-height: 1.32;
+      color: #111;
+      background: #fff;
+    }
+
+    .sheet {
+      max-width: 186mm;
+      margin: 0 auto;
+    }
+
+    h1 {
+      margin: 0 0 5px;
+      text-align: center;
+      font-size: 25px;
+      line-height: 1.15;
+    }
+
+    .meta {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 6px;
+      margin-bottom: 5px;
+      font-size: 15px;
+      line-height: 1.25;
+    }
+
+    .line {
+      display: inline-block;
+      min-width: 25mm;
+      border-bottom: 1px solid #222;
+      height: 17px;
+      vertical-align: bottom;
+    }
+
+    .tip {
+      border: 1px solid #222;
+      padding: 4px 8px;
+      margin-bottom: 5px;
+      font-size: 15px;
+      line-height: 1.25;
+    }
+
+    h2 {
+      margin: 5px 0 3px;
+      font-size: 17px;
+      line-height: 1.2;
+    }
+
+    .read-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 6px;
+      margin-bottom: 4px;
+    }
+
+    .read-card {
+      border: 1px solid #bbb;
+      min-height: 20mm;
+      padding: 4px 6px;
+      font-size: 15px;
+      line-height: 1.25;
+    }
+
+    .mental-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 3px 10px;
+      margin-bottom: 4px;
+    }
+
+    .compact-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 3px 10px;
+      margin-bottom: 4px;
+    }
+
+    .item {
+      white-space: nowrap;
+      min-height: 20px;
+      line-height: 1.25;
+    }
+
+    .blank {
+      display: inline-block;
+      width: 15mm;
+      border-bottom: 1px solid #222;
+      height: 18px;
+      vertical-align: bottom;
+    }
+
+    .blank-wide {
+      display: inline-block;
+      width: 24mm;
+      border-bottom: 1px solid #222;
+      height: 18px;
+      vertical-align: bottom;
+    }
+
+    .problem-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 5px 10px;
+    }
+
+    .geometry-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 7px;
+      margin-bottom: 4px;
+    }
+
+    .problem {
+      border: 1px solid #bbb;
+      min-height: 24mm;
+      padding: 5px 6px;
+      break-inside: avoid;
+    }
+
+    .problem.tall {
+      min-height: 30mm;
+    }
+
+    .geometry-diagram {
+      display: block;
+      width: 100%;
+      max-width: 78mm;
+      height: auto;
+      margin: 5px auto 3px;
+    }
+
+    .geometry-diagram text {
+      font-size: 12px;
+      dominant-baseline: middle;
+      text-anchor: middle;
+    }
+
+    .prompt {
+      font-size: 16px;
+      line-height: 1.25;
+    }
+
+    .work-line {
+      display: block;
+      margin-top: 4px;
+      height: 15px;
+      border-bottom: 1px solid #222;
+    }
+
+    .answer-line {
+      margin-top: 4px;
+      font-size: 16px;
+      line-height: 1.25;
+    }
+
+    .choice {
+      display: inline-block;
+      min-width: 11mm;
+      margin-right: 3mm;
+      border: 1px solid #999;
+      text-align: center;
+      line-height: 1.35;
+    }
+
+    .chain {
+      margin-top: 3px;
+      font-size: 15px;
+      line-height: 1.25;
+    }
+
+    .dash {
+      display: block;
+      margin-top: 2px;
+      height: 17px;
+      border-bottom: 1px dashed #888;
+    }
+
+    .check-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 5px 10px;
+    }
+
+    .check-card {
+      border: 1px solid #bbb;
+      min-height: 22mm;
+      padding: 5px 6px;
+      line-height: 1.3;
+    }
+
+    .footer {
+      margin-top: 5px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <main class="sheet">
+    <h1>期末前薄弱项综合诊断卷（一）</h1>
+    <section class="meta">
+      <div>姓名：<span class="line"></span></div>
+      <div>日期：<span class="line"></span></div>
+      <div>用时：<span class="line"></span></div>
+      <div>正确题数：<span class="line"></span></div>
+    </section>
+    <section class="tip">期末综合卷：遇到应用题先圈最后问法；两位数减法写小竖式或小帽子；含□题先写式子；做完选2题检查。</section>
+    <h2>一、基础计算：退位和数位别漏掉</h2>
+    <section class="mental-grid">
+      <div class="problem">
+        1. 90-7 = <span class="blank"></span>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+      </div>
+      <div class="problem">
+        2. 70-26 = <span class="blank"></span>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+      </div>
+      <div class="problem">
+        3. 100-64 = <span class="blank"></span>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+      </div>
+      <div class="problem">
+        4. 71-60 = <span class="blank"></span>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+      </div>
+      <div class="problem">
+        5. 62-35 = <span class="blank"></span>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+      </div>
+      <div class="problem">
+        6. 50-18 = <span class="blank"></span>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+      </div>
+      <div class="problem">
+        7. 38+15 = <span class="blank"></span>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+      </div>
+      <div class="problem">
+        8. 47+28 = <span class="blank"></span>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+      </div>
+    </section>
+    <h2>二、含□、符号和找规律：先想这一步求什么</h2>
+    <section class="compact-grid">
+      <div class="problem">
+        <div class="prompt">9. 70 - □ = 38，□ = <span class="blank"></span></div>
+      </div>
+      <div class="problem">
+        <div class="prompt">10. □ + 37 = 84，□ = <span class="blank"></span></div>
+      </div>
+      <div class="problem">
+        <div class="prompt">11. 85 - □ = 49，□ = <span class="blank"></span></div>
+      </div>
+      <div class="problem">
+        <div class="prompt">12. ○ + ○ = 40，△ + ○ = 61，○ = <span class="blank"></span>，△ = <span class="blank"></span></div>
+      </div>
+      <div class="problem">
+        <div class="prompt">13. 找规律：12，18，24，<span class="blank"></span>，<span class="blank"></span></div>
+      </div>
+      <div class="problem">
+        <div class="prompt">14. 找规律：72，65，58，<span class="blank"></span>，<span class="blank"></span></div>
+      </div>
+    </section>
+    <h2>三、错法结果比较：先写正确式和错误式</h2>
+    <section class="problem-grid">
+      <div class="problem tall">
+        <div class="prompt">15. 把58+20错算成58-20，这样算出的结果比正确结果少多少？</div>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+        <div class="answer-line">答：比正确结果少<span class="blank"></span>。</div>
+      </div>
+      <div class="problem tall">
+        <div class="prompt">16. 把26+13错算成26-13，这样算出的结果比正确结果少多少？</div>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+        <div class="answer-line">答：比正确结果少<span class="blank"></span>。</div>
+      </div>
+      <div class="problem tall">
+        <div class="prompt">17. 一道加法题，一个加数24被错写成54，算出的和是80。正确的和是多少？</div>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+        <div class="answer-line">答：正确的和是<span class="blank"></span>。</div>
+      </div>
+      <div class="problem tall">
+        <div class="prompt">18. 一道加法题，一个加数43被错写成34，算出的和是80。正确的和是多少？</div>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+        <div class="answer-line">答：正确的和是<span class="blank"></span>。</div>
+      </div>
+    </section>
+    <h2>四、应用题综合：圈最后问法，再列式</h2>
+    <section class="problem-grid">
+      <div class="problem tall">
+        <div class="prompt">19. 图书角原来有70本书，上午借走26本，下午还回来9本。现在比原来少多少本？
+      短话：借走会变少，还回来会变多，最后问“比原来少多少”。</div>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+        <div class="answer-line">答：现在比原来少<span class="blank"></span>本。</div>
+      </div>
+      <div class="problem tall">
+        <div class="prompt">20. 一盒糖连盒重90克，吃掉一半糖后连盒重56克。糖原来重多少克？盒子重多少克？
+      短话：90到56少掉的是一半糖。</div>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+        <div class="answer-line">答：糖原来重<span class="blank"></span>克，盒子重____克。</div>
+      </div>
+      <div class="problem tall">
+        <div class="prompt">21. 小红原来有36支铅笔，小明比小红少14支。后来小明又买了8支。现在小明有多少支？他比小红少多少支？
+      我的短话：______________________________</div>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+        <div class="answer-line">答：小明现在有<span class="blank"></span>支，比小红少____支。</div>
+      </div>
+      <div class="problem tall">
+        <div class="prompt">22. 水果汤圆原来比芝麻汤圆多18个。后来又买水果汤圆12个，又买芝麻汤圆20个。现在谁多？多多少个？
+      我的短话：______________________________</div>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+        <div class="answer-line">答：现在<span class="blank"></span>汤圆多，多____个。</div>
+      </div>
+      <div class="problem tall">
+        <div class="prompt">23. 小朋友排队做操，芝芝从前往后数是第8个，从后往前数是第7个。这一队一共有多少个小朋友？</div>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+        <div class="answer-line">答：一共有<span class="blank"></span>个小朋友。</div>
+      </div>
+      <div class="problem tall">
+        <div class="prompt">24. 有4个同学一共折了76只纸鹤，其中红色28只，蓝色纸鹤多少只？
+      圈一圈：哪个数字不用来计算？</div>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+        <div class="answer-line">答：蓝色纸鹤<span class="blank"></span>只。</div>
+      </div>
+    </section>
+    <h2>五、检查动作：选两题真的检查</h2>
+    <section class="problem-grid">
+      <div class="problem">
+        <div class="prompt">25. 我检查第<span class="blank"></span>题和第<span class="blank"></span>题。第一个容易错的地方是：<span class="blank-wide"></span>。第二个容易错的地方是：<span class="blank-wide"></span>。</div>
+      </div>
+    </section>
+    <div class="footer">家长批改提示：不要只看总分，请标出错因。若应用题读懂但计算错，下一步补计算；若计算会但不会列式，下一步补读题和短话。</div>
+  </main>
+</body>
+</html>
