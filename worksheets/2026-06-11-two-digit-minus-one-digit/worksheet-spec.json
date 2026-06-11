@@ -1,0 +1,93 @@
+{
+  "version": 1,
+  "date": "2026-06-11",
+  "title": "两位数减一位数小帽子专项卷",
+  "topic": "两位数减一位数",
+  "grade": "一年级下册",
+  "target": "针对芝芝最近两位数减一位数、尤其个位不够减时经常算错，集中练习“先看个位够不够，不够就给十位戴小帽子；十位少1后别忘了”。",
+  "template": "assets/worksheet/a4-single.html",
+  "worksheet_file": "worksheet.html",
+  "answer_key_file": "answer-key.md",
+  "page": {
+    "size": "A4",
+    "expected_pages": 1,
+    "verify_print": true
+  },
+  "fields": ["姓名", "日期", "用时", "正确题数"],
+  "reminder": "小提醒：先看个位够不够减；不够减，就给十位戴小帽子。做完自己选3题检查。",
+  "footer": "家长观察：重点看有没有主动戴小帽子、十位有没有忘记少1。",
+  "sections": [
+    {
+      "title": "一、先热身：20以内退位减法。",
+      "layout": "grid-4",
+      "items": [
+        {"type": "equation", "expr": "13 - 7", "answer": "6"},
+        {"type": "equation", "expr": "12 - 5", "answer": "7"},
+        {"type": "equation", "expr": "15 - 8", "answer": "7"},
+        {"type": "equation", "expr": "14 - 6", "answer": "8"},
+        {"type": "equation", "expr": "16 - 9", "answer": "7"},
+        {"type": "equation", "expr": "11 - 4", "answer": "7"},
+        {"type": "equation", "expr": "18 - 9", "answer": "9"},
+        {"type": "equation", "expr": "17 - 8", "answer": "9"}
+      ]
+    },
+    {
+      "title": "二、不退位：先稳住基本题。",
+      "layout": "grid-4",
+      "items": [
+        {"type": "equation", "expr": "35 - 2", "answer": "33"},
+        {"type": "equation", "expr": "48 - 5", "answer": "43"},
+        {"type": "equation", "expr": "76 - 4", "answer": "72"},
+        {"type": "equation", "expr": "59 - 6", "answer": "53"},
+        {"type": "equation", "expr": "87 - 3", "answer": "84"},
+        {"type": "equation", "expr": "64 - 2", "answer": "62"},
+        {"type": "equation", "expr": "96 - 5", "answer": "91"},
+        {"type": "equation", "expr": "28 - 7", "answer": "21"}
+      ]
+    },
+    {
+      "title": "三、退位主练：个位不够减，要给十位戴小帽子。",
+      "layout": "grid-4",
+      "items": [
+        {"type": "equation", "expr": "32 - 6", "answer": "26"},
+        {"type": "equation", "expr": "41 - 7", "answer": "34"},
+        {"type": "equation", "expr": "53 - 8", "answer": "45"},
+        {"type": "equation", "expr": "62 - 9", "answer": "53"},
+        {"type": "equation", "expr": "74 - 6", "answer": "68"},
+        {"type": "equation", "expr": "85 - 7", "answer": "78"},
+        {"type": "equation", "expr": "91 - 4", "answer": "87"},
+        {"type": "equation", "expr": "23 - 9", "answer": "14"},
+        {"type": "equation", "expr": "36 - 8", "answer": "28"},
+        {"type": "equation", "expr": "45 - 6", "answer": "39"},
+        {"type": "equation", "expr": "54 - 7", "answer": "47"},
+        {"type": "equation", "expr": "63 - 5", "answer": "58"},
+        {"type": "equation", "expr": "72 - 8", "answer": "64"},
+        {"type": "equation", "expr": "81 - 6", "answer": "75"},
+        {"type": "equation", "expr": "94 - 8", "answer": "86"},
+        {"type": "equation", "expr": "27 - 9", "answer": "18"}
+      ]
+    },
+    {
+      "title": "四、混合检查：先判断要不要戴小帽子，再计算。",
+      "layout": "grid-4",
+      "items": [
+        {"type": "equation", "expr": "43 - 5", "answer": "38"},
+        {"type": "equation", "expr": "68 - 4", "answer": "64"},
+        {"type": "equation", "expr": "52 - 7", "answer": "45"},
+        {"type": "equation", "expr": "79 - 6", "answer": "73"},
+        {"type": "equation", "expr": "31 - 8", "answer": "23"},
+        {"type": "equation", "expr": "86 - 9", "answer": "77"},
+        {"type": "equation", "expr": "95 - 3", "answer": "92"},
+        {"type": "equation", "expr": "24 - 7", "answer": "17"}
+      ]
+    },
+    {
+      "title": "五、检查题：算完用加法验算。",
+      "layout": "check-grid-2",
+      "items": [
+        {"type": "check_equation", "expr": "46 - 8", "answer": "38", "check": "+ 8 = 46"},
+        {"type": "check_equation", "expr": "73 - 9", "answer": "64", "check": "+ 9 = 73"}
+      ]
+    }
+  ]
+}

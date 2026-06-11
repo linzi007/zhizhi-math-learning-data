@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>两位数减一位数小帽子专项卷</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 12mm;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 18px;
+      line-height: 1.32;
+      color: #111;
+      background: #fff;
+    }
+
+    .sheet {
+      max-width: 186mm;
+      margin: 0 auto;
+    }
+
+    h1 {
+      margin: 0 0 5px;
+      text-align: center;
+      font-size: 25px;
+      line-height: 1.15;
+    }
+
+    .meta {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 6px;
+      margin-bottom: 5px;
+      font-size: 15px;
+      line-height: 1.25;
+    }
+
+    .line {
+      display: inline-block;
+      min-width: 25mm;
+      border-bottom: 1px solid #222;
+      height: 17px;
+      vertical-align: bottom;
+    }
+
+    .tip {
+      border: 1px solid #222;
+      padding: 4px 8px;
+      margin-bottom: 5px;
+      font-size: 15px;
+      line-height: 1.25;
+    }
+
+    h2 {
+      margin: 5px 0 3px;
+      font-size: 17px;
+      line-height: 1.2;
+    }
+
+    .read-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 6px;
+      margin-bottom: 4px;
+    }
+
+    .read-card {
+      border: 1px solid #bbb;
+      min-height: 20mm;
+      padding: 4px 6px;
+      font-size: 15px;
+      line-height: 1.25;
+    }
+
+    .mental-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 3px 10px;
+      margin-bottom: 4px;
+    }
+
+    .compact-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 3px 10px;
+      margin-bottom: 4px;
+    }
+
+    .item {
+      white-space: nowrap;
+      min-height: 20px;
+      line-height: 1.25;
+    }
+
+    .blank {
+      display: inline-block;
+      width: 15mm;
+      border-bottom: 1px solid #222;
+      height: 18px;
+      vertical-align: bottom;
+    }
+
+    .blank-wide {
+      display: inline-block;
+      width: 24mm;
+      border-bottom: 1px solid #222;
+      height: 18px;
+      vertical-align: bottom;
+    }
+
+    .problem-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 5px 10px;
+    }
+
+    .geometry-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 7px;
+      margin-bottom: 4px;
+    }
+
+    .problem {
+      border: 1px solid #bbb;
+      min-height: 24mm;
+      padding: 5px 6px;
+      break-inside: avoid;
+    }
+
+    .problem.tall {
+      min-height: 30mm;
+    }
+
+    .geometry-diagram {
+      display: block;
+      width: 100%;
+      max-width: 78mm;
+      height: auto;
+      margin: 5px auto 3px;
+    }
+
+    .geometry-diagram text {
+      font-size: 12px;
+      dominant-baseline: middle;
+      text-anchor: middle;
+    }
+
+    .prompt {
+      font-size: 16px;
+      line-height: 1.25;
+    }
+
+    .work-line {
+      display: block;
+      margin-top: 4px;
+      height: 15px;
+      border-bottom: 1px solid #222;
+    }
+
+    .answer-line {
+      margin-top: 4px;
+      font-size: 16px;
+      line-height: 1.25;
+    }
+
+    .choice {
+      display: inline-block;
+      min-width: 11mm;
+      margin-right: 3mm;
+      border: 1px solid #999;
+      text-align: center;
+      line-height: 1.35;
+    }
+
+    .chain {
+      margin-top: 3px;
+      font-size: 15px;
+      line-height: 1.25;
+    }
+
+    .dash {
+      display: block;
+      margin-top: 2px;
+      height: 17px;
+      border-bottom: 1px dashed #888;
+    }
+
+    .check-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 5px 10px;
+    }
+
+    .check-card {
+      border: 1px solid #bbb;
+      min-height: 22mm;
+      padding: 5px 6px;
+      line-height: 1.3;
+    }
+
+    .footer {
+      margin-top: 5px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <main class="sheet">
+    <h1>两位数减一位数小帽子专项卷</h1>
+    <section class="meta">
+      <div>姓名：<span class="line"></span></div>
+      <div>日期：<span class="line"></span></div>
+      <div>用时：<span class="line"></span></div>
+      <div>正确题数：<span class="line"></span></div>
+    </section>
+    <section class="tip">小提醒：先看个位够不够减；不够减，就给十位戴小帽子。做完自己选3题检查。</section>
+    <h2>一、先热身：20以内退位减法。</h2>
+    <section class="mental-grid">
+      <div class="item">1. 13 - 7 = <span class="blank"></span></div>
+      <div class="item">2. 12 - 5 = <span class="blank"></span></div>
+      <div class="item">3. 15 - 8 = <span class="blank"></span></div>
+      <div class="item">4. 14 - 6 = <span class="blank"></span></div>
+      <div class="item">5. 16 - 9 = <span class="blank"></span></div>
+      <div class="item">6. 11 - 4 = <span class="blank"></span></div>
+      <div class="item">7. 18 - 9 = <span class="blank"></span></div>
+      <div class="item">8. 17 - 8 = <span class="blank"></span></div>
+    </section>
+    <h2>二、不退位：先稳住基本题。</h2>
+    <section class="mental-grid">
+      <div class="item">9. 35 - 2 = <span class="blank"></span></div>
+      <div class="item">10. 48 - 5 = <span class="blank"></span></div>
+      <div class="item">11. 76 - 4 = <span class="blank"></span></div>
+      <div class="item">12. 59 - 6 = <span class="blank"></span></div>
+      <div class="item">13. 87 - 3 = <span class="blank"></span></div>
+      <div class="item">14. 64 - 2 = <span class="blank"></span></div>
+      <div class="item">15. 96 - 5 = <span class="blank"></span></div>
+      <div class="item">16. 28 - 7 = <span class="blank"></span></div>
+    </section>
+    <h2>三、退位主练：个位不够减，要给十位戴小帽子。</h2>
+    <section class="mental-grid">
+      <div class="item">17. 32 - 6 = <span class="blank"></span></div>
+      <div class="item">18. 41 - 7 = <span class="blank"></span></div>
+      <div class="item">19. 53 - 8 = <span class="blank"></span></div>
+      <div class="item">20. 62 - 9 = <span class="blank"></span></div>
+      <div class="item">21. 74 - 6 = <span class="blank"></span></div>
+      <div class="item">22. 85 - 7 = <span class="blank"></span></div>
+      <div class="item">23. 91 - 4 = <span class="blank"></span></div>
+      <div class="item">24. 23 - 9 = <span class="blank"></span></div>
+      <div class="item">25. 36 - 8 = <span class="blank"></span></div>
+      <div class="item">26. 45 - 6 = <span class="blank"></span></div>
+      <div class="item">27. 54 - 7 = <span class="blank"></span></div>
+      <div class="item">28. 63 - 5 = <span class="blank"></span></div>
+      <div class="item">29. 72 - 8 = <span class="blank"></span></div>
+      <div class="item">30. 81 - 6 = <span class="blank"></span></div>
+      <div class="item">31. 94 - 8 = <span class="blank"></span></div>
+      <div class="item">32. 27 - 9 = <span class="blank"></span></div>
+    </section>
+    <h2>四、混合检查：先判断要不要戴小帽子，再计算。</h2>
+    <section class="mental-grid">
+      <div class="item">33. 43 - 5 = <span class="blank"></span></div>
+      <div class="item">34. 68 - 4 = <span class="blank"></span></div>
+      <div class="item">35. 52 - 7 = <span class="blank"></span></div>
+      <div class="item">36. 79 - 6 = <span class="blank"></span></div>
+      <div class="item">37. 31 - 8 = <span class="blank"></span></div>
+      <div class="item">38. 86 - 9 = <span class="blank"></span></div>
+      <div class="item">39. 95 - 3 = <span class="blank"></span></div>
+      <div class="item">40. 24 - 7 = <span class="blank"></span></div>
+    </section>
+    <h2>五、检查题：算完用加法验算。</h2>
+    <section class="check-grid">
+      <div class="check-card">
+        41. 46 - 8 = <span class="blank"></span><br>
+        检查：<span class="blank"></span> + 8 = 46
+      </div>
+      <div class="check-card">
+        42. 73 - 9 = <span class="blank"></span><br>
+        检查：<span class="blank"></span> + 9 = 73
+      </div>
+    </section>
+    <div class="footer">家长观察：重点看有没有主动戴小帽子、十位有没有忘记少1。</div>
+  </main>
+</body>
+</html>
