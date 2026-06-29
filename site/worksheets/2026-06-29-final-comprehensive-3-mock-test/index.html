@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>期末综合练习（三）：期末模拟小卷</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 12mm;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 18px;
+      line-height: 1.32;
+      color: #111;
+      background: #fff;
+    }
+
+    .sheet {
+      max-width: 186mm;
+      margin: 0 auto;
+    }
+
+    h1 {
+      margin: 0 0 5px;
+      text-align: center;
+      font-size: 25px;
+      line-height: 1.15;
+    }
+
+    .meta {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 6px;
+      margin-bottom: 5px;
+      font-size: 15px;
+      line-height: 1.25;
+    }
+
+    .line {
+      display: inline-block;
+      min-width: 25mm;
+      border-bottom: 1px solid #222;
+      height: 17px;
+      vertical-align: bottom;
+    }
+
+    .tip {
+      border: 1px solid #222;
+      padding: 4px 8px;
+      margin-bottom: 5px;
+      font-size: 15px;
+      line-height: 1.25;
+    }
+
+    h2 {
+      margin: 5px 0 3px;
+      font-size: 17px;
+      line-height: 1.2;
+    }
+
+    .read-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 6px;
+      margin-bottom: 4px;
+    }
+
+    .read-card {
+      border: 1px solid #bbb;
+      min-height: 20mm;
+      padding: 4px 6px;
+      font-size: 15px;
+      line-height: 1.25;
+    }
+
+    .mental-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 3px 10px;
+      margin-bottom: 4px;
+    }
+
+    .compact-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 3px 10px;
+      margin-bottom: 4px;
+    }
+
+    .item {
+      white-space: nowrap;
+      min-height: 20px;
+      line-height: 1.25;
+    }
+
+    .blank {
+      display: inline-block;
+      width: 15mm;
+      border-bottom: 1px solid #222;
+      height: 18px;
+      vertical-align: bottom;
+    }
+
+    .blank-wide {
+      display: inline-block;
+      width: 24mm;
+      border-bottom: 1px solid #222;
+      height: 18px;
+      vertical-align: bottom;
+    }
+
+    .problem-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 5px 10px;
+    }
+
+    .geometry-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 7px;
+      margin-bottom: 4px;
+    }
+
+    .problem {
+      border: 1px solid #bbb;
+      min-height: 24mm;
+      padding: 5px 6px;
+      break-inside: avoid;
+    }
+
+    .problem.tall {
+      min-height: 30mm;
+    }
+
+    .geometry-diagram {
+      display: block;
+      width: 100%;
+      max-width: 78mm;
+      height: auto;
+      margin: 5px auto 3px;
+    }
+
+    .geometry-diagram text {
+      font-size: 12px;
+      dominant-baseline: middle;
+      text-anchor: middle;
+    }
+
+    .prompt {
+      font-size: 16px;
+      line-height: 1.25;
+    }
+
+    .work-line {
+      display: block;
+      margin-top: 4px;
+      height: 15px;
+      border-bottom: 1px solid #222;
+    }
+
+    .answer-line {
+      margin-top: 4px;
+      font-size: 16px;
+      line-height: 1.25;
+    }
+
+    .choice {
+      display: inline-block;
+      min-width: 11mm;
+      margin-right: 3mm;
+      border: 1px solid #999;
+      text-align: center;
+      line-height: 1.35;
+    }
+
+    .chain {
+      margin-top: 3px;
+      font-size: 15px;
+      line-height: 1.25;
+    }
+
+    .dash {
+      display: block;
+      margin-top: 2px;
+      height: 17px;
+      border-bottom: 1px dashed #888;
+    }
+
+    .check-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 5px 10px;
+    }
+
+    .check-card {
+      border: 1px solid #bbb;
+      min-height: 22mm;
+      padding: 5px 6px;
+      line-height: 1.3;
+    }
+
+    .footer {
+      margin-top: 5px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <main class="sheet">
+    <h1>期末综合练习（三）：期末模拟小卷</h1>
+    <section class="meta">
+      <div>姓名：<span class="line"></span></div>
+      <div>日期：<span class="line"></span></div>
+      <div>用时：<span class="line"></span></div>
+      <div>正确题数：<span class="line"></span></div>
+    </section>
+    <section class="tip">这张像小测验：先易后难；遇到长题圈最后问法；遇到有几种先列全；做完检查2题。</section>
+    <h2>一、填空与选择：看清任务词</h2>
+    <section class="compact-grid">
+      <div class="problem">
+        <div class="prompt">1. 68里面有<span class="blank"></span>个十和<span class="blank"></span>个一；比68多2个十是<span class="blank"></span>。</div>
+      </div>
+      <div class="problem">
+        <div class="prompt">2. 与45相邻的两个数是<span class="blank"></span>和<span class="blank"></span>，它们的和是<span class="blank"></span>。</div>
+      </div>
+      <div class="problem">
+        <div class="prompt">3. 一个两位数，十位是3，个位比十位多5，这个数是<span class="blank"></span>。</div>
+      </div>
+      <div class="problem">
+        <div class="prompt">4. 37个苹果，每5个装一袋，可以装满<span class="blank"></span>袋，还剩<span class="blank"></span>个。</div>
+      </div>
+      <div class="problem">
+        <div class="prompt">5. 丁丁做了25题，明明超过丁丁最少要做<span class="blank"></span>题。</div>
+      </div>
+      <div class="problem">
+        <div class="prompt">6. 4□+18的结果是六十多，□有<span class="blank"></span>种填法。</div>
+      </div>
+    </section>
+    <h2>二、计算：写清进退位</h2>
+    <section class="mental-grid">
+      <div class="problem">
+        7. 56+27 = <span class="blank"></span>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+      </div>
+      <div class="problem">
+        8. 64-28 = <span class="blank"></span>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+      </div>
+      <div class="problem">
+        9. 70-9 = <span class="blank"></span>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+      </div>
+      <div class="problem">
+        10. 83-50 = <span class="blank"></span>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+      </div>
+      <div class="problem">
+        11. 29+36 = <span class="blank"></span>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+      </div>
+      <div class="problem">
+        12. 90-45 = <span class="blank"></span>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+      </div>
+      <div class="problem">
+        13. 38+17 = <span class="blank"></span>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+      </div>
+      <div class="problem">
+        14. 72-6 = <span class="blank"></span>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+      </div>
+    </section>
+    <h2>三、符号、规律、人民币</h2>
+    <section class="compact-grid">
+      <div class="problem">
+        <div class="prompt">15. ○+○=30，△+○=52，○=<span class="blank"></span>，△=<span class="blank"></span>。</div>
+      </div>
+      <div class="problem">
+        <div class="prompt">16. 找规律：9，18，27，<span class="blank"></span>，<span class="blank"></span>。</div>
+      </div>
+      <div class="problem">
+        <div class="prompt">17. 找规律：88，76，64，<span class="blank"></span>，<span class="blank"></span>。</div>
+      </div>
+      <div class="problem">
+        <div class="prompt">18. 3元5角+2元8角=<span class="blank"></span>元<span class="blank"></span>角。</div>
+      </div>
+      <div class="problem">
+        <div class="prompt">19. 10元买一本6元7角的本子，应找回<span class="blank"></span>元<span class="blank"></span>角。</div>
+      </div>
+      <div class="problem">
+        <div class="prompt">20. 用8个○摆两位数，最小是<span class="blank"></span>，最大是<span class="blank"></span>，一共能摆<span class="blank"></span>个。</div>
+      </div>
+    </section>
+    <h2>四、图形与应用题综合</h2>
+    <section class="problem-grid">
+      <div class="problem">
+        <div class="prompt">21. 数一数：一个大三角形里分成3个小三角形，一共可以看到<span class="blank"></span>个三角形。（可以画图帮忙）</div>
+      </div>
+      <div class="problem tall">
+        <div class="prompt">22. 学校有48个足球，篮球比足球少19个。后来又买来8个篮球。现在篮球有多少个？</div>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+        <div class="answer-line">答：现在篮球有<span class="blank"></span>个。</div>
+      </div>
+      <div class="problem tall">
+        <div class="prompt">23. 红队原来比蓝队多14分。后来红队又得6分，蓝队又得12分。现在红队比蓝队多多少分？</div>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+        <div class="answer-line">答：红队比蓝队多<span class="blank"></span>分。</div>
+      </div>
+      <div class="problem tall">
+        <div class="prompt">24. 一共有82页书，芝芝第一天看了26页，第二天看了18页。还剩多少页没看？</div>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+        <div class="answer-line">答：还剩<span class="blank"></span>页。</div>
+      </div>
+      <div class="problem tall">
+        <div class="prompt">25. 把42+15看成42-15，错误结果比正确结果少多少？</div>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+        <div class="answer-line">答：少<span class="blank"></span>。</div>
+      </div>
+      <div class="problem tall">
+        <div class="prompt">26. 一队有20人，小华从前往后数第7个，从后往前数是第几个？</div>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+        <span class="work-line"></span>
+        <div class="answer-line">答：从后往前数是第<span class="blank"></span>个。</div>
+      </div>
+    </section>
+    <h2>五、检查记录</h2>
+    <section class="problem-grid">
+      <div class="problem">
+        <div class="prompt">27. 我检查第<span class="blank"></span>题和第<span class="blank"></span>题。检查后我改正了：<span class="blank-wide"></span>。</div>
+      </div>
+    </section>
+    <div class="footer">家长批改提示：这张用于决定期末前最后两天补什么。错因比总分更重要。</div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,244 @@
+{
+  "version": 1,
+  "title": "期末综合练习（三）：期末模拟小卷",
+  "date": "2026-06-29",
+  "topic": "一年级下学期期末模拟：数与代数、人民币、规律、图形、应用题综合",
+  "grade": "一年级下学期",
+  "strategy": "exam_mistake_review",
+  "diagnostic_target": "模拟期末综合小卷，覆盖一年级下册已学范围，并加权近期薄弱项：退位进位、条件枚举、符号推理、人民币、图形计数、应用题读题。",
+  "review_status": "assigned",
+  "target": "建议35-45分钟完成。尽量独立完成，做完至少检查2题。",
+  "fields": [
+    "姓名",
+    "日期",
+    "用时",
+    "正确题数"
+  ],
+  "reminder": "这张像小测验：先易后难；遇到长题圈最后问法；遇到有几种先列全；做完检查2题。",
+  "sections": [
+    {
+      "title": "一、填空与选择：看清任务词",
+      "layout": "compact-3",
+      "items": [
+        {
+          "type": "fill_condition",
+          "prompt": "68里面有[blank]个十和[blank]个一；比68多2个十是[blank]。",
+          "answer_detail": "68有6个十8个一；多2个十是88。"
+        },
+        {
+          "type": "fill_condition",
+          "prompt": "与45相邻的两个数是[blank]和[blank]，它们的和是[blank]。",
+          "answer_detail": "44和46，和是90。"
+        },
+        {
+          "type": "fill_condition",
+          "prompt": "一个两位数，十位是3，个位比十位多5，这个数是[blank]。",
+          "answer_detail": "个位8，所以是38。"
+        },
+        {
+          "type": "fill_condition",
+          "prompt": "37个苹果，每5个装一袋，可以装满[blank]袋，还剩[blank]个。",
+          "answer_detail": "5×7=35，装满7袋，还剩2个。"
+        },
+        {
+          "type": "fill_condition",
+          "prompt": "丁丁做了25题，明明超过丁丁最少要做[blank]题。",
+          "answer_detail": "超过25题最少是26题。"
+        },
+        {
+          "type": "fill_condition",
+          "prompt": "4□+18的结果是六十多，□有[blank]种填法。",
+          "answer_detail": "40+18=58，41+18=59，42+18=60，43+18=61，44+18=62，45+18=63，46+18=64，47+18=65，48+18=66，49+18=67。六十多按60-69，共□=2到9，8种。"
+        }
+      ]
+    },
+    {
+      "title": "二、计算：写清进退位",
+      "layout": "grid-4",
+      "items": [
+        {
+          "type": "scratch_equation",
+          "expr": "56+27",
+          "answer": 83,
+          "answer_detail": "56+27=83。"
+        },
+        {
+          "type": "scratch_equation",
+          "expr": "64-28",
+          "answer": 36,
+          "answer_detail": "64-28=36。"
+        },
+        {
+          "type": "scratch_equation",
+          "expr": "70-9",
+          "answer": 61,
+          "answer_detail": "70-9=61。"
+        },
+        {
+          "type": "scratch_equation",
+          "expr": "83-50",
+          "answer": 33,
+          "answer_detail": "83-50=33。"
+        },
+        {
+          "type": "scratch_equation",
+          "expr": "29+36",
+          "answer": 65,
+          "answer_detail": "29+36=65。"
+        },
+        {
+          "type": "scratch_equation",
+          "expr": "90-45",
+          "answer": 45,
+          "answer_detail": "90-45=45。"
+        },
+        {
+          "type": "scratch_equation",
+          "expr": "38+17",
+          "answer": 55,
+          "answer_detail": "38+17=55。"
+        },
+        {
+          "type": "scratch_equation",
+          "expr": "72-6",
+          "answer": 66,
+          "answer_detail": "72-6=66。"
+        }
+      ]
+    },
+    {
+      "title": "三、符号、规律、人民币",
+      "layout": "compact-3",
+      "items": [
+        {
+          "type": "fill_condition",
+          "prompt": "○+○=30，△+○=52，○=[blank]，△=[blank]。",
+          "answer_detail": "○=15，△=37。"
+        },
+        {
+          "type": "fill_condition",
+          "prompt": "找规律：9，18，27，[blank]，[blank]。",
+          "answer_detail": "每次+9，填36、45。"
+        },
+        {
+          "type": "fill_condition",
+          "prompt": "找规律：88，76，64，[blank]，[blank]。",
+          "answer_detail": "每次-12，填52、40。"
+        },
+        {
+          "type": "fill_condition",
+          "prompt": "3元5角+2元8角=[blank]元[blank]角。",
+          "answer_detail": "35角+28角=63角=6元3角。"
+        },
+        {
+          "type": "fill_condition",
+          "prompt": "10元买一本6元7角的本子，应找回[blank]元[blank]角。",
+          "answer_detail": "100角-67角=33角=3元3角。"
+        },
+        {
+          "type": "fill_condition",
+          "prompt": "用8个○摆两位数，最小是[blank]，最大是[blank]，一共能摆[blank]个。",
+          "answer_detail": "两位数十位不能空：17、26、35、44、53、62、71、80，共8个；最小17，最大80。"
+        }
+      ]
+    },
+    {
+      "title": "四、图形与应用题综合",
+      "layout": "problem-grid-2",
+      "items": [
+        {
+          "type": "fill_condition",
+          "prompt": "数一数：一个大三角形里分成3个小三角形，一共可以看到[blank]个三角形。（可以画图帮忙）",
+          "answer_detail": "通常为4个：3个小三角形+1个大三角形。若实际图不同，以图为准；此题训练小图形加整体图形。"
+        },
+        {
+          "type": "multi_step_word_problem",
+          "prompt": "学校有48个足球，篮球比足球少19个。后来又买来8个篮球。现在篮球有多少个？",
+          "answer_prompt": "答：现在篮球有",
+          "answer_suffix": "个。",
+          "work_lines": 3,
+          "answer_detail": "48-19=29，29+8=37。答：37个。",
+          "review_status": "approved"
+        },
+        {
+          "type": "multi_step_word_problem",
+          "prompt": "红队原来比蓝队多14分。后来红队又得6分，蓝队又得12分。现在红队比蓝队多多少分？",
+          "answer_prompt": "答：红队比蓝队多",
+          "answer_suffix": "分。",
+          "work_lines": 4,
+          "answer_detail": "14+6=20，20-12=8。答：多8分。",
+          "review_status": "approved"
+        },
+        {
+          "type": "condition_filtering_problem",
+          "prompt": "一共有82页书，芝芝第一天看了26页，第二天看了18页。还剩多少页没看？",
+          "answer_prompt": "答：还剩",
+          "answer_suffix": "页。",
+          "work_lines": 4,
+          "answer_detail": "26+18=44，82-44=38。答：还剩38页。",
+          "review_status": "approved"
+        },
+        {
+          "type": "word_problem",
+          "prompt": "把42+15看成42-15，错误结果比正确结果少多少？",
+          "answer_prompt": "答：少",
+          "answer_suffix": "。",
+          "work_lines": 3,
+          "answer_detail": "正确42+15=57，错误42-15=27，57-27=30。答：少30。"
+        },
+        {
+          "type": "word_problem",
+          "prompt": "一队有20人，小华从前往后数第7个，从后往前数是第几个？",
+          "answer_prompt": "答：从后往前数是第",
+          "answer_suffix": "个。",
+          "work_lines": 3,
+          "answer_detail": "20-7+1=14。答：第14个。"
+        }
+      ]
+    },
+    {
+      "title": "五、检查记录",
+      "layout": "problem-grid-2",
+      "items": [
+        {
+          "type": "fill_condition",
+          "prompt": "我检查第[blank]题和第[blank]题。检查后我改正了：[blank-wide]。",
+          "answer_detail": "不固定答案。若没有改正，也可以写‘没有改正，但重算确认了’。"
+        }
+      ]
+    }
+  ],
+  "footer": "家长批改提示：这张用于决定期末前最后两天补什么。错因比总分更重要。",
+  "grading": {
+    "error_labels": [
+      {
+        "name": "基础概念错",
+        "description": "数位、相邻数、超过最少等基础填空错误。"
+      },
+      {
+        "name": "计算执行错",
+        "description": "式子对但进退位、单位换算错。"
+      },
+      {
+        "name": "枚举/范围错",
+        "description": "有几种填法、圆片摆数未列全。"
+      },
+      {
+        "name": "应用题建模错",
+        "description": "问法、中间量、条件取舍或差距变化错误。"
+      },
+      {
+        "name": "检查不足",
+        "description": "没有检查或检查没有抓住易错点。"
+      }
+    ],
+    "reassessment": [
+      "总正确率90%以上：进入轻量查漏补缺。",
+      "80%-90%：按错因补4-6题短练。",
+      "低于80%：拆成基础计算+应用题两张短练。"
+    ],
+    "next": [
+      "完成后拍照，我会给期末前最后复习建议。"
+    ]
+  }
+}

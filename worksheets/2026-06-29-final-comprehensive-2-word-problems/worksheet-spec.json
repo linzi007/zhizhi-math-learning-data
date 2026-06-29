@@ -1,0 +1,194 @@
+{
+  "version": 1,
+  "title": "期末综合练习（二）：读题与应用题",
+  "date": "2026-06-29",
+  "topic": "一年级下学期期末综合复习：长文字应用题、差距变化、中间量、条件取舍、排队问题",
+  "grade": "一年级下学期",
+  "strategy": "exam_mistake_review",
+  "diagnostic_target": "针对芝芝近期长文字应用题、差距变化方向、第一步结果是否最终答案、干扰条件和排队位置换算进行综合复习。",
+  "review_status": "assigned",
+  "target": "建议30-40分钟完成。每题先圈最后问什么，再用一句短话说题意。",
+  "fields": [
+    "姓名",
+    "日期",
+    "用时",
+    "正确题数"
+  ],
+  "reminder": "先圈最后问法，再列式；第一步结果不一定是答案；两位数加减写小竖式或标进退位；答句要填完整。",
+  "sections": [
+    {
+      "title": "一、先读题：把长题说短",
+      "layout": "cards-3",
+      "items": [
+        {
+          "type": "reading_task",
+          "text": "水果汤圆原来比芝麻汤圆多18个。后来水果又买12个，芝麻又买20个。现在谁多？多多少个？",
+          "keyword_label": "圈：原来多、后来、水果、芝麻、现在谁多",
+          "task_label": "短话：差距先变大，再被芝麻追回一部分。",
+          "answer_note": "先算18+12，再减20。"
+        },
+        {
+          "type": "reading_task",
+          "text": "图书角原来有80本书，上午借走27本，下午还回来9本。现在比原来少多少本？",
+          "keyword_label": "圈：借走、还回来、比原来少",
+          "task_label": "短话：借走变少，还回来又多一点。",
+          "answer_note": "可算27-9=18。"
+        },
+        {
+          "type": "reading_task",
+          "text": "买一本书剩18元，买两本还差12元。一本书多少钱？",
+          "keyword_label": "圈：一本剩、两本还差、一本多少钱",
+          "task_label": "短话：两种买法相差一本书，钱数相差18+12。",
+          "answer_note": "18+12=30。"
+        }
+      ]
+    },
+    {
+      "title": "二、差距变化：先判断第二步加还是减",
+      "layout": "problem-grid-2",
+      "items": [
+        {
+          "type": "multi_step_word_problem",
+          "prompt": "红花原来比黄花多16朵。后来红花又开了7朵，黄花没有变。现在红花比黄花多多少朵？",
+          "answer_prompt": "答：红花比黄花多",
+          "answer_suffix": "朵。",
+          "work_lines": 3,
+          "answer_detail": "16+7=23。红花又多，差距变大。答：23朵。",
+          "review_status": "approved"
+        },
+        {
+          "type": "multi_step_word_problem",
+          "prompt": "红花原来比黄花多16朵。后来黄花又开了7朵，红花没有变。现在红花比黄花多多少朵？",
+          "answer_prompt": "答：红花比黄花多",
+          "answer_suffix": "朵。",
+          "work_lines": 3,
+          "answer_detail": "16-7=9。黄花追上来，差距变小。答：9朵。",
+          "review_status": "approved"
+        },
+        {
+          "type": "multi_step_word_problem",
+          "prompt": "小兰有42张贴纸，小明比小兰少15张。后来小明又得到8张。现在小明有多少张？比小兰少多少张？",
+          "answer_prompt": "答：小明现在有",
+          "answer_suffix": "张，比小兰少____张。",
+          "work_lines": 4,
+          "answer_detail": "42-15=27，27+8=35，42-35=7。答：35张，少7张。",
+          "review_status": "approved"
+        },
+        {
+          "type": "multi_step_word_problem",
+          "prompt": "一班比二班多种了13棵树。下午二班又种了9棵，一班又种了4棵。现在一班比二班多多少棵？",
+          "answer_prompt": "答：一班比二班多",
+          "answer_suffix": "棵。",
+          "work_lines": 4,
+          "answer_detail": "13+4=17，17-9=8。答：多8棵。",
+          "review_status": "approved"
+        }
+      ]
+    },
+    {
+      "title": "三、中间量和条件取舍：别把第一步当答案",
+      "layout": "problem-grid-2",
+      "items": [
+        {
+          "type": "multi_step_word_problem",
+          "prompt": "一盒糖连盒重88克，吃掉一半糖后连盒重55克。糖原来重多少克？盒子重多少克？",
+          "answer_prompt": "答：糖原来重",
+          "answer_suffix": "克，盒子重____克。",
+          "work_lines": 4,
+          "answer_detail": "88-55=33，33是一半糖；33+33=66，糖原来重66克；88-66=22，盒子重22克。",
+          "review_status": "approved"
+        },
+        {
+          "type": "condition_filtering_problem",
+          "prompt": "有5个同学做纸花，一共做了74朵，其中红花28朵。黄花有多少朵？圈出不用的数字。",
+          "answer_prompt": "答：黄花有",
+          "answer_suffix": "朵。",
+          "work_lines": 3,
+          "unused_conditions": [
+            "5个同学"
+          ],
+          "answer_detail": "74-28=46。5个同学不用来计算。",
+          "review_status": "approved"
+        },
+        {
+          "type": "condition_filtering_problem",
+          "prompt": "篮球46元，排球23元。妈妈带了65元，买一个篮球和一个排球够吗？",
+          "answer_prompt": "答：",
+          "answer_suffix": "。",
+          "work_lines": 3,
+          "answer_detail": "46+23=69，69>65，不够。",
+          "review_status": "approved"
+        },
+        {
+          "type": "multi_step_word_problem",
+          "prompt": "茶叶原价92元，优惠8元后，爸爸还差14元。爸爸带了多少钱？",
+          "answer_prompt": "答：爸爸带了",
+          "answer_suffix": "元。",
+          "work_lines": 4,
+          "answer_detail": "92-8=84，84-14=70。答：70元。",
+          "review_status": "approved"
+        }
+      ]
+    },
+    {
+      "title": "四、排队和检查",
+      "layout": "problem-grid-2",
+      "items": [
+        {
+          "type": "word_problem",
+          "prompt": "小朋友排队，从前往后数，明明是第9个；从后往前数，明明是第6个。这一队一共有多少个小朋友？",
+          "answer_prompt": "答：一共有",
+          "answer_suffix": "个小朋友。",
+          "work_lines": 3,
+          "answer_detail": "9+6-1=14。明明被数了两次，减1。"
+        },
+        {
+          "type": "word_problem",
+          "prompt": "一队小朋友有18人。芝芝从后往前数是第5个，她从前往后数是第几个？",
+          "answer_prompt": "答：从前往后数是第",
+          "answer_suffix": "个。",
+          "work_lines": 3,
+          "answer_detail": "18-5+1=14。答：第14个。"
+        },
+        {
+          "type": "fill_condition",
+          "prompt": "我检查第[blank]题。检查方法是：[blank-wide]。",
+          "answer_detail": "不固定答案。比如重算关键一步、回看最后问法、检查答句单位。"
+        }
+      ]
+    }
+  ],
+  "footer": "家长批改提示：如果式子列对但计算错，算计算问题；如果第一步对、第二步方向错，重点讲差距变大/变小。",
+  "grading": {
+    "error_labels": [
+      {
+        "name": "最后问法没圈",
+        "description": "不知道最终要求什么。"
+      },
+      {
+        "name": "差距方向错",
+        "description": "应加写减，或应减写加。"
+      },
+      {
+        "name": "中间量当答案",
+        "description": "第一步结果直接填最终答案。"
+      },
+      {
+        "name": "条件误用",
+        "description": "用了干扰数字或漏用关键条件。"
+      },
+      {
+        "name": "排队位置错",
+        "description": "忘记减1或倒数位置换算错。"
+      }
+    ],
+    "reassessment": [
+      "应用题错3题以上：先做4题短练，不进入大模拟卷。",
+      "差距变化错2题以上：只补差距变大/变小。",
+      "排队错2题：补前后第几个和倒数位置。"
+    ],
+    "next": [
+      "完成后拍照批改，按错因拆下一步。"
+    ]
+  }
+}

@@ -1,0 +1,182 @@
+{
+  "version": 1,
+  "title": "期末综合练习（一）：数与计算稳基础",
+  "date": "2026-06-29",
+  "topic": "一年级下学期期末综合复习：数位、口算、条件枚举、规律",
+  "grade": "一年级下学期",
+  "strategy": "exam_mistake_review",
+  "diagnostic_target": "复习100以内数的认识、两位数加减法、退位/进位、数位摆数、几十多范围、找规律和人民币单位换算。重点观察是否能主动列举、写小竖式或标进退位。",
+  "review_status": "assigned",
+  "target": "建议25-35分钟完成。计算题不要赶速度，遇到退位/进位先写清楚过程。",
+  "fields": [
+    "姓名",
+    "日期",
+    "用时",
+    "正确题数"
+  ],
+  "reminder": "两位数横式先写规范竖式或清楚标记进退位；问“有几种”先列出来再数；做完选1题检查。",
+  "sections": [
+    {
+      "title": "一、口算与数位：个位十位别丢",
+      "layout": "grid-4",
+      "items": [
+        {
+          "type": "scratch_equation",
+          "expr": "80-6",
+          "answer": 74,
+          "answer_detail": "80-6=74。借1个十后还剩7个十。"
+        },
+        {
+          "type": "scratch_equation",
+          "expr": "90-24",
+          "answer": 66,
+          "answer_detail": "90-24=66。个位10-4=6，十位8-2=6。"
+        },
+        {
+          "type": "scratch_equation",
+          "expr": "71-40",
+          "answer": 31,
+          "answer_detail": "71-40=31。个位1还在。"
+        },
+        {
+          "type": "scratch_equation",
+          "expr": "62-35",
+          "answer": 27,
+          "answer_detail": "62-35=27。个位借位，12-5=7，5-3=2。"
+        },
+        {
+          "type": "scratch_equation",
+          "expr": "47+28",
+          "answer": 75,
+          "answer_detail": "47+28=75。7+8=15，个位写5，十位进1。"
+        },
+        {
+          "type": "scratch_equation",
+          "expr": "36+19",
+          "answer": 55,
+          "answer_detail": "36+19=55。6+9=15，进1。"
+        },
+        {
+          "type": "scratch_equation",
+          "expr": "100-73",
+          "answer": 27,
+          "answer_detail": "100-73=27。"
+        },
+        {
+          "type": "scratch_equation",
+          "expr": "54+8",
+          "answer": 62,
+          "answer_detail": "54+8=62。4+8=12，进1。"
+        }
+      ]
+    },
+    {
+      "title": "二、数位与条件枚举：先列全",
+      "layout": "compact-3",
+      "items": [
+        {
+          "type": "fill_condition",
+          "prompt": "一个两位数，个位比十位大7，这个两位数最大是[blank]。",
+          "answer_detail": "可能是18、29，最大是29。"
+        },
+        {
+          "type": "fill_condition",
+          "prompt": "5□+16的结果是六十多，□可以填[blank-wide]，一共有[blank]种。",
+          "answer_detail": "□=0、1、2、3，一共4种。"
+        },
+        {
+          "type": "fill_condition",
+          "prompt": "6□+15的结果是七十多，□可以填[blank-wide]，一共有[blank]种。",
+          "answer_detail": "60+15=75到69+15=84，所以□=0、1、2、3、4，一共5种。"
+        },
+        {
+          "type": "fill_condition",
+          "prompt": "用5个○在十位和个位摆两位数，能摆出[blank]个不同的两位数。请写出最小数[blank]，最大数[blank]。",
+          "answer_detail": "十位不能空：14、23、32、41、50，共5个；最小14，最大50。"
+        },
+        {
+          "type": "fill_condition",
+          "prompt": "用4个○在十位和个位摆数，如果可以是一位数或两位数，能摆出[blank]个不同的数，从小到大是[blank-wide]。",
+          "answer_detail": "4、13、22、31、40，共5个。"
+        },
+        {
+          "type": "fill_condition",
+          "prompt": "57前面的第3个数是[blank]；39后面的第5个数是[blank]。",
+          "answer_detail": "57前面：56、55、54；39后面：40、41、42、43、44。"
+        }
+      ]
+    },
+    {
+      "title": "三、找规律与人民币：先说规则，先统一单位",
+      "layout": "compact-3",
+      "items": [
+        {
+          "type": "fill_condition",
+          "prompt": "找规律：18，25，32，[blank]，[blank]。",
+          "answer_detail": "每次+7，填39、46。"
+        },
+        {
+          "type": "fill_condition",
+          "prompt": "找规律：96，84，72，[blank]，[blank]。",
+          "answer_detail": "每次-12，填60、48。"
+        },
+        {
+          "type": "fill_condition",
+          "prompt": "1元=[blank]角；1元=[blank]分。",
+          "answer_detail": "1元=10角；1元=100分。"
+        },
+        {
+          "type": "fill_condition",
+          "prompt": "78分+1分=[blank]角[blank]分。",
+          "answer_detail": "79分=7角9分。"
+        },
+        {
+          "type": "fill_condition",
+          "prompt": "4元-3元2角=[blank]角。",
+          "answer_detail": "4元=40角，3元2角=32角，40-32=8角。"
+        },
+        {
+          "type": "fill_condition",
+          "prompt": "按从小到大排：6元、58角、5元9角。顺序是：[blank-wide]。",
+          "answer_detail": "58角=5元8角，所以58角＜5元9角＜6元。"
+        }
+      ]
+    },
+    {
+      "title": "四、检查动作",
+      "layout": "problem-grid-2",
+      "items": [
+        {
+          "type": "fill_condition",
+          "prompt": "我检查第[blank]题。检查时我发现最容易错的是：[blank-wide]。",
+          "answer_detail": "不固定答案。能说出退位、进位、单位换算、有没有列全等即可。"
+        }
+      ]
+    }
+  ],
+  "footer": "家长批改提示：本卷重点看计算过程和枚举过程。只写答案对但没有过程的题，可以口头追问。",
+  "grading": {
+    "error_labels": [
+      {
+        "name": "退位/进位错",
+        "description": "借位后十位未少1，或个位满十进位不稳。"
+      },
+      {
+        "name": "枚举漏情况",
+        "description": "没有从0或1开始逐个列全。"
+      },
+      {
+        "name": "单位未统一",
+        "description": "人民币元角分没有先换成同一单位。"
+      }
+    ],
+    "reassessment": [
+      "计算错2题以上：补5分钟退位/进位短练。",
+      "枚举错2题以上：补2题圆片/几十多列举。",
+      "人民币错2题以上：补单位换算短练。"
+    ],
+    "next": [
+      "完成后拍照，我按错因决定下一张重点。"
+    ]
+  }
+}
