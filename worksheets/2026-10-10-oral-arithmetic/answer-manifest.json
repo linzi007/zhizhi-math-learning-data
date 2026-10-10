@@ -1,0 +1,338 @@
+[
+  {
+    "id": 1,
+    "concept": "一、100以内加减法",
+    "expression": "36+27",
+    "answer": 63,
+    "source": "用户指定范围原创"
+  },
+  {
+    "id": 2,
+    "concept": "一、100以内加减法",
+    "expression": "72-38",
+    "answer": 34,
+    "source": "用户指定范围原创"
+  },
+  {
+    "id": 3,
+    "concept": "一、100以内加减法",
+    "expression": "45+19",
+    "answer": 64,
+    "source": "用户指定范围原创"
+  },
+  {
+    "id": 4,
+    "concept": "一、100以内加减法",
+    "expression": "80-26",
+    "answer": 54,
+    "source": "用户指定范围原创"
+  },
+  {
+    "id": 5,
+    "concept": "一、100以内加减法",
+    "expression": "28+35",
+    "answer": 63,
+    "source": "用户指定范围原创"
+  },
+  {
+    "id": 6,
+    "concept": "一、100以内加减法",
+    "expression": "91-47",
+    "answer": 44,
+    "source": "用户指定范围原创"
+  },
+  {
+    "id": 7,
+    "concept": "一、100以内加减法",
+    "expression": "56+18",
+    "answer": 74,
+    "source": "用户指定范围原创"
+  },
+  {
+    "id": 8,
+    "concept": "一、100以内加减法",
+    "expression": "63-29",
+    "answer": 34,
+    "source": "用户指定范围原创"
+  },
+  {
+    "id": 9,
+    "concept": "一、100以内加减法",
+    "expression": "47+26",
+    "answer": 73,
+    "source": "用户指定范围原创"
+  },
+  {
+    "id": 10,
+    "concept": "一、100以内加减法",
+    "expression": "70-34",
+    "answer": 36,
+    "source": "用户指定范围原创"
+  },
+  {
+    "id": 11,
+    "concept": "一、100以内加减法",
+    "expression": "18+46",
+    "answer": 64,
+    "source": "用户指定范围原创"
+  },
+  {
+    "id": 12,
+    "concept": "一、100以内加减法",
+    "expression": "85-39",
+    "answer": 46,
+    "source": "用户指定范围原创"
+  },
+  {
+    "id": 13,
+    "concept": "一、100以内加减法",
+    "expression": "39+24",
+    "answer": 63,
+    "source": "用户指定范围原创"
+  },
+  {
+    "id": 14,
+    "concept": "一、100以内加减法",
+    "expression": "62-27",
+    "answer": 35,
+    "source": "用户指定范围原创"
+  },
+  {
+    "id": 15,
+    "concept": "一、100以内加减法",
+    "expression": "26+58",
+    "answer": 84,
+    "source": "用户指定范围原创"
+  },
+  {
+    "id": 16,
+    "concept": "一、100以内加减法",
+    "expression": "100-46",
+    "answer": 54,
+    "source": "用户指定范围原创"
+  },
+  {
+    "id": 17,
+    "concept": "二、乘法口诀",
+    "expression": "3*4",
+    "answer": 12,
+    "source": "用户指定范围原创"
+  },
+  {
+    "id": 18,
+    "concept": "二、乘法口诀",
+    "expression": "6*5",
+    "answer": 30,
+    "source": "用户指定范围原创"
+  },
+  {
+    "id": 19,
+    "concept": "二、乘法口诀",
+    "expression": "7*2",
+    "answer": 14,
+    "source": "用户指定范围原创"
+  },
+  {
+    "id": 20,
+    "concept": "二、乘法口诀",
+    "expression": "8*3",
+    "answer": 24,
+    "source": "用户指定范围原创"
+  },
+  {
+    "id": 21,
+    "concept": "二、乘法口诀",
+    "expression": "4*6",
+    "answer": 24,
+    "source": "用户指定范围原创"
+  },
+  {
+    "id": 22,
+    "concept": "二、乘法口诀",
+    "expression": "9*2",
+    "answer": 18,
+    "source": "用户指定范围原创"
+  },
+  {
+    "id": 23,
+    "concept": "二、乘法口诀",
+    "expression": "5*7",
+    "answer": 35,
+    "source": "用户指定范围原创"
+  },
+  {
+    "id": 24,
+    "concept": "二、乘法口诀",
+    "expression": "6*6",
+    "answer": 36,
+    "source": "用户指定范围原创"
+  },
+  {
+    "id": 25,
+    "concept": "二、乘法口诀",
+    "expression": "8*4",
+    "answer": 32,
+    "source": "用户指定范围原创"
+  },
+  {
+    "id": 26,
+    "concept": "二、乘法口诀",
+    "expression": "7*6",
+    "answer": 42,
+    "source": "用户指定范围原创"
+  },
+  {
+    "id": 27,
+    "concept": "二、乘法口诀",
+    "expression": "9*3",
+    "answer": 27,
+    "source": "用户指定范围原创"
+  },
+  {
+    "id": 28,
+    "concept": "二、乘法口诀",
+    "expression": "8*7",
+    "answer": 56,
+    "source": "用户指定范围原创"
+  },
+  {
+    "id": 29,
+    "concept": "二、乘法口诀",
+    "expression": "9*5",
+    "answer": 45,
+    "source": "用户指定范围原创"
+  },
+  {
+    "id": 30,
+    "concept": "二、乘法口诀",
+    "expression": "7*7",
+    "answer": 49,
+    "source": "用户指定范围原创"
+  },
+  {
+    "id": 31,
+    "concept": "二、乘法口诀",
+    "expression": "8*8",
+    "answer": 64,
+    "source": "用户指定范围原创"
+  },
+  {
+    "id": 32,
+    "concept": "二、乘法口诀",
+    "expression": "9*9",
+    "answer": 81,
+    "source": "用户指定范围原创"
+  },
+  {
+    "id": 33,
+    "concept": "三、乘法和加减法混合",
+    "expression": "3*4+8",
+    "answer": 20,
+    "source": "用户指定范围原创"
+  },
+  {
+    "id": 34,
+    "concept": "三、乘法和加减法混合",
+    "expression": "5*6-9",
+    "answer": 21,
+    "source": "用户指定范围原创"
+  },
+  {
+    "id": 35,
+    "concept": "三、乘法和加减法混合",
+    "expression": "7+4*5",
+    "answer": 27,
+    "source": "用户指定范围原创"
+  },
+  {
+    "id": 36,
+    "concept": "三、乘法和加减法混合",
+    "expression": "40-6*4",
+    "answer": 16,
+    "source": "用户指定范围原创"
+  },
+  {
+    "id": 37,
+    "concept": "三、乘法和加减法混合",
+    "expression": "2*8+15",
+    "answer": 31,
+    "source": "用户指定范围原创"
+  },
+  {
+    "id": 38,
+    "concept": "三、乘法和加减法混合",
+    "expression": "7*3-6",
+    "answer": 15,
+    "source": "用户指定范围原创"
+  },
+  {
+    "id": 39,
+    "concept": "三、乘法和加减法混合",
+    "expression": "18+5*4",
+    "answer": 38,
+    "source": "用户指定范围原创"
+  },
+  {
+    "id": 40,
+    "concept": "三、乘法和加减法混合",
+    "expression": "60-7*6",
+    "answer": 18,
+    "source": "用户指定范围原创"
+  },
+  {
+    "id": 41,
+    "concept": "三、乘法和加减法混合",
+    "expression": "6*5+27",
+    "answer": 57,
+    "source": "用户指定范围原创"
+  },
+  {
+    "id": 42,
+    "concept": "三、乘法和加减法混合",
+    "expression": "8*4-18",
+    "answer": 14,
+    "source": "用户指定范围原创"
+  },
+  {
+    "id": 43,
+    "concept": "三、乘法和加减法混合",
+    "expression": "16+9*3",
+    "answer": 43,
+    "source": "用户指定范围原创"
+  },
+  {
+    "id": 44,
+    "concept": "三、乘法和加减法混合",
+    "expression": "70-8*7",
+    "answer": 14,
+    "source": "用户指定范围原创"
+  },
+  {
+    "id": 45,
+    "concept": "三、乘法和加减法混合",
+    "expression": "7*7+14",
+    "answer": 63,
+    "source": "用户指定范围原创"
+  },
+  {
+    "id": 46,
+    "concept": "三、乘法和加减法混合",
+    "expression": "9*5-26",
+    "answer": 19,
+    "source": "用户指定范围原创"
+  },
+  {
+    "id": 47,
+    "concept": "三、乘法和加减法混合",
+    "expression": "25+6*6",
+    "answer": 61,
+    "source": "用户指定范围原创"
+  },
+  {
+    "id": 48,
+    "concept": "三、乘法和加减法混合",
+    "expression": "90-9*8",
+    "answer": 18,
+    "source": "用户指定范围原创"
+  }
+]
